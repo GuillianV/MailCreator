@@ -120,7 +120,7 @@ namespace MailCreator
                 if (fileInfo!= null)
                 {
                     ExcelManager excel = new ExcelManager(fileInfo);
-                    excel.ReadExcelFile();
+                    dgCells.ItemsSource = excel.ShowCellsValues().OrderBy(cellView => cellView.RowReference).ThenBy(cellView => cellView.ColumnReference);
 
                 }
 

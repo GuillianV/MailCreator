@@ -7,22 +7,30 @@
         mc:Ignorable="d"
         Title="MailCreator" Height="450" Width="800">
     <Grid  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="197*"/>
+            <ColumnDefinition Width="199*"/>
+        </Grid.ColumnDefinitions>
 
 
 
-        <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top">
+        <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label Content="Mail Créator" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>
         </StackPanel>
 
 
 
 
-        <StackPanel Margin="10,82,10,0" x:Name="panExcelSemaine" Background="AliceBlue" Orientation="Horizontal" VerticalAlignment="Top"    AllowDrop="True" Drop="panExcelSemaine_Drop"  DragOver="panExcelSemaine_DragOver" >
+        <StackPanel Margin="10,82,10,0" x:Name="panExcelSemaine"  Orientation="Horizontal" VerticalAlignment="Top"    AllowDrop="True" Drop="panExcelSemaine_Drop"  DragOver="panExcelSemaine_DragOver" Grid.ColumnSpan="2" >
             <Label FontSize="14" Content="Excel de la semaine : " FontFamily="Poppins" VerticalAlignment="Center" HorizontalAlignment="Left" />
             <Border x:Name="bordExcelSemaine" BorderThickness="2" BorderBrush="Transparent">
                 <Label FontSize="12" x:Name="lbDropExcelSemaine" Content="Glissez le fichier Excel ici " Background="LightGray" FontFamily="Poppins" VerticalAlignment="Center" Width="300" HorizontalAlignment="Left" />
             </Border>
         </StackPanel>
+        <DataGrid Margin="10,10,10,10" Grid.ColumnSpan="2" x:Name="dgCells" Height="290" VerticalAlignment="Bottom">
+            
+            
+        </DataGrid>
 
 
 
