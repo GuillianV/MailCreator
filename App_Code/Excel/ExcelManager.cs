@@ -67,17 +67,10 @@ namespace Excel
 
                 foreach (Cell cell in row.Elements<Cell>())
                 {
-
-                    string value = cell.CellValue.InnerText;
-
-                    if (cell.DataType != null && cell.DataType == CellValues.SharedString)
-                    {
-                        int sharedStringId = int.Parse(cell.CellValue.Text);
-                        SharedStringItem sharedStringItem = this._workbookPart.SharedStringTablePart.SharedStringTable.Elements<SharedStringItem>().ElementAt(sharedStringId);
-                        value = sharedStringItem.InnerText;
-                    }
-
-                    cellViewBindings.Add(new CellViewBinding(value, cell.CellReference, cell.DataType ?? CellValues.Number));
+                    string value = GetCellInnerText(cell);
+                   
+                    if(!string.IsNullOrEmpty(value))
+                        cellViewBindings.Add(new CellViewBinding(value, cell.CellReference, cell.DataType ?? CellValues.Number));
 
                 }
             }
@@ -87,6 +80,22 @@ namespace Excel
         }
 
 
+
+        public string GetCellInnerText(Cell cell)
+        {
+
+            string value = cell.CellValue?.InnerText;
+
+            if (cell.DataType != null && cell.DataType == CellValues.SharedString)
+            {
+                int sharedStringId = int.Parse(cell.CellValue.Text);
+                SharedStringItem sharedStringItem = this._workbookPart.SharedStringTablePart.SharedStringTable.Elements<SharedStringItem>().ElementAt(sharedStringId);
+                value = sharedStringItem.InnerText;
+            }
+
+            return value;
+
+        }
 
     }
 
