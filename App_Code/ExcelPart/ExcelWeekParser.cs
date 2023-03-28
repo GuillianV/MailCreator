@@ -22,25 +22,12 @@ namespace ExcelPart
         public ExcelWeekParser(List<CellViewBinding> cells)
         {
             this._cells = cells;
-            GetWeek();
+            InitWeek();
         }
 
 
-        public List<CellViewBinding> GetWeekCells(string semainKey)
-        {
-            List<CellViewBinding> cells = new List<CellViewBinding>();
-            if(_weeks.ContainsKey(semainKey))
-                cells = _weeks[semainKey];
 
-            ParseWeek(cells);
-
-
-            return cells;
-
-        }
-
-
-        private void GetWeek()
+        private void InitWeek()
         {
             string workingWeek = "";
 
@@ -49,8 +36,8 @@ namespace ExcelPart
             _cells.ForEach(cell =>
            {
 
-
-               if(MatchWeek(MatchReference(cell.InnerText)[0],Convert.ToInt32(MatchReference(cell.InnerText)[1]))){
+               string[] referenceRes = MatchReference(cell.InnerText);
+               if (MatchWeek(referenceRes[0],Convert.ToInt32(referenceRes[1]))){
 
                    if (!string.IsNullOrEmpty(workingWeek) && cells.Count > 0 && workingWeek != cell.InnerText)
                    {
@@ -79,30 +66,136 @@ namespace ExcelPart
         }
 
 
-        private List<MatiereViewBinding> ParseWeek(List<CellViewBinding> weekCells)
+
+
+
+
+        public List<WeekViewBinding> GetWeeks()
+        {
+            List<WeekViewBinding> weekViews = new List<WeekViewBinding>();
+            _weeks.ToList()?.ForEach(week =>
+            {
+                weekViews.Add(GetWeek(week.Key));
+            });
+
+            return weekViews;
+
+
+        }
+
+        public WeekViewBinding? GetWeek(string semainKey)
         {
 
+            List<CellViewBinding> weekCells = new List<CellViewBinding>();
+            if (_weeks.ContainsKey(semainKey))
+                weekCells = _weeks[semainKey];
+            else
+                return null;
+
+
+            WeekViewBinding week = new WeekViewBinding(weekCells.First().InnerText);
+            week.SetMatieres(ParseMatiere(weekCells));
+
+            return week;
+
+        }
+
+        private List<MatiereViewBinding> ParseMatiere(List<CellViewBinding> weekCells)
+        {
             List<MatiereViewBinding> result = new List<MatiereViewBinding>();
 
-            weekCells.OrderBy(c => c.RowReference).ThenBy(c => c.ColumnReference).ToList().ForEach(cell => { 
-            
-                if(Promos.MatchPromo(cell.InnerText) != null)
+            weekCells.OrderBy(c => c.RowReference).ThenBy(c => c.ColumnReference).ToList().ForEach(cell => {
+
+                if (Promos.MatchPromo(cell.InnerText) != null)
                 {
+
                     weekCells.Where(wc => wc.RowReference == cell.RowReference && wc.Reference != cell.Reference).ToList().ForEach(matiereCell =>
                     {
-                        MatiereViewBinding matiereViewBinding = new MatiereViewBinding();
-                        matiereViewBinding.Matiere = matiereCell.InnerText;
+
+                        string matiere = "";
+                        string prof = "";
+                        string sceance = "";
+                        bool visio = false;
+                        string salle = "";
+                        string[] matierCellSplited = matiereCell.InnerText.Split('\n');
+                        if (matierCellSplited.Length > 0)
+                        {
+
+                            if (matierCellSplited.Length == 3)
+                            {
+                                matiere = matierCellSplited[0];
+                                prof = matierCellSplited[1];
+                                sceance = matierCellSplited[2];
+                                if (prof.Contains("(visio)"))
+                                {
+                                    prof.Replace("(visio)", String.Empty);
+                                    visio = true;
+
+                                }
+                            }
+
+
+                            if (matierCellSplited.Length == 2)
+                            {
+                                matiere = matierCellSplited[0];
+                                prof = matierCellSplited[1];
+                                if (prof.Contains("(visio)"))
+                                {
+                                    prof.Replace("(visio)", String.Empty);
+                                    visio = true;
+
+                                }
+
+                            }
+
+
+                            if (matierCellSplited.Length == 1)
+                                matiere = matierCellSplited[0];
+
+                        }
+                        Jour jour = Jours.GetJourByColumn(matiereCell.ColumnReference);
+                        List<CellViewBinding> sallesCells = new List<CellViewBinding>();
+                        if (jour.ColumnReference.Count > 0)
+                        {
+
+                            foreach (string jourColumnRef in jour.ColumnReference)
+                            {
+                                CellViewBinding salleCell = weekCells.FirstOrDefault(wc => wc.RowReference == matiereCell.RowReference + 4 && wc.ColumnReference == jourColumnRef);
+                                if (salleCell != null)
+                                {
+                                    sallesCells.Add(salleCell);
+                                    break;
+                                }
+
+                            }
+
+
+                            sallesCells?.ForEach(salleCell =>
+                            {
+                                if (!string.IsNullOrEmpty(salleCell.InnerText))
+                                    salle += $"{salleCell.InnerText},";
+                            });
+
+                        }
+
+
+
+
+
+                        MatiereViewBinding matiereViewBinding = new MatiereViewBinding(cell.InnerText, matiere, prof, salle, jour.Nom, sceance, visio);
                         result.Add(matiereViewBinding);
                     });
                 }
-            
-            
-            
+
+
+
             });
 
             return result;
-
         }
+
+
+
 
         private bool MatchWeek(string week, int weekNumber)
         {

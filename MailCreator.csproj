@@ -72,6 +72,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="App_Code\ExcelPart\Data\Jours.cs" />
+    <Compile Include="App_Code\ExcelPart\Data\Jour.cs" />
     <Compile Include="App_Code\ExcelPart\Data\Promos.cs" />
     <Compile Include="App_Code\ExcelPart\UI\MatiereViewBinding.cs" />
     <Compile Include="App_Code\ExcelPart\UI\WeekViewBinding.cs" />

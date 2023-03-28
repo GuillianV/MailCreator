@@ -1,5 +1,6 @@
 ﻿using Excel;
 using ExcelPart;
+using ExcelPart.UI;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -111,7 +112,7 @@ namespace MailCreator
 
 
         }
-
+        List<WeekViewBinding> weekViewBinding = new List<WeekViewBinding>();
         public void panExcelSemaine_Drop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
@@ -123,17 +124,25 @@ namespace MailCreator
                     ExcelManager excel = new ExcelManager(fileInfo);
                     ExcelWeekParser excelWeekParser = new ExcelWeekParser(excel.ShowCellsValues());
 
-
-                    dgCells.ItemsSource = excelWeekParser.GetWeekCells("S49").OrderBy(cellView => cellView.RowReference).ThenBy(cellView => cellView.ColumnReference); //excel.ShowCellsValues().OrderBy(cellView => cellView.RowReference).ThenBy(cellView => cellView.ColumnReference);
+                    weekViewBinding = excelWeekParser.GetWeeks();
+                    dgCells.ItemsSource = weekViewBinding.OrderBy(w => Convert.ToInt32( w.Semaine.Replace("S",String.Empty))).AsQueryable(); 
 
                 }
 
             }
         }
 
+        private void dgCells_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if(dgCells.SelectedValue.GetType() == typeof(WeekViewBinding))
+            {
 
-      
+                WeekViewBinding week = (WeekViewBinding)dgCells.SelectedValue;
+                dgCells.ItemsSource = week.Matieres;
 
- 
+            }
+
+            
+        }
     }
 }
