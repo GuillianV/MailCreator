@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:behaviors="clr-namespace:WPFTextBoxAutoComplete;assembly=WPFTextBoxAutoComplete"
              xmlns:local="clr-namespace:MailCreator.Windows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -21,24 +22,25 @@
             </StackPanel>
         </Button>
 
-
-        <ListView ItemsSource="{Binding Matieres}" Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+       
+        <ListView  ItemsSource="{Binding Matieres}"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
             <ListView.View>
-                <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Matières">
+                <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
                     <GridViewColumn x:Name="gvcPromo" DisplayMemberBinding="{Binding Promo}" Header="Promo" Width="100"/>
                     <GridViewColumn x:Name="gvcMatiere" DisplayMemberBinding="{Binding Matiere}" Header="Matière" Width="100"/>
                     <GridViewColumn x:Name="gvcEnseignant" DisplayMemberBinding="{Binding Enseignant}" Header="Enseignant" Width="100"/>
                     <GridViewColumn x:Name="gvcSalle" DisplayMemberBinding="{Binding Salle}" Header="Salle" Width="100"/>
                     <GridViewColumn x:Name="gvcJour" DisplayMemberBinding="{Binding Jour}" Header="Jour" Width="100"/>
                     <GridViewColumn x:Name="gvcSeance" DisplayMemberBinding="{Binding Seance}" Header="Séance" Width="100"/>
-                    <GridViewColumn x:Name="gvcVisioconference" Header="Visioconférence" Width="100">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Image Source="{Binding Visioconference, Converter={StaticResource BoolToImageConverter}}" Width="16" Height="16"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
+                    <GridViewColumn x:Name="gvcVisioconference" DisplayMemberBinding="{Binding Visioconference}" Header="Visioconference" Width="100">
+						<GridViewColumn.CellTemplate>
+							<DataTemplate>
+								<Image Source="{Binding Visioconference, Converter={StaticResource  ../Images/checked.png}}" Width="16" Height="16"/>
+							</DataTemplate>
+						</GridViewColumn.CellTemplate>
                     </GridViewColumn>
                 </GridView>
+				
             </ListView.View>
         </ListView>
 

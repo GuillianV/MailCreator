@@ -58,12 +58,30 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.0\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.0\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>packages\Extended.Wpf.Toolkit.4.5.0\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Windows\WeekWindow.xaml.cs">
+      <DependentUpon>WeekWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -84,6 +102,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Windows\WeekWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -103,7 +125,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="bin\Debug\MailCreator.exe.config" />
     <None Include="packages.config" />
+    <None Include="packages\DocumentFormat.OpenXml.2.19.0\.signature.p7s" />
+    <None Include="packages\DocumentFormat.OpenXml.2.19.0\DocumentFormat.OpenXml.2.19.0.nupkg" />
+    <None Include="packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\.signature.p7s" />
+    <None Include="packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\Microsoft.Office.Interop.Excel.15.0.4795.1001.nupkg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +139,30 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\DocumentFormat.OpenXml.dll" />
+    <Resource Include="Images\checked.png" />
+    <Resource Include="bin\Debug\DocumentFormat.OpenXml.xml" />
+    <Content Include="bin\Debug\MailCreator.exe" />
+    <Content Include="bin\Debug\MailCreator.pdb" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net40\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net40\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net46\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net46\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net6.0\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net6.0\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\netstandard1.3\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\netstandard1.3\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\netstandard2.0\DocumentFormat.OpenXml.dll" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\netstandard2.0\DocumentFormat.OpenXml.xml" />
+    <Content Include="packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\netstandard2.0\Microsoft.Office.Interop.Excel.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

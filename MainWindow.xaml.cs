@@ -1,6 +1,7 @@
 ﻿using Excel;
 using ExcelPart;
 using ExcelPart.UI;
+using MailCreator.Windows;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -35,38 +36,6 @@ namespace MailCreator
         {
         
             InitializeComponent();
-          //  RequestFileDropPermissions();
-        }
-
-        private void RequestFileDropPermissions()
-        {
-
-         
-            try
-            {
-                var permissionSet = AppDomain.CurrentDomain.PermissionSet;
-                permissionSet.AddPermission(new FileIOPermission(FileIOPermissionAccess.Read, System.IO.Path.GetFullPath(".")));
-
-                var securityPermission = new SecurityPermission(SecurityPermissionFlag.UnmanagedCode);
-                permissionSet.AddPermission(securityPermission);
-
-                var uiPermission = new UIPermission(PermissionState.Unrestricted);
-                permissionSet.AddPermission(uiPermission);
-
-                var appDomainPermission = new ReflectionPermission(ReflectionPermissionFlag.RestrictedMemberAccess);
-                permissionSet.AddPermission(appDomainPermission);
-
-                var fileDialogPermission = new FileDialogPermission(FileDialogPermissionAccess.Open);
-                permissionSet.AddPermission(fileDialogPermission);
-
-                var environmentPermission = new EnvironmentPermission(EnvironmentPermissionAccess.Read, "TEMP;TMP;USERNAME;USERPROFILE");
-                permissionSet.AddPermission(environmentPermission);
-
-            }
-            catch (PolicyException e)
-            {
-                // Handle exception.
-            }
         }
 
      
@@ -124,8 +93,8 @@ namespace MailCreator
                     ExcelManager excel = new ExcelManager(fileInfo);
                     ExcelWeekParser excelWeekParser = new ExcelWeekParser(excel.ShowCellsValues());
 
-                    weekViewBinding = excelWeekParser.GetWeeks();
-                    dgCells.ItemsSource = weekViewBinding.OrderBy(w => Convert.ToInt32( w.Semaine.Replace("S",String.Empty))).AsQueryable(); 
+                    WeekWindow mainWindow = new WeekWindow(excelWeekParser);
+                    this.Content = mainWindow;
 
                 }
 
@@ -134,7 +103,7 @@ namespace MailCreator
 
         private void dgCells_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if(dgCells.SelectedValue.GetType() == typeof(WeekViewBinding))
+            if(dgCells.SelectedValue?.GetType() == typeof(WeekViewBinding))
             {
 
                 WeekViewBinding week = (WeekViewBinding)dgCells.SelectedValue;

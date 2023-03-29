@@ -9,7 +9,7 @@ using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace Excel.UI
 {
-    class CellViewBinding
+    public class CellViewBinding
     {
 
         public String InnerText {get; private set ;}

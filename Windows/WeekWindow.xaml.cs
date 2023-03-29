@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ExcelPart;
+using ExcelPart.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +22,20 @@ namespace MailCreator.Windows
     /// </summary>
     public partial class WeekWindow : UserControl
     {
-        public WeekWindow()
+        public List<MatiereViewBinding> Matieres { get; set; }
+
+        private List<WeekViewBinding> Weeks = new List<WeekViewBinding>();
+
+        public WeekWindow(ExcelWeekParser excelWeekParser)
         {
+
+
             InitializeComponent();
+
+            Weeks = excelWeekParser.GetWeeks();
+            Matieres = excelWeekParser.GetWeek("S49").Matieres; //Weeks.OrderBy(w => Convert.ToInt32(w.Semaine.Replace("S", String.Empty))).ToList();
+            DataContext = this;
+
         }
     }
 }

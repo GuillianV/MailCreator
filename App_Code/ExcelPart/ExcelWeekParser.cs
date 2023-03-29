@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ExcelPart
 {
-    internal class ExcelWeekParser
+    public class ExcelWeekParser
     {
 
         private  List<CellViewBinding> _cells = new List<CellViewBinding>();
