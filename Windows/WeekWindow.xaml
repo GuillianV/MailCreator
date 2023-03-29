@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="MailCreator.Windows.WeekWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MailCreator.Windows"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+
+        <Label FontSize="18" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Excel planification des salles</Label>
+
+        <Label FontSize="18" FontWeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Poppins" Margin="40,100,0,0" Content="Choisissz une semaine :" />
+
+        <TextBox InputScope="Number" x:Name="inpSemaine" Text="" Width="100" HorizontalAlignment="Left" Margin="246,106,0,0" Height="20" VerticalAlignment="Top"/>
+
+        
+        <Button x:Name="btnValiderSemaine" Width="20" Margin="351,106,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../Images/checked.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
+
+
+        <ListView ItemsSource="{Binding Matieres}" Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true" ColumnHeaderToolTip="Matières">
+                    <GridViewColumn x:Name="gvcPromo" DisplayMemberBinding="{Binding Promo}" Header="Promo" Width="100"/>
+                    <GridViewColumn x:Name="gvcMatiere" DisplayMemberBinding="{Binding Matiere}" Header="Matière" Width="100"/>
+                    <GridViewColumn x:Name="gvcEnseignant" DisplayMemberBinding="{Binding Enseignant}" Header="Enseignant" Width="100"/>
+                    <GridViewColumn x:Name="gvcSalle" DisplayMemberBinding="{Binding Salle}" Header="Salle" Width="100"/>
+                    <GridViewColumn x:Name="gvcJour" DisplayMemberBinding="{Binding Jour}" Header="Jour" Width="100"/>
+                    <GridViewColumn x:Name="gvcSeance" DisplayMemberBinding="{Binding Seance}" Header="Séance" Width="100"/>
+                    <GridViewColumn x:Name="gvcVisioconference" Header="Visioconférence" Width="100">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Visioconference, Converter={StaticResource BoolToImageConverter}}" Width="16" Height="16"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+    </Grid>
+</UserControl>
