@@ -23,19 +23,59 @@ namespace MailCreator.Windows
     public partial class WeekWindow : UserControl
     {
         public List<MatiereViewBinding> Matieres { get; set; }
+        private List<WeekViewBinding> Weeks { get; set; }
 
-        private List<WeekViewBinding> Weeks = new List<WeekViewBinding>();
+        private ExcelWeekParser _excelWeekParser;
 
         public WeekWindow(ExcelWeekParser excelWeekParser)
         {
-
+            
 
             InitializeComponent();
 
+            _excelWeekParser = excelWeekParser;
             Weeks = excelWeekParser.GetWeeks();
-            Matieres = excelWeekParser.GetWeek("S49").Matieres; //Weeks.OrderBy(w => Convert.ToInt32(w.Semaine.Replace("S", String.Empty))).ToList();
-            DataContext = this;
+            BindWeekListView(Weeks);
 
+        }
+
+        private void btnValiderSemaine_Click(object sender, RoutedEventArgs e)
+        {
+           
+                WeekViewBinding weekViewBinding = _excelWeekParser.GetWeek(txtSemaine.Text);
+                BindMatiereListView(weekViewBinding?.Matieres);
+
+        }
+
+        private void BindMatiereListView(List<MatiereViewBinding> _matieres)
+        {
+            if (_matieres == null || _matieres.Count <= 0)
+                return;
+
+            lvMatieres.ItemsSource = _matieres;
+            lvWeek.Visibility = Visibility.Hidden;
+            lvMatieres.Visibility = Visibility.Visible;
+        }
+
+        private void BindWeekListView(List<WeekViewBinding> _semaines)
+        {
+            if (_semaines == null || _semaines.Count <= 0)
+                return;
+
+            lvWeek.ItemsSource = _semaines;
+            lvWeek.Visibility = Visibility.Visible;
+            lvMatieres.Visibility = Visibility.Hidden;
+        }
+
+        private void lvWeek_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (lvWeek.SelectedValue?.GetType() == typeof(WeekViewBinding))
+            {
+
+                WeekViewBinding week = (WeekViewBinding)lvWeek.SelectedValue;
+                txtSemaine.Text = week.Semaine;
+
+            }
         }
     }
 }

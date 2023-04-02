@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-			 xmlns:behaviors="clr-namespace:WPFTextBoxAutoComplete;assembly=WPFTextBoxAutoComplete"
              xmlns:local="clr-namespace:MailCreator.Windows"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
@@ -13,18 +12,20 @@
 
         <Label FontSize="18" FontWeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Poppins" Margin="40,100,0,0" Content="Choisissz une semaine :" />
 
-        <TextBox InputScope="Number" x:Name="inpSemaine" Text="" Width="100" HorizontalAlignment="Left" Margin="246,106,0,0" Height="20" VerticalAlignment="Top"/>
-
+        <TextBox InputScope="Number" x:Name="txtSemaine"   Width="100" HorizontalAlignment="Left" Margin="246,106,0,0" Height="20" VerticalAlignment="Top"/>
         
-        <Button x:Name="btnValiderSemaine" Width="20" Margin="351,106,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left">
+
+        <Button x:Name="btnValiderSemaine" Width="20" Click="btnValiderSemaine_Click" Margin="351,106,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left">
             <StackPanel Orientation="Horizontal">
                 <Image Source="../Images/checked.png" Width="16" Height="16" />
             </StackPanel>
         </Button>
 
        
-        <ListView  ItemsSource="{Binding Matieres}"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+        <ListView  ItemsSource="{Binding Matieres}"  x:Name="lvMatieres"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+            
             <ListView.View>
+                
                 <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
                     <GridViewColumn x:Name="gvcPromo" DisplayMemberBinding="{Binding Promo}" Header="Promo" Width="100"/>
                     <GridViewColumn x:Name="gvcMatiere" DisplayMemberBinding="{Binding Matiere}" Header="Matière" Width="100"/>
@@ -43,6 +44,15 @@
 				
             </ListView.View>
         </ListView>
+
+        <ListView  ItemsSource="{Binding Weeks}" MouseDoubleClick="lvWeek_MouseDoubleClick"  x:Name="lvWeek"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+            <ListView.View>
+                <GridView AllowsColumnReorder="true"  x:Name="gvWeek" ColumnHeaderToolTip="Semaines">
+                    <GridViewColumn x:Name="gvcSemaine" DisplayMemberBinding="{Binding Semaine}" Header="Semaines" Width="100"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
 
 
     </Grid>

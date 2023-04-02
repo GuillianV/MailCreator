@@ -101,17 +101,5 @@ namespace MailCreator
             }
         }
 
-        private void dgCells_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            if(dgCells.SelectedValue?.GetType() == typeof(WeekViewBinding))
-            {
-
-                WeekViewBinding week = (WeekViewBinding)dgCells.SelectedValue;
-                dgCells.ItemsSource = week.Matieres;
-
-            }
-
-            
-        }
     }
 }

@@ -124,8 +124,19 @@ namespace ExcelPart
                             if (matierCellSplited.Length == 3)
                             {
                                 matiere = matierCellSplited[0];
-                                prof = matierCellSplited[1];
-                                sceance = matierCellSplited[2];
+
+                                if(MatchSeance(matierCellSplited[1]))
+                                {
+                                    sceance = matierCellSplited[1];
+                                    prof = matierCellSplited[2];
+                                }
+                                else
+                                {
+                                    prof = matierCellSplited[1];
+                                    sceance = matierCellSplited[2];
+                                }
+
+                              
                                 if (prof.Contains("(visio)"))
                                 {
                                     prof.Replace("(visio)", String.Empty);
@@ -195,7 +206,10 @@ namespace ExcelPart
         }
 
 
-
+        private bool MatchSeance(string sceance)
+        {
+            return sceance.Contains("/");
+        }
 
         private bool MatchWeek(string week, int weekNumber)
         {
