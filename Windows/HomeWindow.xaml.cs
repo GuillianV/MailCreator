@@ -28,9 +28,12 @@ namespace MailCreator.Windows
     public partial class HomeWindow : UserControl
     {
 
+        public List<Professeur> Professeurs { get; set; }
+
         public HomeWindow()
         {
             InitializeComponent();
+            BindProfesseur();
         }
 
         private FileInfo? IsDropAllowed(String[] filesName, Border border, Label content)
@@ -59,7 +62,7 @@ namespace MailCreator.Windows
 
         }
 
-        public void panExcelSemaine_DragOver(object sender, DragEventArgs e)
+        private void panExcelSemaine_DragOver(object sender, DragEventArgs e)
         {
             e.Effects = DragDropEffects.Copy;
             e.Handled = true;
@@ -73,7 +76,7 @@ namespace MailCreator.Windows
 
 
         }
-        public void panExcelSemaine_Drop(object sender, DragEventArgs e)
+        private void panExcelSemaine_Drop(object sender, DragEventArgs e)
         {
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
@@ -90,6 +93,12 @@ namespace MailCreator.Windows
                 }
 
             }
+        }
+
+        private void BindProfesseur()
+        {
+            Professeurs =  JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+            lvProfesseurs.ItemsSource = Professeurs;
         }
 
       

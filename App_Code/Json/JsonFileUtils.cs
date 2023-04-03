@@ -34,6 +34,14 @@ namespace Json
             File.WriteAllText(Path.Combine(dataFolder,fileName.Replace("/",String.Empty)), jsonString);
         }
 
+        public static T Read<T>(string fileName)
+        {
+            string jsonString = File.ReadAllText(Path.Combine(dataFolder, fileName.Replace("/", String.Empty)));
+            T jsonObject = JsonConvert.DeserializeObject<T>(jsonString);
+            return jsonObject;
+        }
+
+
         public static bool CreateDataFolder()
         {
             try
