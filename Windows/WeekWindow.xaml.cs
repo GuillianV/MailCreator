@@ -62,7 +62,7 @@ namespace MailCreator.Windows
             if (_semaines == null || _semaines.Count <= 0)
                 return;
 
-            lvWeek.ItemsSource = _semaines;
+            lvWeek.ItemsSource = _semaines.OrderByDescending(semaine => Convert.ToInt32( semaine.Semaine.Replace("S",String.Empty)));
             lvWeek.Visibility = Visibility.Visible;
             lvMatieres.Visibility = Visibility.Hidden;
         }
@@ -76,6 +76,12 @@ namespace MailCreator.Windows
                 txtSemaine.Text = week.Semaine;
 
             }
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            this.Content = homeWindow;
         }
     }
 }

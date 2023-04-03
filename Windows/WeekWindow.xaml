@@ -8,24 +8,34 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
 
-        <Label FontSize="18" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Excel planification des salles</Label>
 
-        <Label FontSize="18" FontWeight="Medium" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Poppins" Margin="40,100,0,0" Content="Choisissz une semaine :" />
-
-        <TextBox InputScope="Number" x:Name="txtSemaine"   Width="100" HorizontalAlignment="Left" Margin="246,106,0,0" Height="20" VerticalAlignment="Top"/>
-        
-
-        <Button x:Name="btnValiderSemaine" Width="20" Click="btnValiderSemaine_Click" Margin="351,106,0,0" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left">
+        <Button x:Name="btnBack" Width="30" Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
             <StackPanel Orientation="Horizontal">
-                <Image Source="../Images/checked.png" Width="16" Height="16" />
+                <Image Source="../Images/back.png" Width="16" Height="16" />
             </StackPanel>
         </Button>
 
-       
-        <ListView  ItemsSource="{Binding Matieres}"  x:Name="lvMatieres"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
-            
+        <Label FontSize="18" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Excel planification des salles</Label>
+
+        <StackPanel Orientation="Horizontal" Height="48" Margin="0,50,0,0" VerticalAlignment="Top" >
+            <Label FontSize="18" FontWeight="Medium" HorizontalAlignment="Left"  FontFamily="Poppins" VerticalAlignment="Center" Content="Choisissz une semaine :" />
+
+            <TextBox InputScope="Number" x:Name="txtSemaine"   Width="100"  Height="20" VerticalAlignment="Center" />
+
+
+            <Button x:Name="btnValiderSemaine" Width="20" Click="btnValiderSemaine_Click" Height="20" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="../Images/checked.png" Width="16" Height="16" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+
+
+
+        <ListView  ItemsSource="{Binding Matieres}"  x:Name="lvMatieres"  Height="239" VerticalAlignment="Top" Margin="0,100,0,0">
+
             <ListView.View>
-                
+
                 <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
                     <GridViewColumn x:Name="gvcPromo" DisplayMemberBinding="{Binding Promo}" Header="Promo" Width="100"/>
                     <GridViewColumn x:Name="gvcMatiere" DisplayMemberBinding="{Binding Matiere}" Header="Matière" Width="100"/>
@@ -34,18 +44,18 @@
                     <GridViewColumn x:Name="gvcJour" DisplayMemberBinding="{Binding Jour}" Header="Jour" Width="100"/>
                     <GridViewColumn x:Name="gvcSeance" DisplayMemberBinding="{Binding Seance}" Header="Séance" Width="100"/>
                     <GridViewColumn x:Name="gvcVisioconference" DisplayMemberBinding="{Binding Visioconference}" Header="Visioconference" Width="100">
-						<GridViewColumn.CellTemplate>
-							<DataTemplate>
-								<Image Source="{Binding Visioconference, Converter={StaticResource  ../Images/checked.png}}" Width="16" Height="16"/>
-							</DataTemplate>
-						</GridViewColumn.CellTemplate>
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Visioconference, Converter={StaticResource  ./Images/checked.png}}" Width="16" Height="16"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
                     </GridViewColumn>
                 </GridView>
-				
+
             </ListView.View>
         </ListView>
 
-        <ListView  ItemsSource="{Binding Weeks}" MouseDoubleClick="lvWeek_MouseDoubleClick"  x:Name="lvWeek"  Height="239" VerticalAlignment="Top" Margin="0,137,0,0">
+        <ListView  ItemsSource="{Binding Weeks}" MouseDoubleClick="lvWeek_MouseDoubleClick"  x:Name="lvWeek"  Height="239" VerticalAlignment="Top"  Margin="0,100,0,0">
             <ListView.View>
                 <GridView AllowsColumnReorder="true"  x:Name="gvWeek" ColumnHeaderToolTip="Semaines">
                     <GridViewColumn x:Name="gvcSemaine" DisplayMemberBinding="{Binding Semaine}" Header="Semaines" Width="100"/>
