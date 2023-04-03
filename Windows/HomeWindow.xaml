@@ -21,6 +21,5 @@
                 <Label FontSize="12" x:Name="lbDropExcelSemaine" Content="Glissez le fichier Excel ici " Background="LightGray" FontFamily="Poppins" VerticalAlignment="Center" Width="300" HorizontalAlignment="Left" />
             </Border>
         </StackPanel>
-
     </Grid>
 </UserControl>
