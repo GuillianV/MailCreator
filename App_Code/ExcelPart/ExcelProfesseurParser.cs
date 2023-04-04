@@ -62,7 +62,7 @@ namespace ExcelPart
                 _professeurs.Add(new Professeur(civilite, nom, prenom, email));
             }
 
-            JsonFileUtils.PrettyWrite(_professeurs, "professeurs.json");
+            JsonFileUtils.Write(_professeurs, typeof(List<Professeur>), "professeurs.json");
 
         }
     }

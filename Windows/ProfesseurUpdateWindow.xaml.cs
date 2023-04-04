@@ -53,10 +53,10 @@ namespace MailCreator.Windows
             if(_selectedIndex != null && Professeurs.Count > 0)
             {
 
-                Professeur professeur = new Professeur(txtCivilite.Text.CleanText(),txtNom.Text.CleanText(),txtPrenom.Text.CleanText(),txtMail.Text.CleanText());
+                Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(),txtNom.Text.MatchMailtypeText(),txtPrenom.Text.MatchMailtypeText(),txtMail.Text.MatchMailtypeText());
                 Professeurs[_selectedIndex] = professeur;
 
-                JsonFileUtils.PrettyWrite(Professeurs, "professeurs.json");
+                JsonFileUtils.Write(Professeurs,typeof(List<Professeur>), "professeurs.json");
                 Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
                 _professeurCible =professeur;
                 BindGrid();

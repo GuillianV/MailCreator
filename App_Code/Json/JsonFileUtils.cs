@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Utils;
 
 namespace Json
 {
@@ -15,30 +16,36 @@ namespace Json
         private static string dataFolder = Path.GetFullPath("../../Data/");
 
 
-        public static void SimpleWrite(object obj, string fileName)
+
+        public static void Write(object obj, Type type, string fileName)
         {
             if (!CreateDataFolder())
                 return;
 
-            var jsonString = JsonConvert.SerializeObject(obj, _options);
-            File.WriteAllText(Path.Combine(dataFolder, fileName.Replace("/", String.Empty)), jsonString);
-        }
+            if (obj.GetType() != type)
+                throw new TypeAccessException($"Le Type : {type.Name} est different de l'objet donné : {obj.GetType().Name}");
 
-        public static void PrettyWrite(object obj, string fileName)
-        {
+            var jsonString = JsonConvert.SerializeObject(obj, type, Formatting.Indented, _options);
+            File.WriteAllText(Path.Combine(dataFolder, fileName.MatchJsonFilename()), jsonString);
 
-            if (!CreateDataFolder())
-                return;
-
-            var jsonString = JsonConvert.SerializeObject(obj, Formatting.Indented, _options);
-            File.WriteAllText(Path.Combine(dataFolder,fileName.Replace("/",String.Empty)), jsonString);
         }
 
         public static T Read<T>(string fileName)
         {
-            string jsonString = File.ReadAllText(Path.Combine(dataFolder, fileName.Replace("/", String.Empty)));
+            string combinedPath = Path.Combine(dataFolder, fileName.MatchJsonFilename());
+            if (!File.Exists(combinedPath))
+            {
+                throw new FileNotFoundException($"Le chemin : '{combinedPath}' n'existe pas");
+            }
+
+            string jsonString = File.ReadAllText(combinedPath);
+            if (string.IsNullOrEmpty(jsonString))
+                throw new NullReferenceException($"Le fichier : {fileName} ne contient aucune valeur");
+
             T jsonObject = JsonConvert.DeserializeObject<T>(jsonString);
             return jsonObject;
+
+      
         }
 
 

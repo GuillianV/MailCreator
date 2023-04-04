@@ -10,7 +10,7 @@ namespace Utils
     public static class StringExtensions
     {
 
-        public static string CleanText(this String str)
+        public static string MatchMailtypeText(this String str)
         {
 
             Regex regex = new Regex("^[a-zA-Z0-9-_@.]*$", RegexOptions.IgnoreCase);
@@ -22,6 +22,17 @@ namespace Utils
             return "";
 
         }
+
+
+        public static string MatchJsonFilename(this String str)
+        {
+
+            Regex regex = new Regex("^[a-zA-Z0-9]+\\.json$", RegexOptions.IgnoreCase);
+            if(!regex.IsMatch(str))
+                throw new ArgumentException("string given does not match json filename");
+            return str;
+        }
+
 
     }
 }
