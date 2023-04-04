@@ -15,7 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Utils;
 namespace MailCreator.Windows
 {
     /// <summary>
@@ -53,7 +53,7 @@ namespace MailCreator.Windows
             if(_selectedIndex != null && Professeurs.Count > 0)
             {
 
-                Professeur professeur = new Professeur(ParseField(txtCivilite.Text), ParseField(txtNom.Text), ParseField(txtPrenom.Text), ParseField(txtMail.Text));
+                Professeur professeur = new Professeur(txtCivilite.Text.CleanText(),txtNom.Text.CleanText(),txtPrenom.Text.CleanText(),txtMail.Text.CleanText());
                 Professeurs[_selectedIndex] = professeur;
 
                 JsonFileUtils.PrettyWrite(Professeurs, "professeurs.json");
@@ -65,18 +65,7 @@ namespace MailCreator.Windows
           
         }
 
-        private string ParseField(string field)
-        {
 
-            Regex regex = new Regex(@"[a-zA-Z0-9.@]");
-            if (regex.IsMatch(field))
-            {
-                return field;
-            }
-
-            return "";
-
-        }
 
         private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {

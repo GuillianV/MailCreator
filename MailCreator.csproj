@@ -92,6 +92,7 @@
     <Compile Include="App_Code\Json\JsonFileUtils.cs" />
     <Compile Include="App_Code\Office\Data\Mail.cs" />
     <Compile Include="App_Code\Office\Office.cs" />
+    <Compile Include="App_Code\Utils\StringExtensions.cs" />
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
