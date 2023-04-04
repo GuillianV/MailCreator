@@ -95,6 +95,9 @@
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ProfesseurUpdateWindow.xaml.cs">
+      <DependentUpon>ProfesseurUpdateWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\WeekWindow.xaml.cs">
       <DependentUpon>WeekWindow.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,10 @@
     <Page Include="Windows\HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProfesseurUpdateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\WeekWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

@@ -101,7 +101,19 @@ namespace MailCreator.Windows
             lvProfesseurs.ItemsSource = Professeurs;
         }
 
-      
+        private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            object objet = lvProfesseurs.SelectedValue;
+            if (objet != null && objet.GetType() == typeof(Professeur))
+            {
+                Professeur professeur = (Professeur)objet;
+
+                ProfesseurUpdateWindow professeurUpdateWindow = new ProfesseurUpdateWindow(Professeurs, Professeurs.IndexOf(professeur));
+                this.Content = professeurUpdateWindow;
+            }
+
+
+        }
     }
 
 }

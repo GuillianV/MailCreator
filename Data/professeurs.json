@@ -468,7 +468,7 @@
     "Mail": "lydiabrabon@gmail.com"
   },
   {
-    "Civilite": "",
+    "Civilite": "Mme",
     "Name": "VARTY",
     "Prenom": "Emma",
     "Mail": ""
@@ -510,9 +510,9 @@
     "Mail": "large.gaultier@gmail.com"
   },
   {
-    "Civilite": "",
+    "Civilite": "Mr",
     "Name": "KINIC",
     "Prenom": "Allan",
-    "Mail": "contact@kinic.fr"
+    "Mail": "jcmermet@open-linking.com"
   }
 ]

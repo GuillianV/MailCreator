@@ -8,6 +8,7 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
 
+
         <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label Content="Mail Créator" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>
         </StackPanel>
@@ -21,7 +22,7 @@
         </StackPanel>
 
 
-        <ListView  ItemsSource="{Binding Professeurs}"  x:Name="lvProfesseurs"  Height="239" VerticalAlignment="Top" Margin="0,120,0,0">
+        <ListView  ItemsSource="{Binding Professeurs}" MouseDoubleClick="lvProfesseurs_MouseDoubleClick"  x:Name="lvProfesseurs"  Height="239" VerticalAlignment="Top" Margin="0,120,0,0">
 
             <ListView.View>
                 <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
