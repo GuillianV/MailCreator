@@ -118,16 +118,16 @@
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ProfesseurCreateWindow.xaml.cs">
+    <Compile Include="Windows\Professeurs\ProfesseurCreateWindow.xaml.cs">
       <DependentUpon>ProfesseurCreateWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ProfesseurWindow.xaml.cs">
+    <Compile Include="Windows\Professeurs\ProfesseurWindow.xaml.cs">
       <DependentUpon>ProfesseurWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\ProfesseurUpdateWindow.xaml.cs">
+    <Compile Include="Windows\Professeurs\ProfesseurUpdateWindow.xaml.cs">
       <DependentUpon>ProfesseurUpdateWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\WeekWindow.xaml.cs">
+    <Compile Include="Windows\Week\WeekWindow.xaml.cs">
       <DependentUpon>WeekWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -154,19 +154,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Windows\ProfesseurCreateWindow.xaml">
+    <Page Include="Windows\Professeurs\ProfesseurCreateWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Windows\ProfesseurWindow.xaml">
+    <Page Include="Windows\Professeurs\ProfesseurWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Windows\ProfesseurUpdateWindow.xaml">
+    <Page Include="Windows\Professeurs\ProfesseurUpdateWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\WeekWindow.xaml">
+    <Page Include="Windows\Week\WeekWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

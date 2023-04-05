@@ -18,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Utils;
-namespace MailCreator.Windows
+namespace MailCreator.Windows.Professeurs
 {
     /// <summary>
     /// Logique d'interaction pour ProfesseurWindow.xaml
@@ -87,6 +87,7 @@ namespace MailCreator.Windows
                     Professeurs.Remove(professeur);
                     Professeurs.UpdateJsonProfesseurs();
                     BindGrid();
+                    this.ShowPopup(PopupValues.SuppressionSucces);
                 }
                 catch
                 {

@@ -3,6 +3,8 @@ using ExcelPart;
 using ExcelPart.UI;
 using Json;
 using JsonPart.Records;
+using MailCreator.Windows.Professeurs;
+using MailCreator.Windows.Week;
 using System;
 using System.Collections.Generic;
 using System.IO;

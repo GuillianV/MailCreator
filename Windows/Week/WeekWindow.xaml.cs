@@ -15,7 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MailCreator.Windows
+namespace MailCreator.Windows.Week
 {
     /// <summary>
     /// Logique d'interaction pour WeekWindow.xaml

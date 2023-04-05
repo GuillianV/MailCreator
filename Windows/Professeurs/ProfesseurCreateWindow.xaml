@@ -1,21 +1,21 @@
-﻿<UserControl x:Class="MailCreator.Windows.ProfesseurCreateWindow"
+﻿<UserControl x:Class="MailCreator.Windows.Professeurs.ProfesseurCreateWindow"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MailCreator.Windows"
+             xmlns:local="clr-namespace:MailCreator.Windows.Professeurs"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
 
         <Button x:Name="btnBack" Width="30" Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
             <StackPanel Orientation="Horizontal">
-                <Image Source="../Images/back.png" Width="16" Height="16" />
+                <Image Source="../../Images/back.png" Width="16" Height="16" />
             </StackPanel>
         </Button>
         <Button x:Name="btnHome" Width="30" Click="btnHome_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,20,0,0">
             <StackPanel Orientation="Horizontal">
-                <Image Source="../Images/house.png" Width="16" Height="16" />
+                <Image Source="../../Images/house.png" Width="16" Height="16" />
             </StackPanel>
         </Button>
 
@@ -59,7 +59,7 @@
 
                 <Button x:Name="btnValider" Width="40" Click="btnValider_Click"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal">
-                        <Image Source="../Images/checked.png" Width="16" Height="16" />
+                        <Image Source="../../Images/checked.png" Width="16" Height="16" />
                     </StackPanel>
                 </Button>
 

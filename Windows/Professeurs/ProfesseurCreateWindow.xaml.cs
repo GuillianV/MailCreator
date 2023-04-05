@@ -18,7 +18,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Utils;
-namespace MailCreator.Windows
+namespace MailCreator.Windows.Professeurs
 {
     /// <summary>
     /// Logique d'interaction pour ProfesseurCreateWindow.xaml
