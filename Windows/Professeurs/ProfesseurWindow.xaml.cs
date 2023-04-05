@@ -96,6 +96,10 @@ namespace MailCreator.Windows.Professeurs
 
 
             }
+            else
+            {
+                this.ShowPopup(PopupValues.MissingSelectValueWarn);
+            }
         }
 
         private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
