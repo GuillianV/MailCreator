@@ -112,6 +112,12 @@
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ProfesseurCreateWindow.xaml.cs">
+      <DependentUpon>ProfesseurCreateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ProfesseurWindow.xaml.cs">
+      <DependentUpon>ProfesseurWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ProfesseurUpdateWindow.xaml.cs">
       <DependentUpon>ProfesseurUpdateWindow.xaml</DependentUpon>
     </Compile>
@@ -139,6 +145,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Windows\HomeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProfesseurCreateWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\ProfesseurWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -183,9 +197,14 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\checked.png" />
-    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
     <Resource Include="Images\back.png" />
+    <Resource Include="Images\checked.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\plus.png" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\house.png" />
+    <Resource Include="Images\teacher.png" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.dll" />
     <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.xml" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net40\DocumentFormat.OpenXml.dll" />

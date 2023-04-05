@@ -31,9 +31,9 @@
   },
   {
     "Civilite": "Mme",
-    "Name": "BARRANCO",
-    "Prenom": "Jessica",
-    "Mail": "barranco.jessica@gmail.com"
+    "Name": "GAZULL",
+    "Prenom": "Jerome",
+    "Mail": "contact@comseo.fr"
   },
   {
     "Civilite": "Mme",
@@ -218,8 +218,8 @@
   {
     "Civilite": "Mr",
     "Name": "PAUTONNIER",
-    "Prenom": "Jérôme",
-    "Mail": ""
+    "Prenom": "Jerome",
+    "Mail": "jérôme"
   },
   {
     "Civilite": "Mme",
@@ -246,13 +246,13 @@
     "Mail": "jlestermann@gmail.com"
   },
   {
-    "Civilite": "",
+    "Civilite": "Mr",
     "Name": "PINNA",
     "Prenom": "Loris",
     "Mail": "devloris@gmail.com"
   },
   {
-    "Civilite": "",
+    "Civilite": "Mr",
     "Name": "BOUVIER",
     "Prenom": "Jérôme",
     "Mail": "contact@jbouvier.com"
@@ -302,8 +302,8 @@
   {
     "Civilite": "",
     "Name": "DURIEUX",
-    "Prenom": "Béatrice",
-    "Mail": ""
+    "Prenom": "",
+    "Mail": "B2oBaTrice"
   },
   {
     "Civilite": "",

@@ -33,7 +33,6 @@ namespace MailCreator.Windows
         public HomeWindow()
         {
             InitializeComponent();
-            BindProfesseur();
         }
 
         private FileInfo? IsDropAllowed(String[] filesName, Border border, Label content)
@@ -95,24 +94,12 @@ namespace MailCreator.Windows
             }
         }
 
-        private void BindProfesseur()
+
+
+        private void btnEnsignants_Click(object sender, RoutedEventArgs e)
         {
-            Professeurs =  JsonFileUtils.Read<List<Professeur>>("professeurs.json");
-            lvProfesseurs.ItemsSource = Professeurs;
-        }
-
-        private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            object objet = lvProfesseurs.SelectedValue;
-            if (objet != null && objet.GetType() == typeof(Professeur))
-            {
-                Professeur professeur = (Professeur)objet;
-
-                ProfesseurUpdateWindow professeurUpdateWindow = new ProfesseurUpdateWindow(Professeurs, Professeurs.IndexOf(professeur));
-                this.Content = professeurUpdateWindow;
-            }
-
-
+            ProfesseurWindow professeurWindow = new ProfesseurWindow();
+            this.Content = professeurWindow;
         }
     }
 

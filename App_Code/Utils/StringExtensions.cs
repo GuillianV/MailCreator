@@ -13,7 +13,7 @@ namespace Utils
         public static string MatchMailtypeText(this String str)
         {
 
-            Regex regex = new Regex("^[a-zA-Z0-9-_@.]*$", RegexOptions.IgnoreCase);
+            Regex regex = new Regex("^[a-zA-Z0-9-_@.éàèôç]*$", RegexOptions.IgnoreCase);
             if (regex.IsMatch(str))
             {
                 return str;

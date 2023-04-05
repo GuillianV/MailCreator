@@ -23,34 +23,26 @@ namespace MailCreator.Windows
     /// </summary>
     public partial class ProfesseurUpdateWindow : UserControl
     {
-        Professeur _professeurCible = null;
         public List<Professeur> Professeurs  { get; set; }
 
-        int _selectedIndex;
+        int _selectedIndex = -1;
 
         public ProfesseurUpdateWindow(List<Professeur> professeurs, int selectedIndex)
         {
             InitializeComponent();
 
             Professeurs = professeurs != null && professeurs.Count > 0 ? professeurs : new List<Professeur>();
-            if (Professeurs.Count > 0)
-                _professeurCible = Professeurs.Count > selectedIndex ? Professeurs[selectedIndex] : null;
-
-            _selectedIndex = selectedIndex;
+            _selectedIndex =  Professeurs.Count > selectedIndex ? selectedIndex : -1;
 
             BindModification();
             BindGrid();
         }
 
-        private void btnBack_Click(object sender, RoutedEventArgs e)
-        {
-            HomeWindow homeWindow = new HomeWindow();
-            this.Content = homeWindow;
-        }
+    
 
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
-            if(_selectedIndex != null && Professeurs.Count > 0)
+            if(_selectedIndex >= 0 && Professeurs.Count > 0)
             {
 
                 Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(),txtNom.Text.MatchMailtypeText(),txtPrenom.Text.MatchMailtypeText(),txtMail.Text.MatchMailtypeText());
@@ -58,7 +50,6 @@ namespace MailCreator.Windows
 
                 JsonFileUtils.Write(Professeurs,typeof(List<Professeur>), "professeurs.json");
                 Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
-                _professeurCible =professeur;
                 BindGrid();
                 BindModification();
             }
@@ -73,20 +64,21 @@ namespace MailCreator.Windows
             if (objet != null && objet.GetType() == typeof(Professeur))
             {
                 Professeur professeur = (Professeur)objet;
-                _professeurCible = professeur;
+                _selectedIndex = Professeurs.IndexOf(professeur);
                 BindModification();
             }
         }
 
         private void BindModification()
         {
-            if (Professeurs == null || _professeurCible == null)
+            if (Professeurs == null || _selectedIndex < 0)
                 return;
 
-            txtCivilite.Text = _professeurCible.Civilite;
-            txtMail.Text = _professeurCible.Mail;
-            txtNom.Text = _professeurCible.Name;
-            txtPrenom.Text = _professeurCible.Prenom;
+            Professeur professeurCible = Professeurs[_selectedIndex];
+            txtCivilite.Text = professeurCible.Civilite;
+            txtMail.Text = professeurCible.Mail;
+            txtNom.Text = professeurCible.Name;
+            txtPrenom.Text = professeurCible.Prenom;
 
         }
 
@@ -97,5 +89,16 @@ namespace MailCreator.Windows
 
         }
 
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            ProfesseurWindow professeurWindow = new ProfesseurWindow();
+            this.Content = professeurWindow;
+        }
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            this.Content = homeWindow;
+        }
     }
 }

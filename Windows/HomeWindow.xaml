@@ -22,19 +22,12 @@
         </StackPanel>
 
 
-        <ListView  ItemsSource="{Binding Professeurs}" MouseDoubleClick="lvProfesseurs_MouseDoubleClick"  x:Name="lvProfesseurs"  Height="239" VerticalAlignment="Top" Margin="0,120,0,0">
-
-            <ListView.View>
-                <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
-                    <GridViewColumn x:Name="gvcCivilite" DisplayMemberBinding="{Binding Civilite}" Header="Civilité" />
-                    <GridViewColumn x:Name="gvcNom" DisplayMemberBinding="{Binding Name}" Header="Nom"/>
-                    <GridViewColumn x:Name="gvcPrenom" DisplayMemberBinding="{Binding Prenom}" Header="Prénom" />
-                    <GridViewColumn x:Name="gvcMail" DisplayMemberBinding="{Binding Mail}" Header="Mail"/>
-
-                </GridView>
-
-            </ListView.View>
-        </ListView>
+        <Button x:Name="btnEnsignants"  Click="btnEnsignants_Click" Width="224"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,130,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Label HorizontalContentAlignment="Center" Width="150">Gérer les enseignants</Label>
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/teacher.png"  Height="16" />
+            </StackPanel>
+        </Button>
 
     </Grid>
 </UserControl>
