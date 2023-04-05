@@ -29,7 +29,7 @@
                 <Button x:Name="btnSupprimer"  Click="btnSupprimer_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,0">
                     <StackPanel Orientation="Horizontal">
                         <Label  HorizontalContentAlignment="Center" Width="75">Supprimer</Label>
-                        <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../Images/delete.png" Height="16" />
+                        <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../Images/delete.png" Height="25" />
                     </StackPanel>
                 </Button>
 
@@ -37,7 +37,7 @@
                 <Button x:Name="btnCreer"  Click="btnCreer_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal">
                         <Label  HorizontalContentAlignment="Center" Width="75">Créer</Label>
-                        <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../Images/plus.png"  Height="16" />
+                        <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../Images/plus.png"  Height="25" />
                     </StackPanel>
                 </Button>
 
@@ -45,7 +45,7 @@
                 <Button x:Name="btnModifier"  Click="btnModifier_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal">
                         <Label HorizontalContentAlignment="Center" Width="75">Modifier</Label>
-                        <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/edit.png"  Height="16" />
+                        <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/edit.png"  Height="25" />
                     </StackPanel>
                 </Button>
 

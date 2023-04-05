@@ -1,20 +1,13 @@
-﻿using System;
+﻿using Popups.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Media;
 
-namespace Utils
+namespace Popups
 {
-    public static class PopupExtensions
-    {
-        public static PopupValue EnregistrerSucces = new PopupValue("Enregistrement Effectué", Colors.LightGreen, Colors.Black, PopupType.Succes,PopupTime.Medium);
-        public static PopupValue EnregistrerFail = new PopupValue("Echec d'Enregistrement", Colors.DarkRed, Colors.White, PopupType.Failure, PopupTime.Medium);
-
-    }
-
-
     public class PopupValue
     {
         public string Name { get; private set; }
@@ -34,18 +27,4 @@ namespace Utils
 
         }
     }
-
-    public enum PopupType
-    {
-        Succes,
-        Failure
-    }
-
-    public enum PopupTime
-    {
-        Short = 1000,
-        Medium = 2000,
-        Long = 5000,
-    }
-
 }

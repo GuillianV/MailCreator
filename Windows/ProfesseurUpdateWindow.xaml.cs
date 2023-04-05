@@ -1,6 +1,7 @@
 ﻿using Json;
 using JsonPart;
 using JsonPart.Records;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -104,7 +105,7 @@ namespace MailCreator.Windows
        
         private void btnPop_Click(object sender, RoutedEventArgs e)
         {
-            this.ShowPopup(PopupExtensions.EnregistrerSucces);
+            this.ShowPopup(PopupValues.EnregistrerFail);
         }
     }
 }
