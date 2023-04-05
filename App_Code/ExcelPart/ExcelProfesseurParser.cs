@@ -1,6 +1,7 @@
 ﻿using Excel;
 using Excel.UI;
 using Json;
+using JsonPart;
 using JsonPart.Records;
 using System;
 using System.Collections.Generic;
@@ -62,8 +63,7 @@ namespace ExcelPart
                 _professeurs.Add(new Professeur(civilite, nom, prenom, email));
             }
 
-            JsonFileUtils.Write(_professeurs, typeof(List<Professeur>), "professeurs.json");
-
+            _professeurs.UpdateJsonProfesseurs();
         }
     }
 

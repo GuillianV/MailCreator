@@ -104,11 +104,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />
+    <Compile Include="App_Code\JsonPart\JsonProfesseurUtils.cs" />
     <Compile Include="App_Code\JsonPart\Records\Professeur.cs" />
     <Compile Include="App_Code\Json\JsonFileUtils.cs" />
     <Compile Include="App_Code\Office\Data\Mail.cs" />
     <Compile Include="App_Code\Office\Office.cs" />
+    <Compile Include="App_Code\Utils\PopupExtensions.cs" />
     <Compile Include="App_Code\Utils\StringExtensions.cs" />
+    <Compile Include="App_Code\Utils\WindowExtensions.cs" />
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>

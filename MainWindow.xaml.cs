@@ -21,6 +21,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Utils;
 //using Excel = Microsoft.Office.Interop.Excel;
 using Packaging = DocumentFormat.OpenXml.Packaging;
 using Spreadsheet = DocumentFormat.OpenXml.Spreadsheet;
@@ -41,6 +42,16 @@ namespace MailCreator
             MainFrame.Navigate(mainWindow);
         }
 
-     
+        public async void ShowPopupSucces(PopupValue popupValue)
+        {
+            popup.IsOpen = true;
+            bPopup.Background = new SolidColorBrush(popupValue.BackgroundColor);
+            txtPopup.Foreground =new SolidColorBrush(popupValue.ForegroundColor );
+            txtPopup.Text = popupValue.Name;
+            await Task.Delay((int)popupValue.PopupTime);
+            popup.IsOpen = false;
+        }
+
+
     }
 }

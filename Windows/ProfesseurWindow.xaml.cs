@@ -1,4 +1,5 @@
 ﻿using Json;
+using JsonPart;
 using JsonPart.Records;
 using System;
 using System.Collections.Generic;
@@ -37,17 +38,6 @@ namespace MailCreator.Windows
             HomeWindow homeWindow = new HomeWindow();
             this.Content = homeWindow;
         }
-
-        //private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        //{
-        //    object objet = lvProfesseurs.SelectedValue;
-        //    if (objet != null && objet.GetType() == typeof(Professeur))
-        //    {
-        //        Professeur professeur = (Professeur)objet;
-        //        _professeurCible = professeur;
-        //    }
-        //}
-
      
 
         private void BindGrid()
@@ -87,8 +77,7 @@ namespace MailCreator.Windows
             {
                 Professeur professeur = (Professeur)objet;
                 Professeurs.Remove(professeur);
-                JsonFileUtils.Write(Professeurs, typeof(List<Professeur>), "professeurs.json");
-                Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+                Professeurs.UpdateJsonProfesseurs();
                 BindGrid();
 
             }

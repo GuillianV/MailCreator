@@ -1,4 +1,5 @@
 ﻿using Json;
+using JsonPart;
 using JsonPart.Records;
 using System;
 using System.Collections.Generic;
@@ -58,8 +59,7 @@ namespace MailCreator.Windows
             else
                 Professeurs[_selectedIndex] = professeur;
 
-            JsonFileUtils.Write(Professeurs, typeof(List<Professeur>), "professeurs.json");
-            Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+            Professeurs.UpdateJsonProfesseurs();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Json;
+using JsonPart;
 using JsonPart.Records;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -47,9 +49,7 @@ namespace MailCreator.Windows
 
                 Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(),txtNom.Text.MatchMailtypeText(),txtPrenom.Text.MatchMailtypeText(),txtMail.Text.MatchMailtypeText());
                 Professeurs[_selectedIndex] = professeur;
-
-                JsonFileUtils.Write(Professeurs,typeof(List<Professeur>), "professeurs.json");
-                Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+                Professeurs = Professeurs.UpdateJsonProfesseurs();
                 BindGrid();
                 BindModification();
             }
@@ -99,6 +99,12 @@ namespace MailCreator.Windows
         {
             HomeWindow homeWindow = new HomeWindow();
             this.Content = homeWindow;
+        }
+
+       
+        private void btnPop_Click(object sender, RoutedEventArgs e)
+        {
+            this.ShowPopup(PopupExtensions.EnregistrerSucces);
         }
     }
 }
