@@ -52,7 +52,7 @@
             </StackPanel>
 
             <StackPanel Orientation="Vertical" HorizontalAlignment="Stretch" >
-                <ListView  ItemsSource="{Binding Professeurs}"  x:Name="lvProfesseurs" Height="275" Width="500" VerticalAlignment="Top" Margin="20,100,20,0">
+                <ListView  ItemsSource="{Binding Professeurs}"  x:Name="lvProfesseurs" MouseDoubleClick="lvProfesseurs_MouseDoubleClick" Height="275" Width="500" VerticalAlignment="Top" Margin="20,100,20,0">
 
                     <ListView.View>
                         <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">

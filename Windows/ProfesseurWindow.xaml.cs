@@ -1,6 +1,7 @@
 ﻿using Json;
 using JsonPart;
 using JsonPart.Records;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,9 +47,9 @@ namespace MailCreator.Windows
             {
                 Professeurs =  JsonFileUtils.Read<List<Professeur>>("professeurs.json");
                 lvProfesseurs.ItemsSource = Professeurs;
-            }catch(Exception e)
+            }catch
             {
-                Console.WriteLine(e);
+                this.ShowPopup(PopupValues.BindingFail);
             }
 
         }
@@ -68,6 +69,10 @@ namespace MailCreator.Windows
                 ProfesseurUpdateWindow professeurUpdateWindow = new ProfesseurUpdateWindow(Professeurs, Professeurs.IndexOf(professeur));
                 this.Content = professeurUpdateWindow;
             }
+            else
+            {
+                this.ShowPopup(PopupValues.MissingSelectValueWarn);
+            }
         }
 
         private void btnSupprimer_Click(object sender, RoutedEventArgs e)
@@ -75,12 +80,39 @@ namespace MailCreator.Windows
             object objet = lvProfesseurs.SelectedValue;
             if (objet != null && objet.GetType() == typeof(Professeur))
             {
-                Professeur professeur = (Professeur)objet;
-                Professeurs.Remove(professeur);
-                Professeurs.UpdateJsonProfesseurs();
-                BindGrid();
+
+                try
+                {
+                    Professeur professeur = (Professeur)objet;
+                    Professeurs.Remove(professeur);
+                    Professeurs.UpdateJsonProfesseurs();
+                    BindGrid();
+                }
+                catch
+                {
+                    this.ShowPopup(PopupValues.SupprimerFail);
+                }
+
 
             }
         }
+
+        private void lvProfesseurs_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+
+            ShowTips();
+
+        }
+
+        private async void ShowTips()
+        {
+
+            btnModifier.BorderThickness = new Thickness(2);
+            btnSupprimer.BorderThickness = new Thickness(2);
+            await Task.Delay(2000);
+            btnModifier.BorderThickness = new Thickness(1);
+            btnSupprimer.BorderThickness = new Thickness(1);
+        }
+
     }
 }

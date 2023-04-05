@@ -1,6 +1,7 @@
 ﻿using Json;
 using JsonPart;
 using JsonPart.Records;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,16 +51,37 @@ namespace MailCreator.Windows
 
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
-            Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(), txtNom.Text.MatchMailtypeText(), txtPrenom.Text.MatchMailtypeText(), txtMail.Text.MatchMailtypeText());
-            if (_selectedIndex == -1)
+            bool creating = false;
+            try
             {
-                Professeurs.Add(professeur);
-                _selectedIndex = Professeurs.Count -1;
-            }
-            else
-                Professeurs[_selectedIndex] = professeur;
+             
+                Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(), txtNom.Text.MatchMailtypeText(), txtPrenom.Text.MatchMailtypeText(), txtMail.Text.MatchMailtypeText());
+                if (_selectedIndex == -1)
+                {
+                    creating = true;
+                    Professeurs.Add(professeur);
+                    _selectedIndex = Professeurs.Count - 1;
+                }
+                else
+                    Professeurs[_selectedIndex] = professeur;
 
-            Professeurs.UpdateJsonProfesseurs();
+                Professeurs.UpdateJsonProfesseurs();
+
+                if (creating)
+                    this.ShowPopup(PopupValues.CreationSucces);
+                else
+                    this.ShowPopup(PopupValues.ModificationSucces);
+
+            }
+            catch
+            {
+                if (creating)
+                    this.ShowPopup(PopupValues.CreationFail);
+                else
+                    this.ShowPopup(PopupValues.ModificationFail);
+            }
+
+       
         }
     }
 }

@@ -45,15 +45,18 @@ namespace MailCreator.Windows
 
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
-            if(_selectedIndex >= 0 && Professeurs.Count > 0)
+            if (_selectedIndex >= 0 && Professeurs.Count > 0)
             {
 
-                Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(),txtNom.Text.MatchMailtypeText(),txtPrenom.Text.MatchMailtypeText(),txtMail.Text.MatchMailtypeText());
+                Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(), txtNom.Text.MatchMailtypeText(), txtPrenom.Text.MatchMailtypeText(), txtMail.Text.MatchMailtypeText());
                 Professeurs[_selectedIndex] = professeur;
                 Professeurs = Professeurs.UpdateJsonProfesseurs();
                 BindGrid();
                 BindModification();
+                this.ShowPopup(PopupValues.EnregistrerSucces);
             }
+            else
+                this.ShowPopup(PopupValues.EnregistrerFail);
           
         }
 
@@ -73,7 +76,10 @@ namespace MailCreator.Windows
         private void BindModification()
         {
             if (Professeurs == null || _selectedIndex < 0)
+            {
+                this.ShowPopup(PopupValues.BindingFail);
                 return;
+            }
 
             Professeur professeurCible = Professeurs[_selectedIndex];
             txtCivilite.Text = professeurCible.Civilite;

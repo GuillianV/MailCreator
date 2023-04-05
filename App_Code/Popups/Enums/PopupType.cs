@@ -9,6 +9,7 @@ namespace Popups.Enums
     public enum PopupType
     {
         Succes,
+        Warn,
         Failure
     }
 }

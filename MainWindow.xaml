@@ -7,14 +7,17 @@
         mc:Ignorable="d"
         Title="MailCreator" Height="450" Width="800">
     <Grid>
-        <Popup x:Name="popup" IsOpen="False"  HorizontalAlignment="Stretch" Margin="0,0,0,0"  >
+        <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20,20,20,0" >
+            <Popup x:Name="popup" IsOpen="False"   HorizontalAlignment="Stretch" Margin="0,0,0,0"   HorizontalOffset="-250" >
 
-            <Border x:Name="bPopup" Background="White" BorderThickness="1"  BorderBrush="Black" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" >
-                <TextBlock x:Name="txtPopup" VerticalAlignment="Center" Margin="20,0,20,0" HorizontalAlignment="Center" FontSize="16" Text="Contenu de la Popup"/>
-            </Border>
+                <Border x:Name="bPopup" Background="White" BorderThickness="1" Width="500"   BorderBrush="Black" HorizontalAlignment="Stretch" Height="50" VerticalAlignment="Top" >
+                    <TextBlock x:Name="txtPopup" VerticalAlignment="Center" Margin="20,0,20,0"  HorizontalAlignment="Center" FontSize="16" Text="Contenu de la Popup"/>
+                </Border>
 
 
-        </Popup>
+            </Popup>
+        </StackPanel>
+
         <Frame x:Name="MainFrame"/>
     </Grid>
 </Window>
