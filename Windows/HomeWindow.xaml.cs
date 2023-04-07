@@ -1,4 +1,5 @@
-﻿using Excel;
+﻿using DataView;
+using Excel;
 using ExcelPart;
 using Json;
 using MailCreator.Windows.Professeurs;
@@ -31,6 +32,7 @@ namespace MailCreator.Windows
         public HomeWindow()
         {
             InitializeComponent();
+            BindSemaineEdit();
         }
 
 
@@ -45,6 +47,21 @@ namespace MailCreator.Windows
             this.Content = weekSelectWindow;
         }
 
+        public void BindSemaineEdit()
+        {
+            List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
+            Semaine semaine = semaines.FirstOrDefault();
+            if (semaine != null)
+            {
+                lbSemaineEdit.Content = $"Modifier la semaine {semaine.Nom}";
+            }
+            else
+            {
+
+            }
+
+        }
+
         private void btnSemaineEdit_Click(object sender, RoutedEventArgs e)
         {
 
@@ -55,7 +72,7 @@ namespace MailCreator.Windows
 
         }
 
-     
+
     }
 
 }

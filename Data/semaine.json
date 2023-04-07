@@ -1,0 +1,223 @@
+[
+  {
+    "Nom": "S49",
+    "Matieres": [
+      {
+        "Promo": "B1",
+        "Nom": "Algorithmique",
+        "Enseignant": "Damien Dabernat",
+        "Salle": "10,",
+        "Jour": "LUNDI",
+        "Seance": "3/3",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B1",
+        "Nom": "Anglais",
+        "Enseignant": "Sylvie Johnston",
+        "Salle": "10,",
+        "Jour": "MARDI",
+        "Seance": "4/5",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B1",
+        "Nom": "Intégration Web",
+        "Enseignant": "Alexandre Thuilier",
+        "Salle": "10,",
+        "Jour": "MERCREDI",
+        "Seance": "4/5",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B1",
+        "Nom": "CMS",
+        "Enseignant": "Cédric Coustellie",
+        "Salle": "10,",
+        "Jour": "JEUDI",
+        "Seance": "6/6",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
+        "Jour": "LUNDI",
+        "Seance": "",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
+        "Jour": "MARDI",
+        "Seance": "",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
+        "Jour": "MERCREDI",
+        "Seance": "",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
+        "Jour": "JEUDI",
+        "Seance": "",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
+        "Jour": "VENDREDI",
+        "Seance": "",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
+        "Jour": "LUNDI",
+        "Seance": "3/7",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
+        "Jour": "MARDI",
+        "Seance": "3/4",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
+        "Jour": "MERCREDI",
+        "Seance": "4/8",
+        "Visioconference": true
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
+        "Salle": "4,",
+        "Jour": "JEUDI",
+        "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "MDSU",
+        "Enseignant": "Geoffrey leroy",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
+        "Jour": "LUNDI",
+        "Seance": "3/7",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
+        "Jour": "MARDI",
+        "Seance": "3/4",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
+        "Jour": "MERCREDI",
+        "Seance": "4/8",
+        "Visioconference": true
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
+        "Salle": "4,",
+        "Jour": "JEUDI",
+        "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "MDSU",
+        "Enseignant": "Autonomie",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
+        "Jour": "LUNDI",
+        "Seance": "3/7",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
+        "Jour": "MARDI",
+        "Seance": "3/4",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
+        "Jour": "MERCREDI",
+        "Seance": "4/8",
+        "Visioconference": true
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
+        "Salle": "4,",
+        "Jour": "JEUDI",
+        "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "MDSU",
+        "Enseignant": "Autonomie",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
+        "Visioconference": false
+      }
+    ]
+  }
+]

@@ -1,6 +1,7 @@
 ﻿using DataView;
 using Excel;
 using ExcelPart;
+using Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -54,8 +55,19 @@ namespace MailCreator.Windows.Week
             if (lvWeek.SelectedValue?.GetType() == typeof(Semaine))
             {
 
-                Semaine week = (Semaine)lvWeek.SelectedValue;
+                try
+                {
+                    Semaine week = (Semaine)lvWeek.SelectedValue;
+                    List<Semaine> semaines = new List<Semaine>() { week };
+                    semaines.UpdateJson("semaine.json");
+                    btnBack_Click(this, new RoutedEventArgs());
+                }
+                catch
+                {
+                   
+                }
 
+         
             }
         }
 

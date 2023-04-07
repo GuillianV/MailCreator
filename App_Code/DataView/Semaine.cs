@@ -9,11 +9,11 @@ namespace DataView
     public class Semaine
     {
 
-        public string Nom { get; private set; }
+        public string Nom { get; set; }
 
-        public List<DateTime> Dates { get; private set; }
+        public List<DateTime> Dates { get; set; }
 
-        public List<Matiere> Matieres { get; private set; }
+        public List<Matiere> Matieres { get; set; }
 
         public Semaine(string semaine)
         {
