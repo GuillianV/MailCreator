@@ -50,21 +50,33 @@ namespace MailCreator.Windows
         public void BindSemaineEdit()
         {
             List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
-            Semaine semaine = semaines.FirstOrDefault();
+            Semaine semaine = semaines?.FirstOrDefault();
             if (semaine != null)
             {
                 lbSemaineEdit.Content = $"Modifier la semaine {semaine.Nom}";
             }
             else
             {
-
+                btnSemaineEdit.IsEnabled = false ;
+                btnMail.IsEnabled = false;
             }
 
         }
 
         private void btnSemaineEdit_Click(object sender, RoutedEventArgs e)
         {
+            List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
+            Semaine semaine = semaines?.FirstOrDefault();
+            if (semaine != null)
+            {
 
+                WeekUpdateWindow weekUpdateWindow = new WeekUpdateWindow();
+                this.Content = weekUpdateWindow;
+            }
+            else
+            {
+
+            }
         }
 
         private void btnMail_Click(object sender, RoutedEventArgs e)

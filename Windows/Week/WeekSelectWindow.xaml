@@ -26,28 +26,6 @@
         </StackPanel>
 
         <Label  VerticalAlignment="Top" Margin="10,130,0,0" FontSize="8">Double cliquez sur une semaine pour la sélectionner</Label>
-        <!--<ListView  ItemsSource="{Binding Matieres}"  x:Name="lvMatieres"  Height="239" VerticalAlignment="Top" Margin="0,150,0,0">
-
-            <ListView.View>
-
-                <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
-                    <GridViewColumn x:Name="gvcPromo" DisplayMemberBinding="{Binding Promo}" Header="Promo" Width="100"/>
-                    <GridViewColumn x:Name="gvcMatiere" DisplayMemberBinding="{Binding Matiere}" Header="Matière" Width="100"/>
-                    <GridViewColumn x:Name="gvcEnseignant" DisplayMemberBinding="{Binding Enseignant}" Header="Enseignant" Width="100"/>
-                    <GridViewColumn x:Name="gvcSalle" DisplayMemberBinding="{Binding Salle}" Header="Salle" Width="100"/>
-                    <GridViewColumn x:Name="gvcJour" DisplayMemberBinding="{Binding Jour}" Header="Jour" Width="100"/>
-                    <GridViewColumn x:Name="gvcSeance" DisplayMemberBinding="{Binding Seance}" Header="Séance" Width="100"/>
-                    <GridViewColumn x:Name="gvcVisioconference" DisplayMemberBinding="{Binding Visioconference}" Header="Visioconference" Width="100">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Image Source="{Binding Visioconference, Converter={StaticResource  ../../Images/checked.png}}" Width="16" Height="16"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                </GridView>
-
-            </ListView.View>
-        </ListView>-->
 
         <ListView  ItemsSource="{Binding Semaine}" MouseDoubleClick="lvWeek_MouseDoubleClick"  x:Name="lvWeek"  Margin="0,150,0,50">
             <ListView.View>

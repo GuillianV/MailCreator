@@ -2,6 +2,7 @@
 using Excel;
 using ExcelPart;
 using Json;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +18,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Utils;
 
 namespace MailCreator.Windows.Week
 {
@@ -44,7 +46,11 @@ namespace MailCreator.Windows.Week
         private void BindWeekListView(List<Semaine> _semaines)
         {
             if (_semaines == null || _semaines.Count <= 0)
+            {
+                this.ShowPopup(PopupValues.BindingFail);
                 return;
+            }
+                
 
             lvWeek.ItemsSource = _semaines.OrderByDescending(semaine => Convert.ToInt32( semaine.Nom.Replace("S",String.Empty)));
             lvWeek.Visibility = Visibility.Visible;
@@ -61,14 +67,16 @@ namespace MailCreator.Windows.Week
                     List<Semaine> semaines = new List<Semaine>() { week };
                     semaines.UpdateJson("semaine.json");
                     btnBack_Click(this, new RoutedEventArgs());
+                    this.ShowPopup(PopupValues.EnregistrerSucces);
                 }
                 catch
                 {
-                   
+                    this.ShowPopup(PopupValues.EnregistrerFail);
                 }
 
          
-            }
+            }else
+                this.ShowPopup(PopupValues.BindingFail);
         }
 
 

@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="MailCreator.Windows.Week.WeekUpdateWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MailCreator.Windows.Week"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+
+
+        <Button x:Name="btnBack" Width="30" Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../../Images/back.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
+
+        <Label FontSize="28" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Modifier la semaine</Label>
+
+
+
+
+        <Label  VerticalAlignment="Top" Margin="10,130,0,0" FontSize="8">L'enregistrement est automatique après l'édition de la cellule</Label>
+        
+        <DataGrid ItemsSource="{Binding Matieres}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,150,0,50">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Promo" Binding="{Binding Promo}"/>
+                <DataGridTextColumn Header="Matière" Binding="{Binding Nom}"/>
+                <DataGridTextColumn x:Name="Enseignant" Header="Enseignant" Binding="{Binding Enseignant}"/>
+                <DataGridTextColumn Header="Salle" Binding="{Binding Salle}"/>
+                <DataGridTextColumn Header="Jour" Binding="{Binding Jour}"/>
+                <DataGridTextColumn Header="Séance" Binding="{Binding Seance}"/>
+                <DataGridCheckBoxColumn Header="Visioconférence" Binding="{Binding Visioconference}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+    </Grid>
+</UserControl>

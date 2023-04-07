@@ -35,7 +35,7 @@ namespace Json
             string combinedPath = Path.Combine(dataFolder, fileName.MatchJsonFilename());
             if (!File.Exists(combinedPath))
             {
-                throw new FileNotFoundException($"Le chemin : '{combinedPath}' n'existe pas");
+                return default(T);
             }
 
             string jsonString = File.ReadAllText(combinedPath);
@@ -51,6 +51,9 @@ namespace Json
 
         public static List<T> UpdateJson<T>(this List<T> list,string filename)
         {
+            if (list == null)
+                return default(List<T>);
+
             JsonFileUtils.Write(list, typeof(List<T>), filename);
             list = JsonFileUtils.Read<List<T>>(filename);
             return list;
