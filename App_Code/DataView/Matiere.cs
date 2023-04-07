@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExcelPart.UI
+namespace DataView
 {
-    public class MatiereViewBinding
+    public class Matiere
     {
         public string Promo { get; private set; }
 
-        public string Matiere { get; private set; }
+        public string Nom { get; private set; }
 
         public string Enseignant { get; private set; }
 
@@ -22,10 +22,10 @@ namespace ExcelPart.UI
 
         public bool Visioconference { get; private set; }
 
-        public MatiereViewBinding(string promo, string matiere, string enseignant, string salle, string jour, string seance ,bool visioconference = false)
+        public Matiere(string promo, string matiere, string enseignant, string salle, string jour, string seance ,bool visioconference = false)
         {
             Promo = promo;
-            Matiere = matiere;
+            Nom = matiere;
             Enseignant = enseignant;
             Salle = salle;
             Jour = jour;

@@ -14,18 +14,34 @@
         </StackPanel>
 
 
-        <StackPanel Margin="10,80,10,0" x:Name="panExcelSemaine"  Orientation="Horizontal" VerticalAlignment="Top"    AllowDrop="True" Drop="panExcelSemaine_Drop"  DragOver="panExcelSemaine_DragOver" Grid.ColumnSpan="2" >
-            <Label FontSize="14" Content="Excel de la semaine : " FontFamily="Poppins" VerticalAlignment="Center" HorizontalAlignment="Left" />
-            <Border x:Name="bordExcelSemaine" BorderThickness="2" BorderBrush="Transparent">
-                <Label FontSize="12" x:Name="lbDropExcelSemaine" Content="Glissez le fichier Excel ici " Background="LightGray" FontFamily="Poppins" VerticalAlignment="Center" Width="300" HorizontalAlignment="Left" />
-            </Border>
-        </StackPanel>
+     
 
 
-        <Button x:Name="btnEnsignants"  Click="btnEnsignants_Click" Width="224"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,130,0,0">
+        <Button x:Name="btnEnsignants"  Click="btnEnsignants_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,130,0,0">
             <StackPanel Orientation="Horizontal">
-                <Label HorizontalContentAlignment="Center" Width="150">Gérer les enseignants</Label>
+                <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gérer les enseignants</Label>
                 <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/teacher.png"  Height="16" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnSemaineAdd"  Click="btnSemaineAdd_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,190,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Choisir une semaine</Label>
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="16" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnSemaineEdit"  Click="btnSemaineEdit_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,250,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Label HorizontalContentAlignment="Center" FontSize="14" x:Name="lbSemaineEdit" Width="200">Modifier la semaine</Label>
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="16" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnMail"  Click="btnMail_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,310,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gérer l'envoi de mail</Label>
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/send.png"  Height="16" />
             </StackPanel>
         </Button>
 

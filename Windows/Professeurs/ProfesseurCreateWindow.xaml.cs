@@ -1,6 +1,5 @@
-﻿using Json;
-using JsonPart;
-using JsonPart.Records;
+﻿using DataView;
+using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
@@ -65,7 +64,7 @@ namespace MailCreator.Windows.Professeurs
                 else
                     Professeurs[_selectedIndex] = professeur;
 
-                Professeurs.UpdateJsonProfesseurs();
+                Professeurs.UpdateJson<Professeur>("professeurs.json");
 
                 if (creating)
                     this.ShowPopup(PopupValues.CreationSucces);

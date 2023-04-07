@@ -72,7 +72,7 @@
                     <ListView.View>
                         <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
                             <GridViewColumn x:Name="gvcCivilite" DisplayMemberBinding="{Binding Civilite}" Header="Civilité" Width="50" />
-                            <GridViewColumn x:Name="gvcNom" DisplayMemberBinding="{Binding Name}" Header="Nom" Width="100"/>
+                            <GridViewColumn x:Name="gvcNom" DisplayMemberBinding="{Binding Nom}" Header="Nom" Width="100"/>
                             <GridViewColumn x:Name="gvcPrenom" DisplayMemberBinding="{Binding Prenom}" Header="Prénom" Width="100"/>
                             <GridViewColumn x:Name="gvcMail" DisplayMemberBinding="{Binding Mail}" Header="Mail" Width="200"/>
 

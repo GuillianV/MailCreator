@@ -1,6 +1,5 @@
-﻿using Json;
-using JsonPart;
-using JsonPart.Records;
+﻿using DataView;
+using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
@@ -50,7 +49,7 @@ namespace MailCreator.Windows.Professeurs
 
                 Professeur professeur = new Professeur(txtCivilite.Text.MatchMailtypeText(), txtNom.Text.MatchMailtypeText(), txtPrenom.Text.MatchMailtypeText(), txtMail.Text.MatchMailtypeText());
                 Professeurs[_selectedIndex] = professeur;
-                Professeurs = Professeurs.UpdateJsonProfesseurs();
+                Professeurs = Professeurs.UpdateJson<Professeur>("professeurs.json");
                 BindGrid();
                 BindModification();
                 this.ShowPopup(PopupValues.EnregistrerSucces);
@@ -84,7 +83,7 @@ namespace MailCreator.Windows.Professeurs
             Professeur professeurCible = Professeurs[_selectedIndex];
             txtCivilite.Text = professeurCible.Civilite;
             txtMail.Text = professeurCible.Mail;
-            txtNom.Text = professeurCible.Name;
+            txtNom.Text = professeurCible.Nom;
             txtPrenom.Text = professeurCible.Prenom;
 
         }

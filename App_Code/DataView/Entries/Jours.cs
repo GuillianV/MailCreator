@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExcelPart.Data
+namespace DataView.Entries
 {
     public static class Jours
     {

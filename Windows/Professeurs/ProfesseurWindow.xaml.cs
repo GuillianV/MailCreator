@@ -1,6 +1,5 @@
-﻿using Json;
-using JsonPart;
-using JsonPart.Records;
+﻿using DataView;
+using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
@@ -85,7 +84,7 @@ namespace MailCreator.Windows.Professeurs
                 {
                     Professeur professeur = (Professeur)objet;
                     Professeurs.Remove(professeur);
-                    Professeurs.UpdateJsonProfesseurs();
+                    Professeurs.UpdateJson<Professeur>("professeurs.json");
                     BindGrid();
                     this.ShowPopup(PopupValues.SuppressionSucces);
                 }

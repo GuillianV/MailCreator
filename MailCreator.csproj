@@ -104,10 +104,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />
-    <Compile Include="App_Code\JsonPart\JsonProfesseurUtils.cs" />
-    <Compile Include="App_Code\JsonPart\Records\Professeur.cs" />
+    <Compile Include="App_Code\DataView\Professeur.cs" />
     <Compile Include="App_Code\Json\JsonFileUtils.cs" />
-    <Compile Include="App_Code\Office\Data\Mail.cs" />
+    <Compile Include="App_Code\Office\DataView\Mail.cs" />
     <Compile Include="App_Code\Office\Office.cs" />
     <Compile Include="App_Code\Popups\Enums\PopupTime.cs" />
     <Compile Include="App_Code\Popups\Enums\PopupType.cs" />
@@ -127,8 +126,8 @@
     <Compile Include="Windows\Professeurs\ProfesseurUpdateWindow.xaml.cs">
       <DependentUpon>ProfesseurUpdateWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\Week\WeekWindow.xaml.cs">
-      <DependentUpon>WeekWindow.xaml</DependentUpon>
+    <Compile Include="Windows\Week\WeekSelectWindow.xaml.cs">
+      <DependentUpon>WeekSelectWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -138,14 +137,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="App_Code\ExcelPart\Data\Jours.cs" />
-    <Compile Include="App_Code\ExcelPart\Data\Jour.cs" />
-    <Compile Include="App_Code\ExcelPart\Data\Promos.cs" />
-    <Compile Include="App_Code\ExcelPart\UI\MatiereViewBinding.cs" />
-    <Compile Include="App_Code\ExcelPart\UI\WeekViewBinding.cs" />
+    <Compile Include="App_Code\DataView\Entries\Jours.cs" />
+    <Compile Include="App_Code\DataView\Jour.cs" />
+    <Compile Include="App_Code\DataView\Entries\Promos.cs" />
+    <Compile Include="App_Code\DataView\Matiere.cs" />
+    <Compile Include="App_Code\DataView\Semaine.cs" />
     <Compile Include="App_Code\Excel\ExcelManager.cs" />
     <Compile Include="App_Code\ExcelPart\ExcelWeekParser.cs" />
-    <Compile Include="App_Code\Excel\UI\CellViewBinding.cs" />
+    <Compile Include="App_Code\Excel\DataView\CellViewBinding.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -166,7 +165,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\Week\WeekWindow.xaml">
+    <Page Include="Windows\Week\WeekSelectWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -206,11 +205,13 @@
     <Resource Include="Images\back.png" />
     <Resource Include="Images\checked.png" />
     <Resource Include="Images\delete.png" />
-    <Resource Include="Images\plus.png" />
-    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
     <Resource Include="Images\edit.png" />
     <Resource Include="Images\house.png" />
+    <Resource Include="Images\plus.png" />
     <Resource Include="Images\teacher.png" />
+    <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
+    <Resource Include="Images\excel.png" />
+    <Resource Include="Images\send.png" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.dll" />
     <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.xml" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net40\DocumentFormat.OpenXml.dll" />

@@ -1,8 +1,7 @@
-﻿using Excel;
-using Excel.UI;
+﻿using DataView;
+using Excel;
+using Excel.DataView;
 using Json;
-using JsonPart;
-using JsonPart.Records;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -63,7 +62,7 @@ namespace ExcelPart
                 _professeurs.Add(new Professeur(civilite, nom, prenom, email));
             }
 
-            _professeurs.UpdateJsonProfesseurs();
+            _professeurs.UpdateJson<Professeur>("professeurs.json");
         }
     }
 

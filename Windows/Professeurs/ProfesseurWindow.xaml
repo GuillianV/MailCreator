@@ -28,7 +28,7 @@
 
                 <Button x:Name="btnSupprimer"  Click="btnSupprimer_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,0">
                     <StackPanel Orientation="Horizontal">
-                        <Label  HorizontalContentAlignment="Center" Width="75">Supprimer</Label>
+                        <Label FontSize="14" HorizontalContentAlignment="Center" Width="75">Supprimer</Label>
                         <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/delete.png" Height="25" />
                     </StackPanel>
                 </Button>
@@ -36,7 +36,7 @@
 
                 <Button x:Name="btnCreer"  Click="btnCreer_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal">
-                        <Label  HorizontalContentAlignment="Center" Width="75">Créer</Label>
+                        <Label FontSize="14" HorizontalContentAlignment="Center" Width="75">Créer</Label>
                         <Image Width="75" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/plus.png"  Height="25" />
                     </StackPanel>
                 </Button>
@@ -44,7 +44,7 @@
 
                 <Button x:Name="btnModifier"  Click="btnModifier_Click" Width="150"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <StackPanel Orientation="Horizontal">
-                        <Label HorizontalContentAlignment="Center" Width="75">Modifier</Label>
+                        <Label FontSize="14" HorizontalContentAlignment="Center" Width="75">Modifier</Label>
                         <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../../Images/edit.png"  Height="25" />
                     </StackPanel>
                 </Button>
@@ -57,7 +57,7 @@
                     <ListView.View>
                         <GridView AllowsColumnReorder="true"  x:Name="gvMatieres" ColumnHeaderToolTip="Matières">
                             <GridViewColumn x:Name="gvcCivilite" DisplayMemberBinding="{Binding Civilite}" Header="Civilité" Width="50" />
-                            <GridViewColumn x:Name="gvcNom" DisplayMemberBinding="{Binding Name}" Header="Nom" Width="100"/>
+                            <GridViewColumn x:Name="gvcNom" DisplayMemberBinding="{Binding Nom}" Header="Nom" Width="100"/>
                             <GridViewColumn x:Name="gvcPrenom" DisplayMemberBinding="{Binding Prenom}" Header="Prénom" Width="100"/>
                             <GridViewColumn x:Name="gvcMail" DisplayMemberBinding="{Binding Mail}" Header="Mail" Width="250"/>
 

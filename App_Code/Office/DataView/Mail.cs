@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Office.Data
+namespace Office.DataView
 {
     public class MailData
     {

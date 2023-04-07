@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
-namespace Excel.UI
+namespace Excel.DataView
 {
     public class CellViewBinding
     {

@@ -49,6 +49,14 @@ namespace Json
         }
 
 
+        public static List<T> UpdateJson<T>(this List<T> list,string filename)
+        {
+            JsonFileUtils.Write(list, typeof(List<T>), filename);
+            list = JsonFileUtils.Read<List<T>>(filename);
+            return list;
+        }
+
+
         public static bool CreateDataFolder()
         {
             try

@@ -1,8 +1,8 @@
-﻿using DocumentFormat.OpenXml.Spreadsheet;
+﻿using DataView;
+using DataView.Entries;
+using DocumentFormat.OpenXml.Spreadsheet;
 using Excel;
-using Excel.UI;
-using ExcelPart.Data;
-using ExcelPart.UI;
+using Excel.DataView;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,9 +70,9 @@ namespace ExcelPart
 
 
 
-        public List<WeekViewBinding> GetWeeks()
+        public List<Semaine> GetWeeks()
         {
-            List<WeekViewBinding> weekViews = new List<WeekViewBinding>();
+            List<Semaine> weekViews = new List<Semaine>();
             _weeks.ToList()?.ForEach(week =>
             {
                 weekViews.Add(GetWeek(week.Key));
@@ -83,7 +83,7 @@ namespace ExcelPart
 
         }
 
-        public WeekViewBinding? GetWeek(string semainKey)
+        public Semaine? GetWeek(string semainKey)
         {
 
             List<CellViewBinding> weekCells = new List<CellViewBinding>();
@@ -93,16 +93,16 @@ namespace ExcelPart
                 return null;
 
 
-            WeekViewBinding week = new WeekViewBinding(weekCells.First().InnerText);
+            Semaine week = new Semaine(weekCells.First().InnerText);
             week.SetMatieres(ParseMatiere(weekCells));
 
             return week;
 
         }
 
-        private List<MatiereViewBinding> ParseMatiere(List<CellViewBinding> weekCells)
+        private List<Matiere> ParseMatiere(List<CellViewBinding> weekCells)
         {
-            List<MatiereViewBinding> result = new List<MatiereViewBinding>();
+            List<Matiere> result = new List<Matiere>();
 
             weekCells.OrderBy(c => c.RowReference).ThenBy(c => c.ColumnReference).ToList().ForEach(cell => {
 
@@ -193,8 +193,8 @@ namespace ExcelPart
 
 
 
-                        MatiereViewBinding matiereViewBinding = new MatiereViewBinding(cell.InnerText, matiere, prof, salle, jour.Nom, sceance, visio);
-                        result.Add(matiereViewBinding);
+                        Matiere Matiere = new Matiere(cell.InnerText, matiere, prof, salle, jour.Nom, sceance, visio);
+                        result.Add(Matiere);
                     });
                 }
 

@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExcelPart.UI
+namespace DataView
 {
-    public class WeekViewBinding
+    public class Semaine
     {
 
-        public string Semaine { get; private set; }
+        public string Nom { get; private set; }
 
         public List<DateTime> Dates { get; private set; }
 
-        public List<MatiereViewBinding> Matieres { get; private set; }
+        public List<Matiere> Matieres { get; private set; }
 
-        public WeekViewBinding(string semaine)
+        public Semaine(string semaine)
         {
-            Semaine = semaine;
+            Nom = semaine;
 
         }
 
 
-        public void SetMatieres(List<MatiereViewBinding> matieres)
+        public void SetMatieres(List<Matiere> matieres)
         {
             Matieres = matieres;
         }
