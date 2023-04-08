@@ -20,9 +20,9 @@
 
 
 
-        <Label  VerticalAlignment="Top" Margin="10,130,0,0" FontSize="8">L'enregistrement est automatique après l'édition de la cellule</Label>
-        
-        <DataGrid ItemsSource="{Binding Matieres}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,150,0,50">
+        <Label Margin="10,100,0,0" FontSize="8" Height="21" VerticalAlignment="Top">L'enregistrement est automatique après l'édition de la cellule</Label>
+
+        <DataGrid ItemsSource="{Binding Matieres}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,120,0,80">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Promo" Binding="{Binding Promo}"/>
                 <DataGridTextColumn Header="Matière" Binding="{Binding Nom}"/>
@@ -33,6 +33,22 @@
                 <DataGridCheckBoxColumn Header="Visioconférence" Binding="{Binding Visioconference}"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <StackPanel Margin="10,0,10,0" Orientation="Horizontal" HorizontalAlignment="Stretch" Height="80" VerticalAlignment="Bottom">
+
+            <Label FontFamily="Poppins" VerticalAlignment="Center" FontSize="12">Sélectionnez la date de début de la prochaine semaine : </Label>
+            
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="10,0,10,0" >
+
+                <DatePicker Width="100"  x:Name="dpSemaine" SelectedDateChanged="DatePicker_SelectedDateChanged" SelectedDate="{Binding DateTimeDebutSemaine}" 
+            DisplayDateStart="1/1/1900"
+            DisplayDateEnd="12/31/2025"
+            SelectedDateFormat="Long"/>
+
+            </StackPanel>
+
+         
+        </StackPanel>
 
 
 

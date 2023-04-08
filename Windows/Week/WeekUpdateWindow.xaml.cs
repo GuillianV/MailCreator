@@ -30,7 +30,7 @@ namespace MailCreator.Windows.Week
         public List<Matiere> Matieres {  get; set; }
         public List<Professeur> Professeurs { get; set; }
 
-
+        public DateTime DateTimeDebutSemaine { get; set; }
         public Semaine Semaine { get; set; }
 
         public WeekUpdateWindow()
@@ -39,7 +39,7 @@ namespace MailCreator.Windows.Week
 
             InitializeComponent();
             BindGridMatiere();
-            
+            BindDatePicker();
 
 
         }
@@ -97,5 +97,49 @@ namespace MailCreator.Windows.Week
 
         }
 
+        private void BindDatePicker()
+        {
+            try
+            {
+                if (Semaine == null)
+                {
+                    this.ShowPopup(PopupValues.BindingFail);
+                    return;
+                }
+                DateTimeDebutSemaine = Semaine.Dates != null && Semaine.Dates.Count > 0 ? Semaine.Dates.First() : DateTime.Now;
+                DataContext = this;
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.BindingFail);
+            }
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+
+
+                if (Semaine != null && dpSemaine.SelectedDate != null)
+                {
+                    List<DateTime> SavedDates = Semaine.Dates;
+                    List<DateTime> localDates = new List<DateTime>() { dpSemaine.SelectedDate.Value, dpSemaine.SelectedDate.Value.AddDays(1), dpSemaine.SelectedDate.Value.AddDays(2), dpSemaine.SelectedDate.Value.AddDays(3), dpSemaine.SelectedDate.Value.AddDays(4) };
+                   
+                    if(SavedDates == null || SavedDates.Count <= 0 || SavedDates.FirstOrDefault().Day != localDates.FirstOrDefault().Day)
+                    {
+                        Semaine.Dates = localDates;
+                        new List<Semaine>() { Semaine }.UpdateJson<Semaine>("semaine.json");
+                        this.ShowPopup(PopupValues.ModificationSucces);
+                    }
+              
+                }
+
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+        }
     }
 }

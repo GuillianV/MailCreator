@@ -1,383 +1,228 @@
 [
   {
-    "Nom": "S50",
+    "Nom": "S49",
+    "Dates": [
+      "2023-04-10T00:00:00",
+      "2023-04-11T00:00:00",
+      "2023-04-12T00:00:00",
+      "2023-04-13T00:00:00",
+      "2023-04-14T00:00:00"
+    ],
     "Matieres": [
       {
         "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
+        "Nom": "Algorithmique",
+        "Enseignant": "Damien Dabernat",
         "Salle": "10,",
         "Jour": "LUNDI",
-        "Seance": "",
+        "Seance": "3/3",
         "Visioconference": false
       },
       {
         "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "LUNDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "MARDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "MARDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "9,",
-        "Jour": "MERCREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "9,",
-        "Jour": "MERCREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "JEUDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "JEUDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "VENDREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B1",
-        "Nom": "Partiels",
-        "Enseignant": "",
-        "Salle": "10,",
-        "Jour": "VENDREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
         "Nom": "Anglais",
-        "Enseignant": "Lydia Brabon",
-        "Salle": "4,",
-        "Jour": "LUNDI",
-        "Seance": "4/6",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "Turorat B1",
-        "Enseignant": "",
-        "Salle": "9/10,",
-        "Jour": "MARDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "Projet fil rouge",
-        "Enseignant": "Autonomie",
-        "Salle": "9/10,",
-        "Jour": "MARDI",
-        "Seance": "1,5/7",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "Vidéo (Pitch ton CV)",
-        "Enseignant": "Antoine Guide",
+        "Enseignant": "Sylvie Johnston",
         "Salle": "10,",
-        "Jour": "MERCREDI",
-        "Seance": "1/2",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "Turorat B1",
-        "Enseignant": "",
-        "Salle": "9/10,",
-        "Jour": "JEUDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "Projet fil rouge",
-        "Enseignant": "Cathy Ramey ",
-        "Salle": "9/10,",
-        "Jour": "JEUDI",
-        "Seance": "2/7",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B2",
-        "Nom": "intégration wordpresss",
-        "Enseignant": "Cédric Coustellié",
-        "Salle": "4,",
-        "Jour": "VENDREDI",
-        "Seance": "4/4",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dig",
-        "Nom": "Production de contenus visuels",
-        "Enseignant": "Julie Jacquot",
-        "Salle": "5,",
-        "Jour": "LUNDI",
-        "Seance": "4/7",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dig",
-        "Nom": "Communication digitale ",
-        "Enseignant": "Alexandra Vignon",
-        "Salle": "4,",
         "Jour": "MARDI",
-        "Seance": "3/4",
+        "Seance": "4/5",
         "Visioconference": false
       },
       {
-        "Promo": "B3 Dig",
-        "Nom": "MDP kick off",
-        "Enseignant": "1/9",
-        "Salle": "4+1+2+3,",
-        "Jour": "MERCREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dig",
+        "Promo": "B1",
         "Nom": "Intégration Web",
         "Enseignant": "Alexandre Thuilier",
-        "Salle": "5,",
+        "Salle": "10,",
+        "Jour": "MERCREDI",
+        "Seance": "4/5",
+        "Visioconference": false
+      },
+      {
+        "Promo": "B1",
+        "Nom": "CMS",
+        "Enseignant": "Cédric Coustellie",
+        "Salle": "10,",
         "Jour": "JEUDI",
-        "Seance": "3/5",
+        "Seance": "6/6",
         "Visioconference": false
       },
       {
-        "Promo": "B3 Dig",
-        "Nom": "Ergonomie Web et maquettage",
-        "Enseignant": "Fanny Koch",
-        "Salle": "5,",
-        "Jour": "VENDREDI",
-        "Seance": "3/4",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Eco",
-        "Nom": "Atelier production graphique",
-        "Enseignant": "Olivier Ploux",
-        "Salle": "1,",
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
         "Jour": "LUNDI",
-        "Seance": "3/5",
+        "Seance": "",
         "Visioconference": false
       },
       {
-        "Promo": "B3 Eco",
-        "Nom": "Acquisition et conversion",
-        "Enseignant": "Antoine Dupent",
-        "Salle": "1,",
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
         "Jour": "MARDI",
-        "Seance": "2/4",
+        "Seance": "",
         "Visioconference": false
       },
       {
-        "Promo": "B3 Eco",
-        "Nom": "MDP kick off",
-        "Enseignant": "1/9",
-        "Salle": "4+1+2+3,",
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
         "Jour": "MERCREDI",
         "Seance": "",
         "Visioconference": false
       },
       {
-        "Promo": "B3 Eco",
-        "Nom": "Parcours client et ergonomie web",
-        "Enseignant": "Benoit Giovangrandi",
-        "Salle": "4,",
-        "Jour": "JEUDI",
-        "Seance": "1/3",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Eco",
-        "Nom": "Catalogue et pricing",
-        "Enseignant": "Christophe MARION",
-        "Salle": "1,",
-        "Jour": "VENDREDI",
-        "Seance": "2/3",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 CN",
-        "Nom": "Marketing web et digital",
-        "Enseignant": "Marie Chambon",
-        "Salle": "9,",
-        "Jour": "LUNDI",
-        "Seance": "3/5",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 CN",
-        "Nom": "Communication digitale et stratégie éditoriale",
-        "Enseignant": "Laetitia Lambert ",
-        "Salle": "5,",
-        "Jour": "MARDI",
-        "Seance": "1/2",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 CN",
-        "Nom": "MDP kick off",
-        "Enseignant": "1/9",
-        "Salle": "4+1+2+3,",
-        "Jour": "MERCREDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 CN",
-        "Nom": "Motion design",
-        "Enseignant": "Akim Brahimi",
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
         "Salle": "",
         "Jour": "JEUDI",
-        "Seance": "1/5",
+        "Seance": "",
         "Visioconference": false
       },
       {
-        "Promo": "B3 CN",
-        "Nom": "Motion design",
-        "Enseignant": "Akim Brahimi",
-        "Salle": "9,",
+        "Promo": "B2",
+        "Nom": "PARTIELS",
+        "Enseignant": "",
+        "Salle": "",
         "Jour": "VENDREDI",
-        "Seance": "2/5",
+        "Seance": "",
         "Visioconference": false
       },
       {
-        "Promo": "B3WSM",
-        "Nom": "Marketing Digital & acquisition trafic",
-        "Enseignant": "Grégory Mugnier",
-        "Salle": "3,",
+        "Promo": "M2 EMD",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
         "Jour": "LUNDI",
-        "Seance": "2/5",
+        "Seance": "3/7",
         "Visioconference": false
       },
       {
-        "Promo": "B3WSM",
-        "Nom": "Communication digitale ",
-        "Enseignant": "Alexandra Vignon",
-        "Salle": "3,",
+        "Promo": "M2 EMD",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
         "Jour": "MARDI",
         "Seance": "3/4",
         "Visioconference": false
       },
       {
-        "Promo": "B3WSM",
-        "Nom": "MDP kick off",
-        "Enseignant": "",
-        "Salle": "4+1+2+3,",
+        "Promo": "M2 EMD",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
         "Jour": "MERCREDI",
-        "Seance": "1/9",
-        "Visioconference": false
+        "Seance": "4/8",
+        "Visioconference": true
       },
       {
-        "Promo": "B3WSM",
-        "Nom": "Parcours client et ergonomie web",
-        "Enseignant": "Benoit Giovangrandi",
+        "Promo": "M2 EMD",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
         "Salle": "4,",
         "Jour": "JEUDI",
-        "Seance": "1/3",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3WSM",
-        "Nom": "Analytics et reporting",
-        "Enseignant": "Mathilde Scelers",
-        "Salle": "3,",
-        "Jour": "VENDREDI",
-        "Seance": "1/2",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dev",
-        "Nom": "Conception UML",
-        "Enseignant": "",
-        "Salle": "2,",
-        "Jour": "LUNDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dev",
-        "Nom": "Conception UML",
-        "Enseignant": "",
-        "Salle": "2,",
-        "Jour": "MARDI",
-        "Seance": "",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dev",
-        "Nom": "MDP kick off",
-        "Enseignant": "",
-        "Salle": "4+1+2+3,",
-        "Jour": "MERCREDI",
-        "Seance": "1/9",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dev",
-        "Nom": "Design Pattern",
-        "Enseignant": "Lilian DI ROSA",
-        "Salle": "2,",
-        "Jour": "JEUDI",
-        "Seance": "1/2",
-        "Visioconference": false
-      },
-      {
-        "Promo": "B3 Dev",
-        "Nom": "Design Pattern",
-        "Enseignant": "Lilian DI ROSA",
-        "Salle": "2,",
-        "Jour": "VENDREDI",
         "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 EMD",
+        "Nom": "MDSU",
+        "Enseignant": "Geoffrey leroy",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
+        "Jour": "LUNDI",
+        "Seance": "3/7",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
+        "Jour": "MARDI",
+        "Seance": "3/4",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
+        "Jour": "MERCREDI",
+        "Seance": "4/8",
+        "Visioconference": true
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
+        "Salle": "4,",
+        "Jour": "JEUDI",
+        "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 MID",
+        "Nom": "MDSU",
+        "Enseignant": "Autonomie",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Méthodologie de projet",
+        "Enseignant": "",
+        "Salle": "4,",
+        "Jour": "LUNDI",
+        "Seance": "3/7",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Management stratégique",
+        "Enseignant": "Pierre Valat",
+        "Salle": "4,",
+        "Jour": "MARDI",
+        "Seance": "3/4",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "MDSU",
+        "Enseignant": "Thomas Postaire (visio)",
+        "Salle": "4,",
+        "Jour": "MERCREDI",
+        "Seance": "4/8",
+        "Visioconference": true
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "Culture commerciale",
+        "Enseignant": "Hassen Yenneck",
+        "Salle": "4,",
+        "Jour": "JEUDI",
+        "Seance": "2/2",
+        "Visioconference": false
+      },
+      {
+        "Promo": "M2 Dev",
+        "Nom": "MDSU",
+        "Enseignant": "Autonomie",
+        "Salle": "4,",
+        "Jour": "VENDREDI",
+        "Seance": "5/8",
         "Visioconference": false
       }
     ]
