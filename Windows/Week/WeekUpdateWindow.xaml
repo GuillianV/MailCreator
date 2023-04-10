@@ -22,14 +22,18 @@
 
         <Label Margin="10,100,0,0" FontSize="8" Height="21" VerticalAlignment="Top">L'enregistrement est automatique après l'édition de la cellule</Label>
 
-        <DataGrid ItemsSource="{Binding Matieres}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,120,0,80">
+        <DataGrid ItemsSource="{Binding Relances}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,120,0,80">
             <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Envoyer le mail" Binding="{Binding EstRelancable}"/>
                 <DataGridTextColumn Header="Promo" Binding="{Binding Promo}"/>
-                <DataGridTextColumn Header="Matière" Binding="{Binding Nom}"/>
-                <DataGridTextColumn x:Name="Enseignant" Header="Enseignant" Binding="{Binding Enseignant}"/>
+                <DataGridTextColumn Header="Matière" Binding="{Binding NomMatiere}"/>
                 <DataGridTextColumn Header="Salle" Binding="{Binding Salle}"/>
                 <DataGridTextColumn Header="Jour" Binding="{Binding Jour}"/>
                 <DataGridTextColumn Header="Séance" Binding="{Binding Seance}"/>
+                <DataGridTextColumn Header="Civilité" Binding="{Binding EnseignantCivilite}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding EnseignantNom}"/>
+                <DataGridTextColumn Header="Prenom" Binding="{Binding EnseignantPrenom}"/>
+                <DataGridTextColumn Header="Mail" Binding="{Binding EnseignantMail}"/>
                 <DataGridCheckBoxColumn Header="Visioconférence" Binding="{Binding Visioconference}"/>
             </DataGrid.Columns>
         </DataGrid>

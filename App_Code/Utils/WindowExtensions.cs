@@ -16,7 +16,7 @@ namespace Utils
         {
             // Obtenez la fenêtre parent (MainWindow) du User Control
             Window parentWindow = Window.GetWindow(windowExtensions);
-            if (parentWindow.GetType() == typeof(MainWindow))
+            if (parentWindow != null && parentWindow.GetType() == typeof(MainWindow))
             {
                 MainWindow mainWindow = (MainWindow)parentWindow;
                 mainWindow.ShowPopupSucces(popupValue);

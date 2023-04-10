@@ -27,8 +27,8 @@ namespace MailCreator.Windows.Week
     /// </summary>
     public partial class WeekUpdateWindow : UserControl
     {
-        public List<Matiere> Matieres {  get; set; }
-        public List<Professeur> Professeurs { get; set; }
+
+        public List<Relance> Relances { get; set; }
 
         public DateTime DateTimeDebutSemaine { get; set; }
         public Semaine Semaine { get; set; }
@@ -48,15 +48,37 @@ namespace MailCreator.Windows.Week
         {
             try
             {
-                List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
-                Professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
-                Semaine = semaines.FirstOrDefault();
-                Matieres = Semaine.Matieres;
-                dgMatieres.ItemsSource = Matieres;
-                
+
+                List<Relance> relances = JsonFileUtils.Read<List<Relance>>("relances.json");
+
+                if (relances == null || relances.Count <= 0)
+                {
+                    List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
+                    List<Professeur> professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+                    relances = new List<Relance>();
+                    if (semaines != null &&  semaines.Count > 0 && semaines.FirstOrDefault().Matieres != null && professeurs != null && professeurs.Count > 0)
+                    {
+                        semaines.FirstOrDefault().Matieres.ForEach(Matiere =>
+                        {
+
+                            relances.Add(new Relance(Matiere, professeurs.FirstOrDefault(prof =>
+                            {
+                                if (Matiere.Enseignant.ToLower().Contains(prof.Nom.ToLower()) && Matiere.Enseignant.ToLower().Contains(prof.Prenom.ToLower()))
+                                    return true;
+
+                                return false;
+
+                            })));
+
+                        });
+                    }
+                 
+                }
+                Relances = relances;
+                dgMatieres.ItemsSource = Relances;
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
 
                 this.ShowPopup(PopupValues.BindingFail);
@@ -79,14 +101,13 @@ namespace MailCreator.Windows.Week
             {
 
 
-                if (Semaine == null)
+                if (Relances == null)
                 {
                     this.ShowPopup(PopupValues.ModificationFail);
                     return;
                 }
 
-
-                new List<Semaine>() { Semaine }.UpdateJson<Semaine>("semaine.json");
+                Relances.UpdateJson<Relance>("relances.json");
                 this.ShowPopup(PopupValues.ModificationSucces);
 
             }

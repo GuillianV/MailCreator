@@ -103,6 +103,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="App_Code\DataView\Relance.cs" />
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />
     <Compile Include="App_Code\DataView\Professeur.cs" />
     <Compile Include="App_Code\Json\JsonFileUtils.cs" />

@@ -38,6 +38,7 @@ namespace MailCreator
         {
 
             InitializeComponent();
+            DataContext = this;
             HomeWindow mainWindow = new HomeWindow();
             MainFrame.Navigate(mainWindow);
         }
