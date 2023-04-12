@@ -49,30 +49,58 @@ namespace MailCreator.Windows.Week
             try
             {
 
-                List<Relance> relances = JsonFileUtils.Read<List<Relance>>("relances.json");
+                List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
+                if(semaines == null || semaines.Count <= 0 || semaines.First().Matieres == null)
+                {
+                    this.ShowPopup(PopupValues.BindingFail);
+                    return;
 
+                }
+                Semaine = semaines.First();
+
+
+                List<Professeur> professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+                if (professeurs == null || professeurs.Count <= 0)
+                {
+                    this.ShowPopup(PopupValues.BindingFail);
+                    return;
+
+                }
+
+                
+                List<Relance> relances = JsonFileUtils.Read<List<Relance>>("relances.json");
                 if (relances == null || relances.Count <= 0)
                 {
-                    List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
-                    List<Professeur> professeurs = JsonFileUtils.Read<List<Professeur>>("professeurs.json");
+                   
                     relances = new List<Relance>();
-                    if (semaines != null &&  semaines.Count > 0 && semaines.FirstOrDefault().Matieres != null && professeurs != null && professeurs.Count > 0)
+                
+                    semaines.FirstOrDefault().Matieres.ForEach(matiereCible =>
                     {
-                        semaines.FirstOrDefault().Matieres.ForEach(Matiere =>
+                        Professeur professeurCible = professeurs.FirstOrDefault(prof =>
                         {
+                            if (matiereCible.Enseignant.ToLower().Contains(prof.Nom.ToLower()) && matiereCible.Enseignant.ToLower().Contains(prof.Prenom.ToLower()))
+                                return true;
 
-                            relances.Add(new Relance(Matiere, professeurs.FirstOrDefault(prof =>
-                            {
-                                if (Matiere.Enseignant.ToLower().Contains(prof.Nom.ToLower()) && Matiere.Enseignant.ToLower().Contains(prof.Prenom.ToLower()))
-                                    return true;
-
-                                return false;
-
-                            })));
+                            return false;
 
                         });
-                    }
-                 
+
+                        relances.Add(new Relance(
+                            professeurCible != null,
+                            matiereCible.Promo,
+                            matiereCible.Nom,
+                            matiereCible.Salle,
+                            matiereCible.Jour,
+                            matiereCible.Seance,
+                            matiereCible.Visioconference,
+                            professeurCible?.Civilite,
+                            professeurCible?.Nom,
+                            professeurCible?.Prenom,
+                            professeurCible?.Mail
+                            ));
+
+                    });
+                    relances.UpdateJson<Relance>("relances.json");
                 }
                 Relances = relances;
                 dgMatieres.ItemsSource = Relances;

@@ -2,6 +2,7 @@
 using Excel;
 using ExcelPart;
 using Json;
+using MailCreator.Windows.Mail;
 using MailCreator.Windows.Professeurs;
 using MailCreator.Windows.Week;
 using System;
@@ -79,12 +80,18 @@ namespace MailCreator.Windows
             }
         }
 
+        private void btnSetupMail_Click(object sender, RoutedEventArgs e)
+        {
+            MailSetupWindow mailSetupWindow = new MailSetupWindow();
+            this.Content = mailSetupWindow;
+        }
+
         private void btnMail_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-
+     
     }
 
 }

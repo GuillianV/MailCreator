@@ -20,28 +20,36 @@
         <Button x:Name="btnEnsignants"  Click="btnEnsignants_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,130,0,0">
             <StackPanel Orientation="Horizontal">
                 <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gérer les enseignants</Label>
-                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/teacher.png"  Height="16" />
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/teacher.png"  Height="25" />
             </StackPanel>
         </Button>
 
         <Button x:Name="btnSemaineAdd"  Click="btnSemaineAdd_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,190,0,0">
             <StackPanel Orientation="Horizontal">
                 <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Choisir une semaine</Label>
-                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="16" />
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="25" />
             </StackPanel>
         </Button>
 
         <Button x:Name="btnSemaineEdit"  Click="btnSemaineEdit_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,250,0,0">
             <StackPanel Orientation="Horizontal">
                 <Label HorizontalContentAlignment="Center" FontSize="14" x:Name="lbSemaineEdit" Width="200">Modifier la semaine</Label>
-                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="16" />
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/excel.png"  Height="25" />
             </StackPanel>
         </Button>
 
-        <Button x:Name="btnMail"  Click="btnMail_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,310,0,0">
+
+        <Button x:Name="btnSetupMail"  Click="btnSetupMail_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,310,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Préparer le contenu du mail</Label>
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/prepare.png"  Height="25" />
+            </StackPanel>
+        </Button>
+
+        <Button x:Name="btnMail"  Click="btnMail_Click" Width="300"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="340,130,0,0">
             <StackPanel Orientation="Horizontal">
                 <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gérer l'envoi de mail</Label>
-                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/send.png"  Height="16" />
+                <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/send.png"  Height="25" />
             </StackPanel>
         </Button>
 

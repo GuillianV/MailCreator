@@ -40,7 +40,7 @@ namespace Json
 
             string jsonString = File.ReadAllText(combinedPath);
             if (string.IsNullOrEmpty(jsonString))
-                throw new NullReferenceException($"Le fichier : {fileName} ne contient aucune valeur");
+                return default(T);
 
             T jsonObject = JsonConvert.DeserializeObject<T>(jsonString);
             return jsonObject;
@@ -59,6 +59,26 @@ namespace Json
             return list;
         }
 
+        public static bool DeleteJson(string filename)
+        {
+            try
+            {
+                string combinedPath = Path.Combine(dataFolder, filename.MatchJsonFilename());
+                if (!File.Exists(combinedPath))
+                {
+                    return true;
+                }
+
+                File.Delete(combinedPath);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+
+           
+        }
 
         public static bool CreateDataFolder()
         {

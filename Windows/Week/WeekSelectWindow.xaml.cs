@@ -67,6 +67,7 @@ namespace MailCreator.Windows.Week
                     List<Semaine> semaines = new List<Semaine>() { week };
                     semaines.UpdateJson("semaine.json");
                     btnBack_Click(this, new RoutedEventArgs());
+                    JsonFileUtils.DeleteJson("relances.json");
                     this.ShowPopup(PopupValues.EnregistrerSucces);
                 }
                 catch

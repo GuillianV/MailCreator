@@ -118,6 +118,9 @@
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Mail\MailSetupWindow.xaml.cs">
+      <DependentUpon>MailSetupWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Professeurs\ProfesseurCreateWindow.xaml.cs">
       <DependentUpon>ProfesseurCreateWindow.xaml</DependentUpon>
     </Compile>
@@ -156,6 +159,10 @@
     <Page Include="Windows\HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Mail\MailSetupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Professeurs\ProfesseurCreateWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -220,6 +227,7 @@
     <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\icon.png" />
     <Resource Include="Images\excel.png" />
     <Resource Include="Images\send.png" />
+    <Resource Include="Images\prepare.png" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.dll" />
     <Resource Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net35\DocumentFormat.OpenXml.xml" />
     <Content Include="packages\DocumentFormat.OpenXml.2.19.0\lib\net40\DocumentFormat.OpenXml.dll" />

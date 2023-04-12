@@ -136,7 +136,7 @@ namespace ExcelPart
                                     sceance = matierCellSplited[2];
                                 }
 
-                              
+                            
                                 if (prof.Contains("(visio)"))
                                 {
                                     prof.Replace("(visio)", String.Empty);
@@ -163,6 +163,8 @@ namespace ExcelPart
                             if (matierCellSplited.Length == 1)
                                 matiere = matierCellSplited[0];
 
+
+
                         }
                         Jour jour = Jours.GetJourByColumn(matiereCell.ColumnReference);
                         List<CellViewBinding> sallesCells = new List<CellViewBinding>();
@@ -187,9 +189,11 @@ namespace ExcelPart
                                     salle += $"{salleCell.InnerText},";
                             });
 
+
                         }
 
-
+                        salle = String.Join(",", salle.Split('+'));
+                        salle = String.Join(",", salle.Split('/'));
 
 
 

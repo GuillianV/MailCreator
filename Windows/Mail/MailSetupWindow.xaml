@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="MailCreator.Windows.Mail.MailSetupWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MailCreator.Windows.Mail"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Button x:Name="btnBack" Width="30" Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../../Images/back.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
+
+        <Label FontSize="28" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
+
+   
+            <StackPanel Margin="20,100,20,20"  x:Name="tbMailBody"  Background="LightGray"  >
+            <RichTextBox Background="Transparent">
+                <FlowDocument Background="Transparent">
+                    <Paragraph Background="Transparent">
+                        <Run Text="Ceci est du texte en "/>
+                        <Run Text="noir" Foreground="Black"/>
+                        <Run Text=" et du texte en "/>
+                        <Run Text="rouge" Foreground="Red"/>
+                        <Run Text="."/>
+                    </Paragraph>
+                </FlowDocument>
+            </RichTextBox>
+        </StackPanel>
+   
+    
+       
+
+
+    </Grid>
+</UserControl>

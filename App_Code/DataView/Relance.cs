@@ -22,31 +22,25 @@ namespace DataView
         public string EnseignantMail { get; set; }
 
 
-        private Matiere _matiere;
-        private Professeur? _professeur;
 
-        public Relance(Matiere matiere, Professeur? professeur)
+
+        public Relance(bool estRelancable, string promo,string nomMatiere ,string salle, string jour,string seance, bool visioconference, string enseignantCivilite, string enseignantNom , string enseignantPrenom, string enseignantMail)
         {
-            _matiere = matiere;
-            Promo = matiere.Promo;
-            NomMatiere = matiere.Nom;
-            Salle = matiere.Salle;
-            Jour = matiere.Jour;
-            Seance = matiere.Seance;
-            Visioconference = matiere.Visioconference;
-
-            if(professeur != null)
-            {
-                
-                _professeur = professeur;
-                EstRelancable = true;
-                EnseignantCivilite = professeur.Civilite;
-                EnseignantNom = professeur.Nom;
-                EnseignantPrenom = professeur.Prenom;
-                EnseignantMail= professeur.Mail;
-            }
+            EstRelancable = estRelancable;
+            Promo = promo;
+            NomMatiere = nomMatiere;
+            Salle = salle;
+            Jour = jour;
+            Seance = seance;
+            Visioconference = visioconference;
+            EnseignantCivilite = enseignantCivilite;
+            EnseignantNom = enseignantNom;
+            EnseignantPrenom = enseignantPrenom;
+            EnseignantMail = enseignantMail;
 
         }
+
+   
 
     }
 }
