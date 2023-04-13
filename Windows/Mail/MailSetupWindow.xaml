@@ -15,23 +15,36 @@
 
         <Label FontSize="28" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
 
-   
-            <StackPanel Margin="20,100,20,20"  x:Name="tbMailBody"  Background="LightGray"  >
-            <RichTextBox Background="Transparent">
-                <FlowDocument Background="Transparent">
-                    <Paragraph Background="Transparent">
-                        <Run Text="Ceci est du texte en "/>
-                        <Run Text="noir" Foreground="Black"/>
-                        <Run Text=" et du texte en "/>
-                        <Run Text="rouge" Foreground="Red"/>
-                        <Run Text="."/>
-                    </Paragraph>
-                </FlowDocument>
-            </RichTextBox>
+        <Label Margin="20,70,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Liste des variables disponible pour rédiger le mail</Label>
+        <StackPanel Orientation="Horizontal" Margin="20,100,20,20" VerticalAlignment="Top" Height="40">
+            <Border x:Name="bdNomMatiere" BorderBrush="Green" Margin="4,4,4,4" BorderThickness="2" Height="auto">
+                <TextBlock Margin="4,4,4,4" VerticalAlignment="Center">$nomMatiere$</TextBlock>
+            </Border>
+           
+            
         </StackPanel>
-   
-    
-       
+
+        <Label Margin="20,140,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
+
+        <RichTextBox Margin="20,170,20,0"  x:Name="tbMailObjet"  Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
+            <FlowDocument Background="Transparent">
+               
+            </FlowDocument>
+        </RichTextBox>
+
+
+        <Label Margin="20,220,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
+
+        <RichTextBox Margin="20,250,20,20" KeyUp="RichTextBox_KeyUp" x:Name="rtbMailBody"  Background="LightGray">
+            <FlowDocument Background="Transparent"  >
+                <Paragraph  Background="Transparent"  >
+                    
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+
+
+
 
 
     </Grid>
