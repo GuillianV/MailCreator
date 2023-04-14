@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Reflection;
+using MailCreator.UserControls;
 
 namespace MailCreator.Windows.Mail
 {
@@ -20,10 +23,37 @@ namespace MailCreator.Windows.Mail
     /// </summary>
     public partial class MailSetupWindow : UserControl
     {
+
+        public List<string> MatchTextStrings = new List<string>();
+
         public MailSetupWindow()
         {
             InitializeComponent();
+            BindDataMailPanel();
         }
+
+        private void BindDataMailPanel()
+        {
+            Func<string, string> LowerFirst = (input) => {
+                return char.ToLower(input[0]) + input.Substring(1);
+            };
+
+            List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
+
+            propertyInfos.ForEach(propertyInfo =>
+            {
+
+                ucMailData ucMailData = new ucMailData();
+                string matchText = $"${LowerFirst(propertyInfo.Name.Replace(" ", String.Empty))}$";
+                MatchTextStrings.Add(matchText);
+                ucMailData.MatchText = matchText;
+                spMailData.Children.Add(ucMailData);
+            });
+
+           
+
+        }
+
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
@@ -123,11 +153,7 @@ namespace MailCreator.Windows.Mail
 
         private void RichTextBox_KeyUp(object sender, KeyEventArgs e)
         {
-            ChangeTextColor(new string[]
-            {
-                "$nomMatiere$",
-                "$nomEnseignant$",
-            }, new SolidColorBrush(Colors.ForestGreen));
+            ChangeTextColor(MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
 
         }
     }
