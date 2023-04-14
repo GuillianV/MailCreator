@@ -1,448 +1,2381 @@
 [
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "LUNDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "LUNDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "MARDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "45"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "MARDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "9,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "9,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "JEUDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "JEUDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "VENDREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B1",
-    "NomMatiere": "Partiels",
-    "Salle": "10,",
-    "Jour": "VENDREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B1"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Partiels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B2",
-    "NomMatiere": "Anglais",
-    "Salle": "4,",
-    "Jour": "LUNDI",
-    "Seance": "4/6",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "BRABON",
-    "EnseignantPrenom": "Lydia",
-    "EnseignantMail": "lydiabrabon@gmail.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Anglais"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "4/6"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "BRABON"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Lydia"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "lydiabrabon@gmail.com"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B2",
-    "NomMatiere": "Turorat B1",
-    "Salle": "9,10,",
-    "Jour": "MARDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Turorat B1"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B2",
-    "NomMatiere": "Projet fil rouge",
-    "Salle": "9,10,",
-    "Jour": "MARDI",
-    "Seance": "1,5/7",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Projet fil rouge"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1,5/7"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B2",
-    "NomMatiere": "Vidéo (Pitch ton CV)",
-    "Salle": "10,",
-    "Jour": "MERCREDI",
-    "Seance": "1/2",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "GUIDE",
-    "EnseignantPrenom": "Antoine",
-    "EnseignantMail": "antoine.guide@gmail.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Vidéo (Pitch ton CV)"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/2"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "GUIDE"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Antoine"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "antoine.guide@gmail.com"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B2",
-    "NomMatiere": "Turorat B1",
-    "Salle": "9,10,",
-    "Jour": "JEUDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Turorat B1"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B2",
-    "NomMatiere": "Projet fil rouge",
-    "Salle": "9,10,",
-    "Jour": "JEUDI",
-    "Seance": "2/7",
-    "Visioconference": false,
-    "EnseignantCivilite": "",
-    "EnseignantNom": "RAMEY",
-    "EnseignantPrenom": "Cathy",
-    "EnseignantMail": "rameycathy@yahoo.fr"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Projet fil rouge"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,10,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/7"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": ""
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "RAMEY"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Cathy"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "rameycathy@yahoo.fr"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B2",
-    "NomMatiere": "intégration wordpresss",
-    "Salle": "4,",
-    "Jour": "VENDREDI",
-    "Seance": "4/4",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B2"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "intégration wordpresss"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "4/4"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Dig",
-    "NomMatiere": "Production de contenus visuels",
-    "Salle": "5,",
-    "Jour": "LUNDI",
-    "Seance": "4/7",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "JACQUOT",
-    "EnseignantPrenom": "Julie",
-    "EnseignantMail": "julie.jacquot@outlook.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dig"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Production de contenus visuels"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "5,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "4/7"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "JACQUOT"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Julie"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "julie.jacquot@outlook.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Dig",
-    "NomMatiere": "Communication digitale ",
-    "Salle": "4,",
-    "Jour": "MARDI",
-    "Seance": "3/4",
-    "Visioconference": false,
-    "EnseignantCivilite": "",
-    "EnseignantNom": "VIGNON",
-    "EnseignantPrenom": "Alexandra",
-    "EnseignantMail": "alexandra-vignon@hotmail.fr"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dig"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Communication digitale "
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/4"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": ""
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "VIGNON"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Alexandra"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "alexandra-vignon@hotmail.fr"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Dig",
-    "NomMatiere": "MDP kick off",
-    "Salle": "4,1,2,3,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dig"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Dig",
-    "NomMatiere": "Intégration Web",
-    "Salle": "5,",
-    "Jour": "JEUDI",
-    "Seance": "3/5",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dig"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Intégration Web"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "5,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Dig",
-    "NomMatiere": "Ergonomie Web et maquettage",
-    "Salle": "5,",
-    "Jour": "VENDREDI",
-    "Seance": "3/4",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "KOCH",
-    "EnseignantPrenom": "Fanny",
-    "EnseignantMail": "hello@fanny-koch.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dig"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Ergonomie Web et maquettage"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "5,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/4"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "KOCH"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Fanny"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "hello@fanny-koch.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Eco",
-    "NomMatiere": "Atelier production graphique",
-    "Salle": "1,",
-    "Jour": "LUNDI",
-    "Seance": "3/5",
-    "Visioconference": false,
-    "EnseignantCivilite": "",
-    "EnseignantNom": "PLOUX",
-    "EnseignantPrenom": "Olivier",
-    "EnseignantMail": "olivierploux@gmail.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Eco"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Atelier production graphique"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "1,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "PLOUX"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Olivier"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "olivierploux@gmail.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Eco",
-    "NomMatiere": "Acquisition et conversion",
-    "Salle": "1,",
-    "Jour": "MARDI",
-    "Seance": "2/4",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "DUPENT",
-    "EnseignantPrenom": "Antoine",
-    "EnseignantMail": "dupent.antoine@gmail.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Eco"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Acquisition et conversion"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "1,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/4"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "DUPENT"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Antoine"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "dupent.antoine@gmail.com"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Eco",
-    "NomMatiere": "MDP kick off",
-    "Salle": "4,1,2,3,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Eco"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Eco",
-    "NomMatiere": "Parcours client et ergonomie web",
-    "Salle": "4,",
-    "Jour": "JEUDI",
-    "Seance": "1/3",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Eco"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Parcours client et ergonomie web"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/3"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Eco",
-    "NomMatiere": "Catalogue et pricing",
-    "Salle": "1,",
-    "Jour": "VENDREDI",
-    "Seance": "2/3",
-    "Visioconference": false,
-    "EnseignantCivilite": "",
-    "EnseignantNom": "MARION",
-    "EnseignantPrenom": "Christophe",
-    "EnseignantMail": "christophe.marion@outlook.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Eco"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Catalogue et pricing"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "1,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/3"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": ""
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "MARION"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Christophe"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "christophe.marion@outlook.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 CN",
-    "NomMatiere": "Marketing web et digital",
-    "Salle": "9,",
-    "Jour": "LUNDI",
-    "Seance": "3/5",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "CHAMBON",
-    "EnseignantPrenom": "Marie",
-    "EnseignantMail": "marie@enjoymarketing.fr"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 CN"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Marketing web et digital"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "CHAMBON"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Marie"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "marie@enjoymarketing.fr"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 CN",
-    "NomMatiere": "Communication digitale et stratégie éditoriale",
-    "Salle": "5,",
-    "Jour": "MARDI",
-    "Seance": "1/2",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mme",
-    "EnseignantNom": "LAMBERT",
-    "EnseignantPrenom": "Laetitia",
-    "EnseignantMail": "laetitia.lambert@lightin.fr"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 CN"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Communication digitale et stratégie éditoriale"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "5,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/2"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mme"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "LAMBERT"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Laetitia"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "laetitia.lambert@lightin.fr"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 CN",
-    "NomMatiere": "MDP kick off",
-    "Salle": "4,1,2,3,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 CN"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 CN",
-    "NomMatiere": "Motion design",
-    "Salle": "",
-    "Jour": "JEUDI",
-    "Seance": "1/5",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "BRAHIMI",
-    "EnseignantPrenom": "Akim",
-    "EnseignantMail": "contact@akimbrahimi.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 CN"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Motion design"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "1"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "BRAHIMI"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Akim"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "contact@akimbrahimi.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 CN",
-    "NomMatiere": "Motion design",
-    "Salle": "9,",
-    "Jour": "VENDREDI",
-    "Seance": "2/5",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "BRAHIMI",
-    "EnseignantPrenom": "Akim",
-    "EnseignantMail": "contact@akimbrahimi.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 CN"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Motion design"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "9,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "BRAHIMI"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Akim"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "contact@akimbrahimi.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3WSM",
-    "NomMatiere": "Marketing Digital & acquisition trafic",
-    "Salle": "3,",
-    "Jour": "LUNDI",
-    "Seance": "2/5",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "MUGNIER",
-    "EnseignantPrenom": "Grégory",
-    "EnseignantMail": "gregory.mugnier@gmail.com"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3WSM"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Marketing Digital & acquisition trafic"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/5"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "MUGNIER"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Grégory"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "gregory.mugnier@gmail.com"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3WSM",
-    "NomMatiere": "Communication digitale ",
-    "Salle": "3,",
-    "Jour": "MARDI",
-    "Seance": "3/4",
-    "Visioconference": false,
-    "EnseignantCivilite": "",
-    "EnseignantNom": "VIGNON",
-    "EnseignantPrenom": "Alexandra",
-    "EnseignantMail": "alexandra-vignon@hotmail.fr"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3WSM"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Communication digitale "
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "3/4"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": ""
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "VIGNON"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Alexandra"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "alexandra-vignon@hotmail.fr"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3WSM",
-    "NomMatiere": "MDP kick off",
-    "Salle": "4,1,2,3,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3WSM"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3WSM",
-    "NomMatiere": "Parcours client et ergonomie web",
-    "Salle": "4,",
-    "Jour": "JEUDI",
-    "Seance": "1/3",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3WSM"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Parcours client et ergonomie web"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/3"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3WSM",
-    "NomMatiere": "Analytics et reporting",
-    "Salle": "3,",
-    "Jour": "VENDREDI",
-    "Seance": "1/2",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3WSM"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Analytics et reporting"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/2"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Dev",
-    "NomMatiere": "Conception UML",
-    "Salle": "2,",
-    "Jour": "LUNDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Conception UML"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "2,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "LUNDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "24/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Dev",
-    "NomMatiere": "Conception UML",
-    "Salle": "2,",
-    "Jour": "MARDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Conception UML"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "2,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MARDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "25/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "dd"
+    }
   },
   {
     "EstRelancable": false,
-    "Promo": "B3 Dev",
-    "NomMatiere": "MDP kick off",
-    "Salle": "4,1,2,3,",
-    "Jour": "MERCREDI",
-    "Seance": "",
-    "Visioconference": false
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": ""
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Dev",
-    "NomMatiere": "Design Pattern",
-    "Salle": "2,",
-    "Jour": "JEUDI",
-    "Seance": "1/2",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "DI ROSA",
-    "EnseignantPrenom": "Lilian",
-    "EnseignantMail": "lilian@ldiro-softwares.io"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Design Pattern"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "2,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "JEUDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "1/2"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "27/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "DI ROSA"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Lilian"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "lilian@ldiro-softwares.io"
+    }
   },
   {
     "EstRelancable": true,
-    "Promo": "B3 Dev",
-    "NomMatiere": "Design Pattern",
-    "Salle": "2,",
-    "Jour": "VENDREDI",
-    "Seance": "2/2",
-    "Visioconference": false,
-    "EnseignantCivilite": "Mr",
-    "EnseignantNom": "DI ROSA",
-    "EnseignantPrenom": "Lilian",
-    "EnseignantMail": "lilian@ldiro-softwares.io"
+    "Promo": {
+      "Nom": "Promo",
+      "MatchText": "$promo$",
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "Nom": "Nom de la matière",
+      "MatchText": "$nomMatiere$",
+      "Traduction": "Design Pattern"
+    },
+    "Salle": {
+      "Nom": "Salle disponibles",
+      "MatchText": "$salles$",
+      "Traduction": "2,"
+    },
+    "Jour": {
+      "Nom": "Jour",
+      "MatchText": "$jour$",
+      "Traduction": "VENDREDI"
+    },
+    "Seance": {
+      "Nom": "Seance",
+      "MatchText": "$seance$",
+      "Traduction": "2/2"
+    },
+    "Date": {
+      "Nom": "Date de la séance",
+      "MatchText": "$date$",
+      "Traduction": "28/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "Nom": "Visioconference",
+      "MatchText": "$visioconference$",
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "Nom": "Civilité de l'enseignant",
+      "MatchText": "$enseignantCivilite$",
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "Nom": "Nom de l'enseignant",
+      "MatchText": "$enseignantNom$",
+      "Traduction": "DI ROSA"
+    },
+    "EnseignantPrenom": {
+      "Nom": "Prenom de l'enseignant",
+      "MatchText": "$enseignantPrenom$",
+      "Traduction": "Lilian"
+    },
+    "EnseignantMail": {
+      "Nom": "Mail de l'enseignant",
+      "MatchText": "$enseignantMail$",
+      "Traduction": "lilian@ldiro-softwares.io"
+    }
   }
 ]

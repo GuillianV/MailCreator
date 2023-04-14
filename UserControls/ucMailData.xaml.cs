@@ -53,6 +53,7 @@ namespace MailCreator.UserControls
         private void BindText()
         {
             tbName.Text = MatchText;
+            bdNomMatiere.ToolTip = TextValue ?? "";
         }
     }
 }

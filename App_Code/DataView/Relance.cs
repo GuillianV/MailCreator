@@ -10,27 +10,32 @@ namespace DataView
     public class Relance
     {
         public bool EstRelancable { get; set; }
-        public string Promo { get; set; }
-        public string NomMatiere { get; set; }
-        public string Salle { get; set; }
-        public string Jour { get; set; }
-        public string Seance { get; set; }
-        public bool Visioconference { get; set; }
-        public string EnseignantCivilite { get; set; }
-        public string EnseignantNom { get; set; }
-        public string EnseignantPrenom { get; set; }
-        public string EnseignantMail { get; set; }
+        public EmailProperty Promo { get; set; }
+        public EmailProperty NomMatiere { get; set; }
+        public EmailProperty Salle { get; set; }
+        public EmailProperty Jour { get; set; }
+        public EmailProperty Seance { get; set; }
+
+        public EmailProperty Date { get; set; }
+        public bool EstVisioconference { get; set; }
+        public EmailProperty Visioconference { get; set; }
+        public EmailProperty EnseignantCivilite { get; set; }
+        public EmailProperty EnseignantNom { get; set; }
+        public EmailProperty EnseignantPrenom { get; set; }
+        public EmailProperty EnseignantMail { get; set; }
 
 
 
 
-        public Relance(bool estRelancable, string promo,string nomMatiere ,string salle, string jour,string seance, bool visioconference, string enseignantCivilite, string enseignantNom , string enseignantPrenom, string enseignantMail)
+        public Relance(bool estRelancable, bool estVisioconference, EmailProperty visioconference, EmailProperty promo, EmailProperty nomMatiere , EmailProperty salle, EmailProperty jour, EmailProperty date, EmailProperty seance, EmailProperty enseignantCivilite, EmailProperty enseignantNom , EmailProperty enseignantPrenom, EmailProperty enseignantMail)
         {
             EstRelancable = estRelancable;
+            EstVisioconference = estVisioconference;
             Promo = promo;
             NomMatiere = nomMatiere;
             Salle = salle;
             Jour = jour;
+            Date = date;
             Seance = seance;
             Visioconference = visioconference;
             EnseignantCivilite = enseignantCivilite;

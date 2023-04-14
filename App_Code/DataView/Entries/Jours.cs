@@ -12,12 +12,12 @@ namespace DataView.Entries
         public static List<Jour> GetJours()
         {
             return new List<Jour>() {
-             new Jour("", new List<string>()),
-             new Jour("LUNDI", new List<string>() { "C", "D" }),
-             new Jour("MARDI", new List<string>() { "F", "G" }),
-             new Jour("MERCREDI", new List<string>() { "I", "J" }),
-             new Jour("JEUDI", new List<string>() { "L", "M" }),
-             new Jour("VENDREDI", new List<string>() { "O", "P" }),};
+             new Jour("", new List<string>(),0),
+             new Jour("LUNDI", new List<string>() { "C", "D" },0),
+             new Jour("MARDI", new List<string>() { "F", "G" },1),
+             new Jour("MERCREDI", new List<string>() { "I", "J" },2),
+             new Jour("JEUDI", new List<string>() { "L", "M" },3),
+             new Jour("VENDREDI", new List<string>() { "O", "P" },4),};
         }
 
 
@@ -25,12 +25,12 @@ namespace DataView.Entries
         {
            
             List<Jour> jours = new List<Jour>() {
-             new Jour("", new List<string>()),
-             new Jour("LUNDI", new List<string>() { "C", "D" }),
-             new Jour("MARDI", new List<string>() { "F", "G" }),
-             new Jour("MERCREDI", new List<string>() { "I", "J" }),
-             new Jour("JEUDI", new List<string>() { "L", "M" }),
-             new Jour("VENDREDI", new List<string>() { "O", "P" }),};
+             new Jour("", new List<string>(),0),
+             new Jour("LUNDI", new List<string>() { "C", "D" },0),
+             new Jour("MARDI", new List<string>() { "F", "G" },1),
+             new Jour("MERCREDI", new List<string>() { "I", "J" },2),
+             new Jour("JEUDI", new List<string>() { "L", "M" },3),
+             new Jour("VENDREDI", new List<string>() { "O", "P" },4)};
 
             Jour jourTrouve = jours.First();
 

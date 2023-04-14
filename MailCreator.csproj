@@ -103,6 +103,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="App_Code\DataView\Email.cs" />
+    <Compile Include="App_Code\DataView\EmailProperty.cs" />
     <Compile Include="App_Code\DataView\Relance.cs" />
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />
     <Compile Include="App_Code\DataView\Professeur.cs" />

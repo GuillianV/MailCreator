@@ -1,4 +1,5 @@
 ﻿using DataView;
+using DataView.Entries;
 using Excel;
 using ExcelPart;
 using Json;
@@ -35,7 +36,7 @@ namespace MailCreator.Windows.Week
 
         public WeekUpdateWindow()
         {
-            
+
 
             InitializeComponent();
             BindGridMatiere();
@@ -50,7 +51,7 @@ namespace MailCreator.Windows.Week
             {
 
                 List<Semaine> semaines = JsonFileUtils.Read<List<Semaine>>("semaine.json");
-                if(semaines == null || semaines.Count <= 0 || semaines.First().Matieres == null)
+                if (semaines == null || semaines.Count <= 0 || semaines.First().Matieres == null)
                 {
                     this.ShowPopup(PopupValues.BindingFail);
                     return;
@@ -67,13 +68,13 @@ namespace MailCreator.Windows.Week
 
                 }
 
-                
+
                 List<Relance> relances = JsonFileUtils.Read<List<Relance>>("relances.json");
                 if (relances == null || relances.Count <= 0)
                 {
-                   
+
                     relances = new List<Relance>();
-                
+
                     semaines.FirstOrDefault().Matieres.ForEach(matiereCible =>
                     {
                         Professeur professeurCible = professeurs.FirstOrDefault(prof =>
@@ -87,16 +88,18 @@ namespace MailCreator.Windows.Week
 
                         relances.Add(new Relance(
                             professeurCible != null,
-                            matiereCible.Promo,
-                            matiereCible.Nom,
-                            matiereCible.Salle,
-                            matiereCible.Jour,
-                            matiereCible.Seance,
                             matiereCible.Visioconference,
-                            professeurCible?.Civilite,
-                            professeurCible?.Nom,
-                            professeurCible?.Prenom,
-                            professeurCible?.Mail
+                            new EmailProperty("Visioconference", "$visioconference$", matiereCible.Visioconference ? "Ce cours sera en visioconférence." : ""),
+                            new EmailProperty("Promo", "$promo$", matiereCible.Promo),
+                            new EmailProperty("Nom de la matière", "$nomMatiere$", matiereCible.Nom),
+                            new EmailProperty("Salle disponibles", "$salles$", matiereCible.Salle),
+                            new EmailProperty("Jour", "$jour$", matiereCible.Jour),
+                            new EmailProperty("Date de la séance", "$date$", dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.ToString() : DateTimeDebutSemaine.ToString()),
+                            new EmailProperty("Seance", "$seance$", matiereCible.Seance),
+                            new EmailProperty("Civilité de l'enseignant", "$enseignantCivilite$", professeurCible?.Civilite),
+                            new EmailProperty("Nom de l'enseignant", "$enseignantNom$", professeurCible?.Nom),
+                            new EmailProperty("Prenom de l'enseignant", "$enseignantPrenom$", professeurCible?.Prenom),
+                            new EmailProperty("Mail de l'enseignant", "$enseignantMail$", professeurCible?.Mail)
                             ));
 
                     });
@@ -112,37 +115,7 @@ namespace MailCreator.Windows.Week
                 this.ShowPopup(PopupValues.BindingFail);
             }
 
-       
 
-        }
-
-
-        private void btnBack_Click(object sender, RoutedEventArgs e)
-        {
-            HomeWindow homeWindow = new HomeWindow();
-            this.Content = homeWindow;
-        }
-
-        private void dgMatieres_CellEditEnding(object sender, DataGridCellEditEndingEventArgs e)
-        {
-            try
-            {
-
-
-                if (Relances == null)
-                {
-                    this.ShowPopup(PopupValues.ModificationFail);
-                    return;
-                }
-
-                Relances.UpdateJson<Relance>("relances.json");
-                this.ShowPopup(PopupValues.ModificationSucces);
-
-            }
-            catch
-            {
-                this.ShowPopup(PopupValues.ModificationFail);
-            }
 
         }
 
@@ -164,6 +137,8 @@ namespace MailCreator.Windows.Week
             }
         }
 
+
+
         private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
         {
             try
@@ -174,14 +149,14 @@ namespace MailCreator.Windows.Week
                 {
                     List<DateTime> SavedDates = Semaine.Dates;
                     List<DateTime> localDates = new List<DateTime>() { dpSemaine.SelectedDate.Value, dpSemaine.SelectedDate.Value.AddDays(1), dpSemaine.SelectedDate.Value.AddDays(2), dpSemaine.SelectedDate.Value.AddDays(3), dpSemaine.SelectedDate.Value.AddDays(4) };
-                   
-                    if(SavedDates == null || SavedDates.Count <= 0 || SavedDates.FirstOrDefault().Day != localDates.FirstOrDefault().Day)
+
+                    if (SavedDates == null || SavedDates.Count <= 0 || SavedDates.FirstOrDefault().Day != localDates.FirstOrDefault().Day)
                     {
                         Semaine.Dates = localDates;
                         new List<Semaine>() { Semaine }.UpdateJson<Semaine>("semaine.json");
-                        this.ShowPopup(PopupValues.ModificationSucces);
+                                               
                     }
-              
+
                 }
 
             }
@@ -189,6 +164,47 @@ namespace MailCreator.Windows.Week
             {
                 this.ShowPopup(PopupValues.ModificationFail);
             }
+        }
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            this.Content = homeWindow;
+        }
+        private void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+                if (Relances == null)
+                {
+                    this.ShowPopup(PopupValues.ModificationFail);
+                    return;
+                }
+
+                Relances.ForEach(relance =>
+                {
+                    relance.Visioconference = new EmailProperty("Visioconference", "$visioconference$", relance.EstVisioconference ? "Ce cours sera en visioconférence." : "");
+                    int addDays = 0;
+                    if (!string.IsNullOrEmpty(relance.Jour.Traduction))
+                    {
+                        Jour jCible = Jours.GetJours().FirstOrDefault(jour => jour.Nom == relance.Jour.Traduction);
+                        if (jCible != null && dpSemaine.SelectedDate != null)
+                        {
+                            relance.Date.Traduction = dpSemaine.SelectedDate.Value.AddDays(jCible.AddDays).ToString("dd/MM/yyyy");
+                        }
+                    }
+                });
+                Relances = Relances.UpdateJson<Relance>("relances.json");
+                dgMatieres.ItemsSource = Relances;
+                this.ShowPopup(PopupValues.ModificationSucces);
+                return;
+
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+
         }
     }
 }

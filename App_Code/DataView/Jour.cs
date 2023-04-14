@@ -11,10 +11,13 @@ namespace DataView
         public string Nom { get; private set; }
         public List<string> ColumnReference { get; private set; }
 
-        public Jour(string nom, List<string> columnReference)
+        public int AddDays { get; private set; }
+
+        public Jour(string nom, List<string> columnReference, int addDays)
         {
             this.Nom = nom;
             this.ColumnReference = columnReference;
+            this.AddDays = addDays;
         }
 
     }

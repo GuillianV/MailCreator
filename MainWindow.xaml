@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MailCreator"
         mc:Ignorable="d"
-        Title="MailCreator" Height="450" Width="800">
+        Title="MailCreator" Height="550" Width="800">
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="20,20,20,0" >
             <Popup x:Name="popup" IsOpen="False"   HorizontalAlignment="Stretch" Margin="0,0,0,0"   HorizontalOffset="-250" >

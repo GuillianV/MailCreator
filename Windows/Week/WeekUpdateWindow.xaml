@@ -22,26 +22,27 @@
 
         <Label Margin="10,100,0,0" FontSize="8" Height="21" VerticalAlignment="Top">L'enregistrement est automatique après l'édition de la cellule</Label>
 
-        <DataGrid ItemsSource="{Binding Relances}" x:Name="dgMatieres" CellEditEnding="dgMatieres_CellEditEnding" AutoGenerateColumns="False"  Margin="0,120,0,80">
+        <DataGrid ItemsSource="{Binding Relances}"  x:Name="dgMatieres" AutoGenerateColumns="False"  Margin="0,120,0,100">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Header="Envoyer le mail" Binding="{Binding EstRelancable}"/>
-                <DataGridTextColumn Header="Promo" Binding="{Binding Promo}"/>
-                <DataGridTextColumn Header="Matière" Binding="{Binding NomMatiere}"/>
-                <DataGridTextColumn Header="Salle" Binding="{Binding Salle}"/>
-                <DataGridTextColumn Header="Jour" Binding="{Binding Jour}"/>
-                <DataGridTextColumn Header="Séance" Binding="{Binding Seance}"/>
-                <DataGridTextColumn Header="Civilité" Binding="{Binding EnseignantCivilite}"/>
-                <DataGridTextColumn Header="Nom" Binding="{Binding EnseignantNom}"/>
-                <DataGridTextColumn Header="Prenom" Binding="{Binding EnseignantPrenom}"/>
-                <DataGridTextColumn Header="Mail" Binding="{Binding EnseignantMail}"/>
-                <DataGridCheckBoxColumn Header="Visioconférence" Binding="{Binding Visioconference}"/>
+                <DataGridTextColumn Header="Promo" Binding="{Binding Promo.Traduction}"/>
+                <DataGridTextColumn Header="Matière" Binding="{Binding NomMatiere.Traduction}"/>
+                <DataGridTextColumn Header="Salle" Binding="{Binding Salle.Traduction}"/>
+                <DataGridTextColumn Header="Jour" Binding="{Binding Jour.Traduction}"/>
+                <DataGridTextColumn Header="Séance" Binding="{Binding Seance.Traduction}"/>
+                <DataGridTextColumn Header="Civilité" Binding="{Binding EnseignantCivilite.Traduction}"/>
+                <DataGridTextColumn Header="Nom" Binding="{Binding EnseignantNom.Traduction}"/>
+                <DataGridTextColumn Header="Prenom" Binding="{Binding EnseignantPrenom.Traduction}"/>
+                <DataGridTextColumn Header="Mail" Binding="{Binding EnseignantMail.Traduction}"/>
+                <DataGridTextColumn Header="Date" Binding="{Binding Date.Traduction}"/>
+                <DataGridCheckBoxColumn Header="Visioconférence"  Binding="{Binding EstVisioconference}"/>
             </DataGrid.Columns>
         </DataGrid>
 
         <StackPanel Margin="10,0,10,0" Orientation="Horizontal" HorizontalAlignment="Stretch" Height="80" VerticalAlignment="Bottom">
 
-            <Label FontFamily="Poppins" VerticalAlignment="Center" FontSize="12">Sélectionnez la date de début de la prochaine semaine : </Label>
-            
+            <Label FontFamily="Poppins" VerticalAlignment="Center" FontSize="12">Sélectionnez la date de début de la prochaine semaine :</Label>
+
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="10,0,10,0" >
 
                 <DatePicker Width="100"  x:Name="dpSemaine" SelectedDateChanged="DatePicker_SelectedDateChanged" SelectedDate="{Binding DateTimeDebutSemaine}" 
@@ -51,10 +52,14 @@
 
             </StackPanel>
 
-         
+
         </StackPanel>
 
-
+        <Button x:Name="btnValider" Width="40" Click="btnValider_Click" Background="Transparent" HorizontalAlignment="Right" Margin="0,0,30,30" Height="40" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../../Images/checked.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
 
     </Grid>
 </UserControl>
