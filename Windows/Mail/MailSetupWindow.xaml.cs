@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Reflection;
 using MailCreator.UserControls;
+using DataView.Entries;
 
 namespace MailCreator.Windows.Mail
 {
@@ -43,14 +44,13 @@ namespace MailCreator.Windows.Mail
             propertyInfos.ForEach(propertyInfo =>
             {
 
-                if(propertyInfo.PropertyType == typeof(EmailProperty))
+                if(propertyInfo.PropertyType == typeof(EmailProperty) && PropertyDatas.GetPropertyDataByName(propertyInfo.Name, out PropertyData propertyData))
                 {
-                    //TODO refactor PropertEmail add entries;
-                  //  EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue();
+                    
                     ucMailData ucMailData = new ucMailData();
-                    string matchText = $"${LowerFirst(propertyInfo.Name.Replace(" ", String.Empty))}$";
-                    MatchTextStrings.Add(matchText);
-                    ucMailData.MatchText = matchText;
+                    MatchTextStrings.Add(propertyData.MatchText);
+                    ucMailData.MatchText =  propertyData.MatchText;
+                    ucMailData.TextValue = propertyData.Description;
                     spMailData.Children.Add(ucMailData);
                 }
 

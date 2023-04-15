@@ -20,6 +20,12 @@ namespace DataView.Entries
         public static PropertyData EnseignantPrenom = new PropertyData("EnseignantPrenom", "$enseignantPrenom$", "Prénom de l'enseignant");
         public static PropertyData EnseignantMail = new PropertyData("EnseignantMail", "$enseignantMail$", "Mail de l'enseignant");
 
+        private static List<PropertyData> _propertyDatas = new List<PropertyData>() { Promo ,NomMatiere,Salle,Jour,Seance,Date,Visioconference,EnseignantCivilite,EnseignantMail,EnseignantNom,EnseignantPrenom};
 
+        public static bool GetPropertyDataByName(string identifier, out PropertyData  propertyData)
+        {
+            propertyData = _propertyDatas.FirstOrDefault(p => p.Nom == identifier);
+            return propertyData != null;
+        }
     }
 }
