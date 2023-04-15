@@ -9,15 +9,12 @@ namespace DataView
     public class EmailProperty
     {
 
-        public string Nom { get; set; }
-
-        public string MatchText { get; set; }
+        public PropertyData PropertyData { get; set; }
         public string Traduction { get; set; }
 
-        public EmailProperty(string _nom,string _matchText,string traduction)
+        public EmailProperty(PropertyData propertyData,string traduction)
         {
-            Nom = _nom;
-            MatchText = _matchText;
+            PropertyData = propertyData;    
             Traduction = traduction;
         }
 

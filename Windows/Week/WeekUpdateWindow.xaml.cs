@@ -89,17 +89,17 @@ namespace MailCreator.Windows.Week
                         relances.Add(new Relance(
                             professeurCible != null,
                             matiereCible.Visioconference,
-                            new EmailProperty("Visioconference", "$visioconference$", matiereCible.Visioconference ? "Ce cours sera en visioconférence." : ""),
-                            new EmailProperty("Promo", "$promo$", matiereCible.Promo),
-                            new EmailProperty("Nom de la matière", "$nomMatiere$", matiereCible.Nom),
-                            new EmailProperty("Salle disponibles", "$salles$", matiereCible.Salle),
-                            new EmailProperty("Jour", "$jour$", matiereCible.Jour),
-                            new EmailProperty("Date de la séance", "$date$", dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.ToString() : DateTimeDebutSemaine.ToString()),
-                            new EmailProperty("Seance", "$seance$", matiereCible.Seance),
-                            new EmailProperty("Civilité de l'enseignant", "$enseignantCivilite$", professeurCible?.Civilite),
-                            new EmailProperty("Nom de l'enseignant", "$enseignantNom$", professeurCible?.Nom),
-                            new EmailProperty("Prenom de l'enseignant", "$enseignantPrenom$", professeurCible?.Prenom),
-                            new EmailProperty("Mail de l'enseignant", "$enseignantMail$", professeurCible?.Mail)
+                            new EmailProperty(PropertyDatas.Visioconference, matiereCible.Visioconference ? "Ce cours sera en visioconférence." : ""),
+                            new EmailProperty(PropertyDatas.Promo, matiereCible.Promo),
+                            new EmailProperty(PropertyDatas.NomMatiere, matiereCible.Nom),
+                            new EmailProperty(PropertyDatas.Salle, matiereCible.Salle),
+                            new EmailProperty(PropertyDatas.Jour, matiereCible.Jour),
+                            new EmailProperty(PropertyDatas.Date, dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.ToString() : DateTimeDebutSemaine.ToString()),
+                            new EmailProperty(PropertyDatas.Seance, matiereCible.Seance),
+                            new EmailProperty(PropertyDatas.EnseignantCivilite,  professeurCible?.Civilite),
+                            new EmailProperty(PropertyDatas.EnseignantNom, professeurCible?.Nom),
+                            new EmailProperty(PropertyDatas.EnseignantPrenom, professeurCible?.Prenom),
+                            new EmailProperty(PropertyDatas.EnseignantMail, professeurCible?.Mail)
                             ));
 
                     });
@@ -183,7 +183,7 @@ namespace MailCreator.Windows.Week
 
                 Relances.ForEach(relance =>
                 {
-                    relance.Visioconference = new EmailProperty("Visioconference", "$visioconference$", relance.EstVisioconference ? "Ce cours sera en visioconférence." : "");
+                    relance.Visioconference = new EmailProperty(PropertyDatas.Visioconference, relance.EstVisioconference ? "Ce cours sera en visioconférence." : "");
                     int addDays = 0;
                     if (!string.IsNullOrEmpty(relance.Jour.Traduction))
                     {

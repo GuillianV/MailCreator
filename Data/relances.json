@@ -2,2379 +2,3765 @@
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
-      "Traduction": "45"
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
+      "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B1"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Partiels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Anglais"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "4/6"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "BRABON"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Lydia"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "lydiabrabon@gmail.com"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Turorat B1"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Projet fil rouge"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1,5/7"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Vidéo (Pitch ton CV)"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/2"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "GUIDE"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Antoine"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "antoine.guide@gmail.com"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Turorat B1"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Projet fil rouge"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,10,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/7"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": ""
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "RAMEY"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Cathy"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "rameycathy@yahoo.fr"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B2"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "intégration wordpresss"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "4/4"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dig"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Production de contenus visuels"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "5,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "4/7"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "JACQUOT"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Julie"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "julie.jacquot@outlook.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dig"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Communication digitale "
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/4"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": ""
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "VIGNON"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Alexandra"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "alexandra-vignon@hotmail.fr"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dig"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "MDP kick off"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,1,2,3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dig"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Intégration Web"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "5,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dig"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Ergonomie Web et maquettage"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "5,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/4"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "KOCH"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Fanny"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "hello@fanny-koch.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Eco"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Atelier production graphique"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "1,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
-      "Traduction": "Mr"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
+      "Traduction": ""
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "PLOUX"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Olivier"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "olivierploux@gmail.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Eco"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Acquisition et conversion"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "1,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/4"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "DUPENT"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Antoine"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "dupent.antoine@gmail.com"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Eco"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "MDP kick off"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,1,2,3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Eco"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Parcours client et ergonomie web"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/3"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Eco"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Catalogue et pricing"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "1,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/3"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": ""
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "MARION"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Christophe"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "christophe.marion@outlook.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 CN"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Marketing web et digital"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "CHAMBON"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Marie"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "marie@enjoymarketing.fr"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 CN"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Communication digitale et stratégie éditoriale"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "5,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/2"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mme"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "LAMBERT"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Laetitia"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "laetitia.lambert@lightin.fr"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 CN"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "MDP kick off"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,1,2,3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
+      "Traduction": ""
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 CN"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Motion design"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
-      "Traduction": "1"
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
+      "Traduction": ""
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "BRAHIMI"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Akim"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "contact@akimbrahimi.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 CN"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Motion design"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "9,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "BRAHIMI"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Akim"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "contact@akimbrahimi.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3WSM"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Marketing Digital & acquisition trafic"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/5"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "MUGNIER"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Grégory"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "gregory.mugnier@gmail.com"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3WSM"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Communication digitale "
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "3/4"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": ""
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "VIGNON"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Alexandra"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "alexandra-vignon@hotmail.fr"
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3WSM"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "MDP kick off"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,1,2,3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3WSM"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Parcours client et ergonomie web"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/3"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3WSM"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Analytics et reporting"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/2"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dev"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Conception UML"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "2,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "LUNDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "24/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "17/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dev"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Conception UML"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "2,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MARDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "25/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "18/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
-      "Traduction": "dd"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": false,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dev"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "MDP kick off"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "4,1,2,3,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "MERCREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": ""
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "26/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "19/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$"
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      }
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$"
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      }
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$"
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      }
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$"
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      }
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dev"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Design Pattern"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "2,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "JEUDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "1/2"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "27/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "20/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "DI ROSA"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Lilian"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "lilian@ldiro-softwares.io"
     }
   },
   {
     "EstRelancable": true,
     "Promo": {
-      "Nom": "Promo",
-      "MatchText": "$promo$",
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
       "Traduction": "B3 Dev"
     },
     "NomMatiere": {
-      "Nom": "Nom de la matière",
-      "MatchText": "$nomMatiere$",
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
       "Traduction": "Design Pattern"
     },
     "Salle": {
-      "Nom": "Salle disponibles",
-      "MatchText": "$salles$",
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
       "Traduction": "2,"
     },
     "Jour": {
-      "Nom": "Jour",
-      "MatchText": "$jour$",
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
       "Traduction": "VENDREDI"
     },
     "Seance": {
-      "Nom": "Seance",
-      "MatchText": "$seance$",
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
       "Traduction": "2/2"
     },
     "Date": {
-      "Nom": "Date de la séance",
-      "MatchText": "$date$",
-      "Traduction": "28/04/2023"
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "21/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
-      "Nom": "Visioconference",
-      "MatchText": "$visioconference$",
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
       "Traduction": ""
     },
     "EnseignantCivilite": {
-      "Nom": "Civilité de l'enseignant",
-      "MatchText": "$enseignantCivilite$",
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
       "Traduction": "Mr"
     },
     "EnseignantNom": {
-      "Nom": "Nom de l'enseignant",
-      "MatchText": "$enseignantNom$",
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
       "Traduction": "DI ROSA"
     },
     "EnseignantPrenom": {
-      "Nom": "Prenom de l'enseignant",
-      "MatchText": "$enseignantPrenom$",
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
       "Traduction": "Lilian"
     },
     "EnseignantMail": {
-      "Nom": "Mail de l'enseignant",
-      "MatchText": "$enseignantMail$",
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
       "Traduction": "lilian@ldiro-softwares.io"
     }
   }
