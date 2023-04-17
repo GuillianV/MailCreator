@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using System.Reflection;
 using MailCreator.UserControls;
 using DataView.Entries;
+using Json;
 
 namespace MailCreator.Windows.Mail
 {
@@ -24,7 +25,7 @@ namespace MailCreator.Windows.Mail
     /// </summary>
     public partial class MailSetupWindow : UserControl
     {
-
+        private Email email = null;
         public List<string> MatchTextStrings = new List<string>();
 
         public MailSetupWindow()
@@ -56,21 +57,55 @@ namespace MailCreator.Windows.Mail
 
             });
 
-           
+
+            List<Email> emails = JsonFileUtils.Read<List<Email>>("emails.json");
+            if(emails != null && emails.Count > 0)
+            {
+                email = emails.FirstOrDefault();
+                BindEmail();
+            }
+
+
+
+          
 
         }
 
-
-        private void ChangeTextColor(string[] textsToFind, SolidColorBrush color)
+        private void BindEmail()
         {
 
-            FlowDocument document = rtbMailBody.Document;
+            if (email == null)
+            {
+                return;
+            }
+
+
+            email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+             {
+                 rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
+                 ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+             });
+
+
+            email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            {
+                rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
+                ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+            });
+
+
+        }
+
+        private void ChangeTextColor(RichTextBox rtb, string[] textsToFind, SolidColorBrush color)
+        {
+
+            FlowDocument document = rtb.Document;
 
             if (document == null) return;
 
             foreach (string textToFind in textsToFind)
             {
-                TextPointer start = rtbMailBody.Document.ContentStart;
+                TextPointer start = rtb.Document.ContentStart;
 
                 while (start != null)
                 {
@@ -114,7 +149,7 @@ namespace MailCreator.Windows.Mail
 
         private void RichTextBox_KeyUp(object sender, KeyEventArgs e)
         {
-            ChangeTextColor(MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+            ChangeTextColor(rtbMailBody,MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
 
         }
 
@@ -130,6 +165,24 @@ namespace MailCreator.Windows.Mail
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
 
+            string subjectText = "";
+
+            TextRange subjectTextRange = new TextRange(
+                 rtbMailObjet.Document.ContentStart,
+                 rtbMailObjet.Document.ContentEnd
+             );
+            subjectText = subjectTextRange.Text;
+
+
+            string bodyText = "";
+
+            TextRange bodyTextRange = new TextRange(
+                 rtbMailBody.Document.ContentStart,
+                 rtbMailBody.Document.ContentEnd
+             );
+            bodyText = bodyTextRange.Text;
+
+            new List<Email>() { new Email(subjectText, bodyText) }.UpdateJson<Email>("emails.json");
         }
     }
 }

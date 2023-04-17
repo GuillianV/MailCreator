@@ -19,7 +19,7 @@
         </ScrollViewer>
         <Label Margin="20,140,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
 
-        <RichTextBox Margin="20,170,20,0"  x:Name="tbMailObjet"  Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
+        <RichTextBox Margin="20,170,20,0"  x:Name="rtbMailObjet"  Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
             <FlowDocument Background="Transparent">
 
             </FlowDocument>
