@@ -59,7 +59,7 @@ namespace MailCreator.Windows
             else
             {
                 btnSemaineEdit.IsEnabled = false ;
-                btnMail.IsEnabled = false;
+                btnMailDraft.IsEnabled = false;
             }
 
         }

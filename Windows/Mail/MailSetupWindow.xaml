@@ -19,7 +19,7 @@
         </ScrollViewer>
         <Label Margin="20,140,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
 
-        <RichTextBox Margin="20,170,20,0"  x:Name="rtbMailObjet"  Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
+        <RichTextBox Margin="20,170,20,0"  x:Name="rtbMailObjet" KeyDown="rtbMailObjet_KeyDown" Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
             <FlowDocument Background="Transparent">
 
             </FlowDocument>
@@ -28,11 +28,9 @@
 
         <Label Margin="20,220,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
 
-        <RichTextBox Margin="20,250,20,100" KeyDown="RichTextBox_KeyUp"  x:Name="rtbMailBody"  Background="LightGray">
+        <RichTextBox Margin="20,250,20,100" KeyDown="rtbMailBody_KeyDown"  x:Name="rtbMailBody"  Background="LightGray">
             <FlowDocument Background="Transparent"  >
-                <Paragraph  Background="Transparent"  >
-
-                </Paragraph>
+           
             </FlowDocument>
         </RichTextBox>
 

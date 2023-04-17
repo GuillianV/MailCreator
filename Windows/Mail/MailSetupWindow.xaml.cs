@@ -17,6 +17,8 @@ using System.Reflection;
 using MailCreator.UserControls;
 using DataView.Entries;
 using Json;
+using Utils;
+using Popups;
 
 namespace MailCreator.Windows.Mail
 {
@@ -36,63 +38,73 @@ namespace MailCreator.Windows.Mail
 
         private void BindDataMailPanel()
         {
-            Func<string, string> LowerFirst = (input) => {
-                return char.ToLower(input[0]) + input.Substring(1);
-            };
 
-            List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
+            try
 
-            propertyInfos.ForEach(propertyInfo =>
             {
+            
+                List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
 
-                if(propertyInfo.PropertyType == typeof(EmailProperty) && PropertyDatas.GetPropertyDataByName(propertyInfo.Name, out PropertyData propertyData))
+                propertyInfos.ForEach(propertyInfo =>
                 {
+
+                    if(propertyInfo.PropertyType == typeof(EmailProperty) && PropertyDatas.GetPropertyDataByName(propertyInfo.Name, out PropertyData propertyData))
+                    {
                     
-                    ucMailData ucMailData = new ucMailData();
-                    MatchTextStrings.Add(propertyData.MatchText);
-                    ucMailData.MatchText =  propertyData.MatchText;
-                    ucMailData.TextValue = propertyData.Description;
-                    spMailData.Children.Add(ucMailData);
+                        ucMailData ucMailData = new ucMailData();
+                        MatchTextStrings.Add(propertyData.MatchText);
+                        ucMailData.MatchText =  propertyData.MatchText;
+                        ucMailData.TextValue = propertyData.Description;
+                        spMailData.Children.Add(ucMailData);
+                    }
+
+                });
+
+
+                List<Email> emails = JsonFileUtils.Read<List<Email>>("emails.json");
+                if(emails != null && emails.Count > 0)
+                {
+                    email = emails.FirstOrDefault();
+                    BindEmail();
                 }
 
-            });
-
-
-            List<Email> emails = JsonFileUtils.Read<List<Email>>("emails.json");
-            if(emails != null && emails.Count > 0)
+            }
+            catch
             {
-                email = emails.FirstOrDefault();
-                BindEmail();
+                this.ShowPopup(PopupValues.BindingFail);
             }
 
 
 
-          
 
         }
 
         private void BindEmail()
         {
-
-            if (email == null)
+            try
             {
-                return;
+
+
+                email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+                 {
+                     rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
+                     ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+                 });
+
+
+                email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+                {
+                    rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
+                    ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+                });
+
+
             }
-
-
-            email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
-             {
-                 rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
-                 ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-             });
-
-
-            email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            catch
             {
-                rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
-                ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-            });
 
+                this.ShowPopup(PopupValues.BindingFail);
+            }
 
         }
 
@@ -147,12 +159,6 @@ namespace MailCreator.Windows.Mail
 
         }
 
-        private void RichTextBox_KeyUp(object sender, KeyEventArgs e)
-        {
-            ChangeTextColor(rtbMailBody,MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-
-        }
-
 
 
 
@@ -165,24 +171,46 @@ namespace MailCreator.Windows.Mail
         private void btnValider_Click(object sender, RoutedEventArgs e)
         {
 
-            string subjectText = "";
+            try
+            {
+                string subjectText = "";
 
-            TextRange subjectTextRange = new TextRange(
-                 rtbMailObjet.Document.ContentStart,
-                 rtbMailObjet.Document.ContentEnd
-             );
-            subjectText = subjectTextRange.Text;
+                TextRange subjectTextRange = new TextRange(
+                     rtbMailObjet.Document.ContentStart,
+                     rtbMailObjet.Document.ContentEnd
+                 );
+                subjectText = subjectTextRange.Text;
 
 
-            string bodyText = "";
+                string bodyText = "";
 
-            TextRange bodyTextRange = new TextRange(
-                 rtbMailBody.Document.ContentStart,
-                 rtbMailBody.Document.ContentEnd
-             );
-            bodyText = bodyTextRange.Text;
+                TextRange bodyTextRange = new TextRange(
+                     rtbMailBody.Document.ContentStart,
+                     rtbMailBody.Document.ContentEnd
+                 );
+                bodyText = bodyTextRange.Text;
 
-            new List<Email>() { new Email(subjectText, bodyText) }.UpdateJson<Email>("emails.json");
+                new List<Email>() { new Email(subjectText, bodyText) }.UpdateJson<Email>("emails.json");
+                this.ShowPopup(PopupValues.ModificationSucces);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+
+      
+        }
+
+        private void rtbMailObjet_KeyDown(object sender, KeyEventArgs e)
+        {
+            ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+
+        }
+
+        private void rtbMailBody_KeyDown(object sender, KeyEventArgs e)
+        {
+            ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
+
         }
     }
 }

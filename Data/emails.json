@@ -1,6 +1,6 @@
 [
   {
-    "Sujet": "Super objet $date$ \r\n\r\n",
-    "Body": "dzdzdz $jour$  d $jour$ \r\nSuper oddbjet $date$  $seance$ et je pense a $enseignantNom$ dzee\r\nds\r\n"
+    "Sujet": "$promo$ \r\n",
+    "Body": "dzdzdz $jour$  d $jour$ \nSuper oddbjet $date$  $seance$ et je pense a $enseignantNom$ dzee\nds\nYeahhh \r\n"
   }
 ]
