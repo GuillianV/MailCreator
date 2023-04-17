@@ -11,9 +11,10 @@ namespace Office
 
 
 
-    public static class Office
+    public static class OfficeUtils
     {
 
+        public static List<Outlook.MailItem> mailDrafts = new List<Outlook.MailItem>();  
 
 
         public static void Authenticate()
@@ -40,7 +41,7 @@ namespace Office
                 mailItem.Subject = mailData.Objet;
                 mailItem.Body = mailData.Body;
                 mailItem.Save();
-
+                mailDrafts.Add(mailItem);
                 return mailItem;
             }
             catch (Exception e)
@@ -49,8 +50,26 @@ namespace Office
                 return null;
             }
 
-            
+        }
 
+        public static bool SendDrafts()
+        {
+            try
+            {
+                mailDrafts.ForEach(mailDraft => {
+
+                    mailDraft.Send();
+
+                });
+                return true;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e);
+                return false;
+            }
+
+          
         }
 
 

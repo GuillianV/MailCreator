@@ -88,7 +88,8 @@ namespace MailCreator.Windows
 
         private void btnMail_Click(object sender, RoutedEventArgs e)
         {
-
+            MailDraftWindow mailDraftWindow = new MailDraftWindow();
+            this.Content = mailDraftWindow;
         }
 
      

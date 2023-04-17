@@ -27,7 +27,7 @@ namespace MailCreator.Windows.Mail
     /// </summary>
     public partial class MailSetupWindow : UserControl
     {
-        private Email email = null;
+        private EmailGeneric email = null;
         public List<string> MatchTextStrings = new List<string>();
 
         public MailSetupWindow()
@@ -61,7 +61,7 @@ namespace MailCreator.Windows.Mail
                 });
 
 
-                List<Email> emails = JsonFileUtils.Read<List<Email>>("emails.json");
+                List<EmailGeneric> emails = JsonFileUtils.Read<List<EmailGeneric>>("emailGenerics.json");
                 if(emails != null && emails.Count > 0)
                 {
                     email = emails.FirstOrDefault();
@@ -190,7 +190,7 @@ namespace MailCreator.Windows.Mail
                  );
                 bodyText = bodyTextRange.Text;
 
-                new List<Email>() { new Email(subjectText, bodyText) }.UpdateJson<Email>("emails.json");
+                new List<EmailGeneric>() { new EmailGeneric(subjectText, bodyText) }.UpdateJson<EmailGeneric>("emailGenerics.json");
                 this.ShowPopup(PopupValues.ModificationSucces);
             }
             catch

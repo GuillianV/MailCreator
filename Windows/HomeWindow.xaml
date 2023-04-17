@@ -18,7 +18,7 @@
 
             <Button x:Name="btnEnsignants"  Click="btnEnsignants_Click" Width="320" Margin="20" HorizontalAlignment="Left" Height="40" Background="Transparent" >
                 <StackPanel Orientation="Horizontal">
-                    <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gérer les enseignants</Label>
+                    <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gestion des enseignants</Label>
                     <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/teacher.png"  Height="25" />
                 </StackPanel>
             </Button>
@@ -47,7 +47,7 @@
 
             <Button x:Name="btnMailDraft"  Click="btnMail_Click" Width="320" Margin="20"  Height="40" Background="Transparent" >
                 <StackPanel Orientation="Horizontal">
-                    <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Créer les brouillon des mails</Label>
+                    <Label HorizontalContentAlignment="Center" FontSize="14" Width="200">Gestion des mails</Label>
                     <Image Width="75"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../Images/send.png"  Height="25" />
                 </StackPanel>
             </Button>

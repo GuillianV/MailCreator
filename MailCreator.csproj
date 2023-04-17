@@ -103,7 +103,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="App_Code\DataView\Email.cs" />
+    <Compile Include="App_Code\DataView\EmailGeneric.cs" />
     <Compile Include="App_Code\DataView\EmailProperty.cs" />
     <Compile Include="App_Code\DataView\Entries\PropertyDatas.cs" />
     <Compile Include="App_Code\DataView\PropertyData.cs" />
@@ -111,7 +111,7 @@
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />
     <Compile Include="App_Code\DataView\Professeur.cs" />
     <Compile Include="App_Code\Json\JsonFileUtils.cs" />
-    <Compile Include="App_Code\Office\DataView\Mail.cs" />
+    <Compile Include="App_Code\Office\DataView\MailData.cs" />
     <Compile Include="App_Code\Office\Office.cs" />
     <Compile Include="App_Code\Popups\Enums\PopupTime.cs" />
     <Compile Include="App_Code\Popups\Enums\PopupType.cs" />
@@ -124,6 +124,9 @@
     </Compile>
     <Compile Include="Windows\HomeWindow.xaml.cs">
       <DependentUpon>HomeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Mail\MailDraftWindow.xaml.cs">
+      <DependentUpon>MailDraftWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Mail\MailSetupWindow.xaml.cs">
       <DependentUpon>MailSetupWindow.xaml</DependentUpon>
@@ -170,6 +173,10 @@
     <Page Include="Windows\HomeWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Mail\MailDraftWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Mail\MailSetupWindow.xaml">
       <SubType>Designer</SubType>

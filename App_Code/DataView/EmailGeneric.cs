@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataView
 {
-    public class Email
+    public class EmailGeneric
     {
 
         public string Sujet { get; set; }
         public string Body { get; set; }
 
-        public Email(string _sujet,string _body)
+        public EmailGeneric(string _sujet,string _body)
         {
             this.Sujet = _sujet;
             this.Body = _body;

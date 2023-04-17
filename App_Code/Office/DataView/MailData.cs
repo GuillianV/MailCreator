@@ -9,9 +9,9 @@ namespace Office.DataView
     public class MailData
     {
 
-        public string Destinataire { get; private set; }
-        public string Objet { get; private set; }
-        public string Body { get; private set; }
+        public string Destinataire { get; set; }
+        public string Objet { get;  set; }
+        public string Body { get;  set; }
 
         public MailData(string _destinataire, string _objet, string _body)
         {
