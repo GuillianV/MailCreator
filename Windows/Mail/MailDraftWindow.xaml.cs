@@ -18,6 +18,7 @@ using Office;
 using Json;
 using System.Reflection;
 using DataView.Entries;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace MailCreator.Windows.Mail
 {
@@ -27,7 +28,7 @@ namespace MailCreator.Windows.Mail
     public partial class MailDraftWindow : UserControl
     {
 
-        public List<MailData> Mails = new List<MailData>();
+        public List<MailData> Mails { get; set; }
 
         private EmailGeneric EmailGeneric = null;
 
@@ -36,27 +37,53 @@ namespace MailCreator.Windows.Mail
         public MailDraftWindow()
         {
             InitializeComponent();
+
             BindData();
             BindMails();
+            BindOffice();
+        }
+
+        private void BindOffice()
+        {
+            if(!OfficeUtils.Authenticate())
+            {
+                DisableBtns();
+                return;
+            }
+
+
+            foreach (Outlook.Account account in OfficeUtils.accounts)
+            {
+                cbAccounts.Items.Add(account.SmtpAddress);
+            }
+            cbAccounts.SelectedValue = OfficeUtils.account?.SmtpAddress;
+
+
+        }
+
+        private void DisableBtns()
+        {
+            btnCreer.IsEnabled = false;
+            btnSupprimer.IsEnabled = false;
+            btnModifier.IsEnabled = false;
+            btnEnvoyer.IsEnabled = false;
         }
 
         private void BindData()
         {
             List<EmailGeneric> emailGenerics = JsonFileUtils.Read<List<EmailGeneric>>("emailGenerics.json");
-            if(emailGenerics != null && emailGenerics.Count > 0)
+            if (emailGenerics != null && emailGenerics.Count > 0)
                 EmailGeneric = emailGenerics.FirstOrDefault();
 
             List<Relance> relances = JsonFileUtils.Read<List<Relance>>("relances.json");
             if (relances != null && relances.Count > 0)
                 Relances = relances.Where(relance => relance.EstRelancable).ToList();
 
+            Mails = new List<MailData>();
 
             if (EmailGeneric == null || Relances == null)
             {
-                btnCreer.IsEnabled = false;
-                btnSupprimer.IsEnabled = false;
-                btnModifier.IsEnabled = false;
-                btnEnvoyer.IsEnabled = false;
+                DisableBtns();
                 return;
             }
 
@@ -65,12 +92,14 @@ namespace MailCreator.Windows.Mail
 
         private void BindMails()
         {
+            Mails.Clear();
             OfficeUtils.mailDrafts.ForEach(mailItem =>
             {
                 Mails.Add(new MailData(mailItem.To, mailItem.Subject, mailItem.Body));
             });
             lvMails.ItemsSource = Mails;
-            DataContext = this;
+            lvMails.Items.Refresh();
+
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -81,42 +110,45 @@ namespace MailCreator.Windows.Mail
 
         private void btnCreer_Click(object sender, RoutedEventArgs e)
         {
-
             List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
-            Mails.Clear();
-            Relances.ForEach(relance =>
+            OfficeUtils.mailDrafts.ForEach(draft =>
             {
-                string To = "";
-                string Subject = EmailGeneric.Sujet;
-                string Body = EmailGeneric.Body;
 
-               
-                propertyInfos.ForEach(propertyInfo =>
-                {
-                    if (propertyInfo.PropertyType == typeof(EmailProperty))
-                    {
-
-                        EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
-                        if(emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
-                        {
-                            To = emailProperty.Traduction;
-                        }
-
-                        Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
-                        Body.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
-
-
-                    }
-
-                });
-
-                Mails.Add(new MailData(To, Subject, Body));
-
+                draft.Delete();
 
             });
+            OfficeUtils.mailDrafts.Clear();
+            Relances.ForEach(relance =>
+           {
+               string To = "";
+               string Subject = EmailGeneric.Sujet;
+               string Body = EmailGeneric.Body;
 
-            lvMails.ItemsSource = Mails;
-            DataContext = this;
+
+               propertyInfos.ForEach(propertyInfo =>
+               {
+                   if (propertyInfo.PropertyType == typeof(EmailProperty))
+                   {
+
+                       EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
+                       if (emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
+                       {
+                           To = emailProperty.Traduction;
+                       }
+
+                       Subject = Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                       Body = Body.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+
+
+                   }
+
+               });
+
+               OfficeUtils.CreateDraft(new MailData(To, Subject, Body));
+
+           });
+
+            BindMails();
         }
 
         private void btnSupprimer_Click(object sender, RoutedEventArgs e)
@@ -132,6 +164,19 @@ namespace MailCreator.Windows.Mail
         private void btnEnvoyer_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void cbAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            foreach (Outlook.Account account in OfficeUtils.accounts)
+            {
+                if(cbAccounts.SelectedValue.ToString() == account.SmtpAddress)
+                {
+
+                    OfficeUtils.account = account;
+
+                }
+            }
         }
     }
 }

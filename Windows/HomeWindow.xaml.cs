@@ -5,6 +5,7 @@ using Json;
 using MailCreator.Windows.Mail;
 using MailCreator.Windows.Professeurs;
 using MailCreator.Windows.Week;
+using Office;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -35,6 +36,7 @@ namespace MailCreator.Windows
             InitializeComponent();
             BindSemaineEdit();
         }
+
 
 
         private void btnEnsignants_Click(object sender, RoutedEventArgs e)
@@ -92,7 +94,6 @@ namespace MailCreator.Windows
             this.Content = mailDraftWindow;
         }
 
-     
     }
 
 }
