@@ -47,7 +47,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -135,7 +135,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -223,7 +223,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -311,7 +311,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -399,7 +399,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -487,7 +487,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -575,7 +575,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -663,7 +663,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -751,7 +751,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -839,7 +839,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -880,7 +880,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -927,7 +927,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1019,7 +1019,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1107,7 +1107,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1148,7 +1148,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -1195,7 +1195,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1287,7 +1287,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1328,7 +1328,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -1375,7 +1375,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1467,7 +1467,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1508,7 +1508,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -1555,7 +1555,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1600,7 +1600,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -1647,7 +1647,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1739,7 +1739,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1827,7 +1827,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1868,7 +1868,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -1915,7 +1915,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1960,7 +1960,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2007,7 +2007,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2052,7 +2052,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2099,7 +2099,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2191,7 +2191,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2279,7 +2279,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2320,7 +2320,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2367,7 +2367,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2412,7 +2412,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2459,7 +2459,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2504,7 +2504,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2551,7 +2551,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2643,7 +2643,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2685,7 +2685,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2732,7 +2732,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2777,7 +2777,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2824,7 +2824,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2869,7 +2869,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2916,7 +2916,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2961,7 +2961,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -3008,7 +3008,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3100,7 +3100,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "19/04/2023"
+      "Traduction": "26/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3188,7 +3188,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3276,7 +3276,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3364,7 +3364,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "17/04/2023"
+      "Traduction": "24/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3452,95 +3452,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "18/04/2023"
-    },
-    "EstVisioconference": false,
-    "Visioconference": {
-      "PropertyData": {
-        "Nom": "Visioconference",
-        "MatchText": "$visioconference$",
-        "Description": "Le cours se passe en visioconference"
-      },
-      "Traduction": ""
-    },
-    "EnseignantCivilite": {
-      "PropertyData": {
-        "Nom": "EnseignantCivilite",
-        "MatchText": "$enseignantCivilite$",
-        "Description": "Civilité de l'enseignant"
-      }
-    },
-    "EnseignantNom": {
-      "PropertyData": {
-        "Nom": "EnseignantNom",
-        "MatchText": "$enseignantNom$",
-        "Description": "Nom de l'enseignant"
-      }
-    },
-    "EnseignantPrenom": {
-      "PropertyData": {
-        "Nom": "EnseignantPrenom",
-        "MatchText": "$enseignantPrenom$",
-        "Description": "Prénom de l'enseignant"
-      }
-    },
-    "EnseignantMail": {
-      "PropertyData": {
-        "Nom": "EnseignantMail",
-        "MatchText": "$enseignantMail$",
-        "Description": "Mail de l'enseignant"
-      }
-    }
-  },
-  {
-    "EstRelancable": false,
-    "Promo": {
-      "PropertyData": {
-        "Nom": "Promo",
-        "MatchText": "$promo$",
-        "Description": "Promotion"
-      },
-      "Traduction": "B3 Dev"
-    },
-    "NomMatiere": {
-      "PropertyData": {
-        "Nom": "NomMatiere",
-        "MatchText": "$nomMatiere$",
-        "Description": "Nom de la matière"
-      },
-      "Traduction": "MDP kick off"
-    },
-    "Salle": {
-      "PropertyData": {
-        "Nom": "Salle",
-        "MatchText": "$salle$",
-        "Description": "Salle"
-      },
-      "Traduction": "4,1,2,3,"
-    },
-    "Jour": {
-      "PropertyData": {
-        "Nom": "Jour",
-        "MatchText": "$jour$",
-        "Description": "Jour"
-      },
-      "Traduction": "MERCREDI"
-    },
-    "Seance": {
-      "PropertyData": {
-        "Nom": "Seance",
-        "MatchText": "$seance$",
-        "Description": "Seance"
-      },
-      "Traduction": ""
-    },
-    "Date": {
-      "PropertyData": {
-        "Nom": "Date",
-        "MatchText": "$date$",
-        "Description": "Date"
-      },
-      "Traduction": "19/04/2023"
+      "Traduction": "25/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3582,6 +3494,98 @@
   },
   {
     "EstRelancable": true,
+    "Promo": {
+      "PropertyData": {
+        "Nom": "Promo",
+        "MatchText": "$promo$",
+        "Description": "Promotion"
+      },
+      "Traduction": "B3 Dev"
+    },
+    "NomMatiere": {
+      "PropertyData": {
+        "Nom": "NomMatiere",
+        "MatchText": "$nomMatiere$",
+        "Description": "Nom de la matière"
+      },
+      "Traduction": "MDP kick off"
+    },
+    "Salle": {
+      "PropertyData": {
+        "Nom": "Salle",
+        "MatchText": "$salle$",
+        "Description": "Salle"
+      },
+      "Traduction": "4,1,2,3,"
+    },
+    "Jour": {
+      "PropertyData": {
+        "Nom": "Jour",
+        "MatchText": "$jour$",
+        "Description": "Jour"
+      },
+      "Traduction": "MERCREDI"
+    },
+    "Seance": {
+      "PropertyData": {
+        "Nom": "Seance",
+        "MatchText": "$seance$",
+        "Description": "Seance"
+      },
+      "Traduction": "1/1"
+    },
+    "Date": {
+      "PropertyData": {
+        "Nom": "Date",
+        "MatchText": "$date$",
+        "Description": "Date"
+      },
+      "Traduction": "26/04/2023"
+    },
+    "EstVisioconference": false,
+    "Visioconference": {
+      "PropertyData": {
+        "Nom": "Visioconference",
+        "MatchText": "$visioconference$",
+        "Description": "Le cours se passe en visioconference"
+      },
+      "Traduction": ""
+    },
+    "EnseignantCivilite": {
+      "PropertyData": {
+        "Nom": "EnseignantCivilite",
+        "MatchText": "$enseignantCivilite$",
+        "Description": "Civilité de l'enseignant"
+      },
+      "Traduction": "Mr"
+    },
+    "EnseignantNom": {
+      "PropertyData": {
+        "Nom": "EnseignantNom",
+        "MatchText": "$enseignantNom$",
+        "Description": "Nom de l'enseignant"
+      },
+      "Traduction": "Vibert"
+    },
+    "EnseignantPrenom": {
+      "PropertyData": {
+        "Nom": "EnseignantPrenom",
+        "MatchText": "$enseignantPrenom$",
+        "Description": "Prénom de l'enseignant"
+      },
+      "Traduction": "Guillian"
+    },
+    "EnseignantMail": {
+      "PropertyData": {
+        "Nom": "EnseignantMail",
+        "MatchText": "$enseignantMail$",
+        "Description": "Mail de l'enseignant"
+      },
+      "Traduction": "guillianvibert90@gmail.com"
+    }
+  },
+  {
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -3628,7 +3632,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "20/04/2023"
+      "Traduction": "27/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3673,7 +3677,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -3720,7 +3724,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "21/04/2023"
+      "Traduction": "28/04/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {

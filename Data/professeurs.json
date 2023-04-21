@@ -514,5 +514,11 @@
     "Nom": "KINIC",
     "Prenom": "Allan",
     "Mail": "jcmermet@open-linking.com"
+  },
+  {
+    "Civilite": "Mr",
+    "Nom": "Vibert-Vallet",
+    "Prenom": "Guillian",
+    "Mail": "guillianvibert90@gmail.com"
   }
 ]

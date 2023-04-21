@@ -103,7 +103,9 @@ namespace MailCreator.Windows.Mail
             lvMails.ItemsSource = Mails;
             lvMails.Items.Refresh();
             cbAccounts.IsEnabled = Mails.Count <= 0;
-        
+            btnSupprimer.IsEnabled = Mails.Count > 0;
+            btnModifier.IsEnabled = Mails.Count > 0;
+            btnEnvoyer.IsEnabled = Mails.Count > 0;
 
         }
 
