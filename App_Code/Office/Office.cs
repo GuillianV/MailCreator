@@ -15,16 +15,19 @@ namespace Office
     public static class OfficeUtils
     {
 
-        public static List<Outlook.MailItem> mailDrafts = new List<Outlook.MailItem>();  
+        private static List<Outlook.MailItem> mailDrafts = new List<Outlook.MailItem>();  
 
-        public static Outlook.Account account = null;
-        public static Outlook.Accounts accounts = null;
+        public static Outlook.Account account { get; set; }
+        public static Outlook.Accounts accounts { get; set; }
         public static bool Authenticate()
         {
             Outlook.NameSpace ns = null;
             Outlook.MAPIFolder folder = null;
             try
             {
+
+                if (account != null)
+                    return true;
 
                 Outlook.Application outlookApp = new Outlook.Application();
                 ns = outlookApp.GetNamespace("MAPI");
@@ -58,6 +61,38 @@ namespace Office
             }
         }
 
+        public static bool MailExist(Outlook.MailItem Email)
+        {
+
+
+            Outlook.Application outlookApp = new Outlook.Application();
+            Outlook.NameSpace outlookNamespace = outlookApp.GetNamespace("MAPI");
+            Outlook.MailItem mailItem = null;
+            try
+            {
+                mailItem = outlookNamespace.GetItemFromID(Email.EntryID);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public static List<Outlook.MailItem> GetAllDrafts()
+        {
+            List<Outlook.MailItem> newDraft = new List<Outlook.MailItem>();
+            foreach (Outlook.MailItem mailItemLocal in mailDrafts)
+            {
+                if (OfficeUtils.MailExist(mailItemLocal))
+                {
+                    newDraft.Add(mailItemLocal);
+                }
+
+            }
+            mailDrafts = newDraft;
+            return mailDrafts;
+        }
 
         public static Outlook.Account GetActiveAccount()
         {
@@ -123,7 +158,7 @@ namespace Office
         {
             try
             {
-                mailDrafts.ForEach(mailDraft => {
+                GetAllDrafts().ForEach(mailDraft => {
 
                     mailDraft.Send();
 

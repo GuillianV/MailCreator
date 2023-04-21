@@ -19,6 +19,8 @@ using Json;
 using System.Reflection;
 using DataView.Entries;
 using Outlook = Microsoft.Office.Interop.Outlook;
+using Utils;
+using Popups;
 
 namespace MailCreator.Windows.Mail
 {
@@ -63,6 +65,7 @@ namespace MailCreator.Windows.Mail
 
         private void DisableBtns()
         {
+            cbAccounts.IsEnabled = false;
             btnCreer.IsEnabled = false;
             btnSupprimer.IsEnabled = false;
             btnModifier.IsEnabled = false;
@@ -93,15 +96,18 @@ namespace MailCreator.Windows.Mail
         private void BindMails()
         {
             Mails.Clear();
-            OfficeUtils.mailDrafts.ForEach(mailItem =>
+            OfficeUtils.GetAllDrafts().ForEach(mailItem =>
             {
                 Mails.Add(new MailData(mailItem.To, mailItem.Subject, mailItem.Body));
             });
             lvMails.ItemsSource = Mails;
             lvMails.Items.Refresh();
+            cbAccounts.IsEnabled = Mails.Count <= 0;
+        
 
         }
 
+   
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             HomeWindow homeWindow = new HomeWindow();
@@ -111,13 +117,13 @@ namespace MailCreator.Windows.Mail
         private void btnCreer_Click(object sender, RoutedEventArgs e)
         {
             List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
-            OfficeUtils.mailDrafts.ForEach(draft =>
+            OfficeUtils.GetAllDrafts().ForEach(draft =>
             {
 
                 draft.Delete();
 
             });
-            OfficeUtils.mailDrafts.Clear();
+            OfficeUtils.GetAllDrafts().Clear();
             Relances.ForEach(relance =>
            {
                string To = "";
@@ -154,8 +160,39 @@ namespace MailCreator.Windows.Mail
         private void btnSupprimer_Click(object sender, RoutedEventArgs e)
         {
 
+            try
+            {
+                if (lvMails.SelectedValue != null && lvMails.SelectedValue.GetType() == typeof(MailData))
+                {
+
+                    MailData mailData = (MailData)lvMails.SelectedValue;
+                
+                    Outlook.MailItem? mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
+                    if (mailItem != null)
+                    {
+                        if (OfficeUtils.MailExist(mailItem))
+                            mailItem.Delete();
+                       
+                    }
+
+                    Mails.Remove(mailData);
+                    BindMails();
+                    this.ShowPopup(PopupValues.SuppressionSucces);
+                    return;
+
+                }
+                this.ShowPopup(PopupValues.SupprimerFail);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.SupprimerFail);
+            }
+
+         
+
         }
 
+   
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
 
