@@ -7,6 +7,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
-            
+
+
+        <Label Margin="20,140,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
+
+        <RichTextBox Margin="20,170,20,0"  x:Name="rtbMailObjet" KeyDown="rtbMailObjet_KeyDown" Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
+            <FlowDocument Background="Transparent">
+
+            </FlowDocument>
+        </RichTextBox>
+
+
+        <Label Margin="20,220,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
+
+        <RichTextBox Margin="20,250,20,100" KeyDown="rtbMailBody_KeyDown"  x:Name="rtbMailBody"  Background="LightGray">
+            <FlowDocument Background="Transparent"  >
+
+            </FlowDocument>
+        </RichTextBox>
+
+
     </Grid>
 </UserControl>

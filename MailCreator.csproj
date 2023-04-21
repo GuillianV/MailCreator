@@ -131,6 +131,9 @@
     <Compile Include="Windows\Mail\MailSetupWindow.xaml.cs">
       <DependentUpon>MailSetupWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Mail\MailUpdateWindow.xaml.cs">
+      <DependentUpon>MailUpdateWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Professeurs\ProfesseurCreateWindow.xaml.cs">
       <DependentUpon>ProfesseurCreateWindow.xaml</DependentUpon>
     </Compile>
@@ -179,6 +182,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Mail\MailSetupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Mail\MailUpdateWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
