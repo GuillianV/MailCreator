@@ -37,12 +37,16 @@
 
         <Label Margin="20,160,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
 
-        <RichTextBox Margin="20,200,20,20"   x:Name="rtbMailBody"  Background="LightGray">
+        <RichTextBox Margin="20,200,20,100"   x:Name="rtbMailBody"  Background="LightGray">
             <FlowDocument Background="Transparent"  >
 
             </FlowDocument>
         </RichTextBox>
-
+        <Button x:Name="btnValider" Width="40" Click="btnValider_Click" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Margin="0,0,0,30">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../../Images/checked.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
 
     </Grid>
 </UserControl>

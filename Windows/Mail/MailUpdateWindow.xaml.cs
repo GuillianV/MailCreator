@@ -1,4 +1,5 @@
 ﻿using Office;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Utils;
 using Outlook = Microsoft.Office.Interop.Outlook;
 namespace MailCreator.Windows.Mail
 {
@@ -67,5 +69,37 @@ namespace MailCreator.Windows.Mail
             this.Content = homeWindow;
         }
 
+        private void btnValider_Click(object sender, RoutedEventArgs e)
+        {
+
+            try
+            {
+                string subjectText = "";
+
+                TextRange subjectTextRange = new TextRange(
+                     rtbMailObjet.Document.ContentStart,
+                     rtbMailObjet.Document.ContentEnd
+                 );
+                subjectText = subjectTextRange.Text;
+
+
+                string bodyText = "";
+
+                TextRange bodyTextRange = new TextRange(
+                     rtbMailBody.Document.ContentStart,
+                     rtbMailBody.Document.ContentEnd
+                 );
+                bodyText = bodyTextRange.Text;
+
+                mailItem.Subject = subjectText;
+                mailItem.Body = bodyText;
+                mailItem.Save();
+                this.ShowPopup(PopupValues.ModificationSucces);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+        }
     }
 }
