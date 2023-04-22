@@ -198,6 +198,38 @@ namespace MailCreator.Windows.Mail
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
 
+            try
+            {
+                if (lvMails.SelectedValue != null && lvMails.SelectedValue.GetType() == typeof(MailData))
+                {
+
+                    MailData mailData = (MailData)lvMails.SelectedValue;
+
+                    Outlook.MailItem? mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
+                    if (mailItem != null)
+                    {
+
+                        MailUpdateWindow mailUpdateWindow = new MailUpdateWindow(mailItem.EntryID);
+                        this.Content = mailUpdateWindow;
+                        return;
+                    }
+                    else
+                    {
+                        Mails.Remove(mailData);
+                        BindMails();
+                    }
+
+                   
+
+                }
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.ModificationFail);
+            }
+
+       
         }
 
         private void btnEnvoyer_Click(object sender, RoutedEventArgs e)

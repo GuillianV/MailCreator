@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Office;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Outlook = Microsoft.Office.Interop.Outlook;
 namespace MailCreator.Windows.Mail
 {
     /// <summary>
@@ -20,9 +21,51 @@ namespace MailCreator.Windows.Mail
     /// </summary>
     public partial class MailUpdateWindow : UserControl
     {
-        public MailUpdateWindow()
+
+        string EntryId;
+        Outlook.MailItem mailItem;
+
+        public MailUpdateWindow(string mailEntryId)
         {
             InitializeComponent();
+            this.EntryId = mailEntryId;
+            BindMail();
         }
+
+        private void BindMail()
+        {
+            mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(mi => mi.EntryID == EntryId);
+            if(mailItem == null)
+            {
+                btnBack_Click(this, new RoutedEventArgs());
+                return;
+            }
+
+
+            mailItem.Subject.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            {
+                rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
+            });
+
+            mailItem.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            {
+                rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
+            });
+
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            MailDraftWindow draftWindow = new MailDraftWindow();
+            this.Content = draftWindow;
+        }
+
+
+        private void btnHome_Click(object sender, RoutedEventArgs e)
+        {
+            HomeWindow homeWindow = new HomeWindow();
+            this.Content = homeWindow;
+        }
+
     }
 }
