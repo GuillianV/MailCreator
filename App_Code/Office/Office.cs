@@ -1,6 +1,7 @@
 ﻿using Office.DataView;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -137,10 +138,10 @@ namespace Office
 
                 Outlook.Application outlookApp = new Outlook.Application();
                 Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
-
+                  
                 mailItem.To = mailData.Destinataire;
                 mailItem.Subject = mailData.Objet;
-                mailItem.Body = mailData.Body;
+                mailItem.Body =  mailData.Body;
                 mailItem.SendUsingAccount = account;
                 mailItem.Save();
                 mailDrafts.Add(mailItem);
@@ -154,11 +155,15 @@ namespace Office
 
         }
 
+
+
+
+
         public static bool SendDrafts()
         {
             try
             {
-                GetAllDrafts().ForEach(mailDraft => {
+                GetAllDrafts()?.ForEach(mailDraft => {
 
                     mailDraft.Send();
 

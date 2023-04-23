@@ -234,7 +234,17 @@ namespace MailCreator.Windows.Mail
 
         private void btnEnvoyer_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                OfficeUtils.SendDrafts();
+                this.ShowPopup(PopupValues.EnvoiSucces);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.EnvoiFail);
+            }
 
+          
         }
 
         private void cbAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
