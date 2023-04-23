@@ -31,12 +31,12 @@
   },
   {
     "Civilite": "Mme",
-    "Nom": "GAZULL",
-    "Prenom": "Jerome",
-    "Mail": "contact@comseo.fr"
+    "Nom": "BARRANCO",
+    "Prenom": "Jessica",
+    "Mail": "barranco.jessica@gmail.com"
   },
   {
-    "Civilite": "Mme",
+    "Civilite": "Mme ",
     "Nom": "JOBERT",
     "Prenom": "Lola",
     "Mail": "lola.jobert@gmail.com"
@@ -84,7 +84,7 @@
     "Mail": "quentin.hourriez@gmail.com"
   },
   {
-    "Civilite": "Mme",
+    "Civilite": "Mme ",
     "Nom": "JACQUOT",
     "Prenom": "Julie",
     "Mail": "julie.jacquot@outlook.com"
@@ -218,8 +218,8 @@
   {
     "Civilite": "Mr",
     "Nom": "PAUTONNIER",
-    "Prenom": "Jerome",
-    "Mail": "jérôme"
+    "Prenom": "Jérôme",
+    "Mail": ""
   },
   {
     "Civilite": "Mme",
@@ -246,13 +246,13 @@
     "Mail": "jlestermann@gmail.com"
   },
   {
-    "Civilite": "Mr",
+    "Civilite": "",
     "Nom": "PINNA",
     "Prenom": "Loris",
     "Mail": "devloris@gmail.com"
   },
   {
-    "Civilite": "Mr",
+    "Civilite": "",
     "Nom": "BOUVIER",
     "Prenom": "Jérôme",
     "Mail": "contact@jbouvier.com"
@@ -300,10 +300,10 @@
     "Mail": "thomas.butty@outlook.com"
   },
   {
-    "Civilite": "fzefzef",
+    "Civilite": "",
     "Nom": "DURIEUX",
-    "Prenom": "Prooo",
-    "Mail": "B2oBaTrice"
+    "Prenom": "Béatrice",
+    "Mail": ""
   },
   {
     "Civilite": "",
@@ -468,10 +468,10 @@
     "Mail": "lydiabrabon@gmail.com"
   },
   {
-    "Civilite": "Mme",
+    "Civilite": "",
     "Nom": "VARTY",
     "Prenom": "Emma",
-    "Mail": "ddd"
+    "Mail": ""
   },
   {
     "Civilite": "",
@@ -498,27 +498,21 @@
     "Mail": "raphael@lasocietesecrete.com"
   },
   {
-    "Civilite": "Mr",
+    "Civilite": "",
     "Nom": "MONTAUD",
     "Prenom": "Rémi",
     "Mail": "remi.montaud@gmail.com"
   },
   {
-    "Civilite": "Mr",
+    "Civilite": "",
     "Nom": "LARGE",
     "Prenom": "Gaultier",
     "Mail": "large.gaultier@gmail.com"
   },
   {
-    "Civilite": "Mrr",
+    "Civilite": "",
     "Nom": "KINIC",
     "Prenom": "Allan",
-    "Mail": "jcmermet@open-linking.com"
-  },
-  {
-    "Civilite": "Mr",
-    "Nom": "Vibert-Vallet",
-    "Prenom": "Guillian",
-    "Mail": "guillianvibert90@gmail.com"
+    "Mail": "contact@kinic.fr"
   }
 ]

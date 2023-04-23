@@ -24,7 +24,7 @@ namespace ExcelPart
         }
 
 
-        private void SaveProfesseurs() { 
+        public void SaveProfesseurs() { 
 
 
             int rowNumber = _cells.OrderByDescending(cell => cell.RowReference).FirstOrDefault()?.RowReference ?? 0;

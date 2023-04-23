@@ -1,4 +1,5 @@
 ﻿using Office;
+using Office.DataView;
 using Popups;
 using System;
 using System.Collections.Generic;
@@ -75,7 +76,6 @@ namespace MailCreator.Windows.Mail
             try
             {
                 string subjectText = "";
-
                 TextRange subjectTextRange = new TextRange(
                      rtbMailObjet.Document.ContentStart,
                      rtbMailObjet.Document.ContentEnd
@@ -84,17 +84,14 @@ namespace MailCreator.Windows.Mail
 
 
                 string bodyText = "";
-
                 TextRange bodyTextRange = new TextRange(
                      rtbMailBody.Document.ContentStart,
                      rtbMailBody.Document.ContentEnd
                  );
                 bodyText = bodyTextRange.Text;
-
-                mailItem.Subject = subjectText;
-                mailItem.Body = bodyText;
-                mailItem.Save();
+                mailItem.UpdateDraft(new MailData(mailItem.To, subjectText, bodyText));
                 this.ShowPopup(PopupValues.ModificationSucces);
+
             }
             catch
             {

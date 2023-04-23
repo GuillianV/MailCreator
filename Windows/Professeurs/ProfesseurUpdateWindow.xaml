@@ -21,6 +21,8 @@
             </StackPanel>
         </Button>
 
+
+
         <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label Content="Modifier enseignant" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>
         </StackPanel>

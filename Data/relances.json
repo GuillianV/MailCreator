@@ -880,7 +880,7 @@
     }
   },
   {
-    "EstRelancable": false,
+    "EstRelancable": true,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",

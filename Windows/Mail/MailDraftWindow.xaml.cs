@@ -47,9 +47,10 @@ namespace MailCreator.Windows.Mail
 
         private void BindOffice()
         {
-            if(!OfficeUtils.Authenticate())
+            if (!OfficeUtils.Authenticate())
             {
                 DisableBtns();
+                this.ShowPopup(PopupValues.ConnexionOutlookFail);
                 return;
             }
 
@@ -109,7 +110,7 @@ namespace MailCreator.Windows.Mail
 
         }
 
-   
+
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
             HomeWindow homeWindow = new HomeWindow();
@@ -118,45 +119,54 @@ namespace MailCreator.Windows.Mail
 
         private void btnCreer_Click(object sender, RoutedEventArgs e)
         {
-            List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
-            OfficeUtils.GetAllDrafts().ForEach(draft =>
+            try
             {
 
-                draft.Delete();
+                List<PropertyInfo> propertyInfos = typeof(Relance).GetProperties().ToList();
+                OfficeUtils.GetAllDrafts().ForEach(draft =>
+                {
 
-            });
-            OfficeUtils.GetAllDrafts().Clear();
-            Relances.ForEach(relance =>
-           {
-               string To = "";
-               string Subject = EmailGeneric.Sujet;
-               string Body = EmailGeneric.Body;
+                    draft.Delete();
 
-
-               propertyInfos.ForEach(propertyInfo =>
+                });
+                OfficeUtils.GetAllDrafts().Clear();
+                Relances.ForEach(relance =>
                {
-                   if (propertyInfo.PropertyType == typeof(EmailProperty))
-                   {
+                   string To = "";
+                   string Subject = EmailGeneric.Sujet;
+                   string Body = EmailGeneric.Body;
 
-                       EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
-                       if (emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
+
+                   propertyInfos.ForEach(propertyInfo =>
+                   {
+                       if (propertyInfo.PropertyType == typeof(EmailProperty))
                        {
-                           To = emailProperty.Traduction;
+
+                           EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
+                           if (emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
+                           {
+                               To = emailProperty.Traduction;
+                           }
+
+                           Subject = Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                           Body = Body.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+
+
                        }
 
-                       Subject = Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
-                       Body = Body.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                   });
 
-
-                   }
+                   OfficeUtils.CreateDraft(new MailData(To, Subject, Body));
 
                });
 
-               OfficeUtils.CreateDraft(new MailData(To, Subject, Body));
-
-           });
-
-            BindMails();
+                BindMails();
+                this.ShowPopup(PopupValues.CreationSucces);
+            }
+            catch
+            {
+                this.ShowPopup(PopupValues.CreationFail);
+            }
         }
 
         private void btnSupprimer_Click(object sender, RoutedEventArgs e)
@@ -168,13 +178,13 @@ namespace MailCreator.Windows.Mail
                 {
 
                     MailData mailData = (MailData)lvMails.SelectedValue;
-                
+
                     Outlook.MailItem? mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
                     if (mailItem != null)
                     {
                         if (OfficeUtils.MailExist(mailItem))
                             mailItem.Delete();
-                       
+
                     }
 
                     Mails.Remove(mailData);
@@ -190,11 +200,11 @@ namespace MailCreator.Windows.Mail
                 this.ShowPopup(PopupValues.SupprimerFail);
             }
 
-         
+
 
         }
 
-   
+
         private void btnModifier_Click(object sender, RoutedEventArgs e)
         {
 
@@ -219,7 +229,7 @@ namespace MailCreator.Windows.Mail
                         BindMails();
                     }
 
-                   
+
 
                 }
                 this.ShowPopup(PopupValues.ModificationFail);
@@ -229,7 +239,7 @@ namespace MailCreator.Windows.Mail
                 this.ShowPopup(PopupValues.ModificationFail);
             }
 
-       
+
         }
 
         private void btnEnvoyer_Click(object sender, RoutedEventArgs e)
@@ -244,14 +254,14 @@ namespace MailCreator.Windows.Mail
                 this.ShowPopup(PopupValues.EnvoiFail);
             }
 
-          
+
         }
 
         private void cbAccounts_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             foreach (Outlook.Account account in OfficeUtils.accounts)
             {
-                if(cbAccounts.SelectedValue.ToString() == account.SmtpAddress)
+                if (cbAccounts.SelectedValue.ToString() == account.SmtpAddress)
                 {
 
                     OfficeUtils.account = account;

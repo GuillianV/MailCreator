@@ -1,8 +1,11 @@
 ﻿using DataView;
+using Excel;
+using ExcelPart;
 using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -112,5 +115,7 @@ namespace MailCreator.Windows.Professeurs
         {
             this.ShowPopup(PopupValues.EnregistrerFail);
         }
+
+   
     }
 }

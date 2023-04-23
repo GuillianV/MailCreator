@@ -27,7 +27,7 @@ namespace Popups
         public static PopupValue ModificationFail = new PopupValue("Echec de la Modification", Colors.DarkRed, Colors.White, PopupType.Failure, PopupTime.Medium);
         public static PopupValue BindingFail = new PopupValue("Impossible d'afficher l'élement", Colors.DarkRed, Colors.White, PopupType.Failure, PopupTime.Medium);
         public static PopupValue CreationFail = new PopupValue("Impossible de créer l'élement", Colors.DarkRed, Colors.White, PopupType.Failure, PopupTime.Medium);
-
+        public static PopupValue ConnexionOutlookFail = new PopupValue("Impossible de se connecter à Outlook.", Colors.DarkRed, Colors.White, PopupType.Failure, PopupTime.Medium);
 
     }
 }

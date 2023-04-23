@@ -138,13 +138,9 @@ namespace Office
 
                 Outlook.Application outlookApp = new Outlook.Application();
                 Outlook.MailItem mailItem = (Outlook.MailItem)outlookApp.CreateItem(Outlook.OlItemType.olMailItem);
-                  
-                mailItem.To = mailData.Destinataire;
-                mailItem.Subject = mailData.Objet;
-                mailItem.Body =  mailData.Body;
-                mailItem.SendUsingAccount = account;
-                mailItem.Save();
+                mailItem.UpdateDraft(mailData);
                 mailDrafts.Add(mailItem);
+               
                 return mailItem;
             }
             catch (Exception e)
@@ -156,7 +152,25 @@ namespace Office
         }
 
 
-
+        public static Outlook.MailItem UpdateDraft(this Outlook.MailItem mailItem, MailData mailData)
+        {
+            try
+            {
+                if(mailItem != null)
+                {
+                    mailItem.To = mailData.Destinataire;
+                    mailItem.Subject = mailData.Objet;
+                    mailItem.Body =  mailData.Body;
+                    mailItem.SendUsingAccount = account;
+                    mailItem.Save();
+                }
+                return mailItem;
+            }
+            catch
+            {
+                return mailItem;
+            }
+        }
 
 
         public static bool SendDrafts()

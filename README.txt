@@ -1,0 +1,1 @@
+Build : .\msbuild E:\Travail\MDS\Commarmond\MailCreator\MailCreator.csproj /p:Configuration=Release /p:LangVersion=8.0 /t:rebuild

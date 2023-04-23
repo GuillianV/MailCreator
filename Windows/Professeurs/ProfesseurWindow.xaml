@@ -15,7 +15,12 @@
         </Button>
 
 
-      
+
+        <Button x:Name="btnRegen" Width="30" Click="btnRegen_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,20,20,0">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="../../Images/teacher.png" Width="16" Height="16" />
+            </StackPanel>
+        </Button>
 
         <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label Content="Gestion enseignants" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>

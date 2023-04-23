@@ -1,8 +1,11 @@
 ﻿using DataView;
+using Excel;
+using ExcelPart;
 using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -116,6 +119,19 @@ namespace MailCreator.Windows.Professeurs
             await Task.Delay(2000);
             btnModifier.BorderThickness = new Thickness(1);
             btnSupprimer.BorderThickness = new Thickness(1);
+        }
+
+        private void btnRegen_Click(object sender, RoutedEventArgs e)
+        {
+            FileInfo file = new FileInfo("E:\\Travail\\MDS\\Commarmond\\MailCreator\\Uploads\\Prof.xlsx");
+            if (file!= null && !file.IsReadOnly && file.Extension.Contains("xls"))
+            {
+                ExcelManager excel = new ExcelManager(file);
+                ExcelProfesseurParser excelProfesseurParser = new ExcelProfesseurParser(excel.ShowCellsValues());
+                excelProfesseurParser.SaveProfesseurs();
+            }
+
+
         }
 
     }
