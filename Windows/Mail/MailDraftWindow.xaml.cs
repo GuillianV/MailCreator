@@ -59,7 +59,7 @@ namespace MailCreator.Windows.Mail
             {
                 cbAccounts.Items.Add(account.SmtpAddress);
             }
-            cbAccounts.SelectedValue = OfficeUtils.account?.SmtpAddress;
+            cbAccounts.SelectedValue = OfficeUtils.account.SmtpAddress;
 
 
         }
@@ -179,7 +179,7 @@ namespace MailCreator.Windows.Mail
 
                     MailData mailData = (MailData)lvMails.SelectedValue;
 
-                    Outlook.MailItem? mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
+                    Outlook.MailItem mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
                     if (mailItem != null)
                     {
                         if (OfficeUtils.MailExist(mailItem))
@@ -215,7 +215,7 @@ namespace MailCreator.Windows.Mail
 
                     MailData mailData = (MailData)lvMails.SelectedValue;
 
-                    Outlook.MailItem? mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
+                    Outlook.MailItem mailItem = OfficeUtils.GetAllDrafts().FirstOrDefault(md => md.To == mailData.Destinataire && md.Subject == mailData.Objet && md.Body == mailData.Body);
                     if (mailItem != null)
                     {
 

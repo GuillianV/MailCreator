@@ -27,7 +27,7 @@ namespace ExcelPart
         public void SaveProfesseurs() { 
 
 
-            int rowNumber = _cells.OrderByDescending(cell => cell.RowReference).FirstOrDefault()?.RowReference ?? 0;
+            int rowNumber = _cells.OrderByDescending(cell => cell.RowReference).FirstOrDefault().RowReference;
             for(int i = 1; i < rowNumber; i++)
             {
                 List<CellViewBinding> rowCells = _cells.Where(cell => cell.RowReference == i).ToList();
@@ -35,7 +35,7 @@ namespace ExcelPart
                 string nom = "";
                 string prenom = "";
                 string email = "";
-                rowCells?.ForEach(rowCell =>
+                rowCells.ForEach(rowCell =>
                 {
 
                     switch (rowCell.ColumnReference)

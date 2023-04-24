@@ -73,7 +73,7 @@ namespace ExcelPart
         public List<Semaine> GetWeeks()
         {
             List<Semaine> weekViews = new List<Semaine>();
-            _weeks.ToList()?.ForEach(week =>
+            _weeks.ToList().ForEach(week =>
             {
                 weekViews.Add(GetWeek(week.Key));
             });
@@ -83,7 +83,7 @@ namespace ExcelPart
 
         }
 
-        public Semaine? GetWeek(string semainKey)
+        public Semaine GetWeek(string semainKey)
         {
 
             List<CellViewBinding> weekCells = new List<CellViewBinding>();
@@ -183,10 +183,10 @@ namespace ExcelPart
                             }
 
 
-                            sallesCells?.ForEach(salleCell =>
+                            sallesCells.ForEach(salleCell =>
                             {
                                 if (!string.IsNullOrEmpty(salleCell.InnerText))
-                                    salle += $"{salleCell.InnerText},";
+                                    salle += salleCell.InnerText+",";
                             });
 
 

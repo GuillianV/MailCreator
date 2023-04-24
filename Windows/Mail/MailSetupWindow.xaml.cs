@@ -48,14 +48,19 @@ namespace MailCreator.Windows.Mail
                 propertyInfos.ForEach(propertyInfo =>
                 {
 
-                    if(propertyInfo.PropertyType == typeof(EmailProperty) && PropertyDatas.GetPropertyDataByName(propertyInfo.Name, out PropertyData propertyData))
+                    if(propertyInfo.PropertyType == typeof(EmailProperty))
                     {
+
+                        PropertyData propertyData = PropertyDatas.GetPropertyDataByName(propertyInfo.Name);
+                        if(propertyData != null)
+                        {
+                            ucMailData ucMailData = new ucMailData();
+                            MatchTextStrings.Add(propertyData.MatchText);
+                            ucMailData.MatchText =  propertyData.MatchText;
+                            ucMailData.TextValue = propertyData.Description;
+                            spMailData.Children.Add(ucMailData);
+                        }
                     
-                        ucMailData ucMailData = new ucMailData();
-                        MatchTextStrings.Add(propertyData.MatchText);
-                        ucMailData.MatchText =  propertyData.MatchText;
-                        ucMailData.TextValue = propertyData.Description;
-                        spMailData.Children.Add(ucMailData);
                     }
 
                 });
@@ -85,14 +90,14 @@ namespace MailCreator.Windows.Mail
             {
 
 
-                email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+                email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
                  {
                      rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
                      ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
                  });
 
 
-                email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+                email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
                 {
                     rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
                     ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));

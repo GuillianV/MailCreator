@@ -58,7 +58,7 @@ namespace MailCreator.Windows.Week
 
         private void lvWeek_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
-            if (lvWeek.SelectedValue?.GetType() == typeof(Semaine))
+            if (lvWeek.SelectedValue.GetType() == typeof(Semaine))
             {
 
                 try
@@ -81,7 +81,7 @@ namespace MailCreator.Windows.Week
         }
 
 
-        private FileInfo? IsDropAllowed(String[] filesName, Border border, Label content)
+        private FileInfo IsDropAllowed(String[] filesName, Border border, Label content)
         {
             if (filesName.Length == 1)
             {
@@ -126,7 +126,7 @@ namespace MailCreator.Windows.Week
             if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-                FileInfo? fileInfo = IsDropAllowed(files, bordExcelSemaine, lbDropExcelSemaine);
+                FileInfo fileInfo = IsDropAllowed(files, bordExcelSemaine, lbDropExcelSemaine);
                 if (fileInfo != null)
                 {
                     ExcelManager excel = new ExcelManager(fileInfo);

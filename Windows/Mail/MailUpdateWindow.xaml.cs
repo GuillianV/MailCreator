@@ -45,12 +45,12 @@ namespace MailCreator.Windows.Mail
             }
 
 
-            mailItem.Subject.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            mailItem.Subject.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
             {
                 rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
             });
 
-            mailItem.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList()?.ForEach(txt =>
+            mailItem.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
             {
                 rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
             });

@@ -129,7 +129,7 @@ namespace Office
 
         }
 
-        public static Outlook.MailItem? CreateDraft(MailData mailData) 
+        public static Outlook.MailItem CreateDraft(MailData mailData) 
         {
             try
             {
@@ -177,7 +177,7 @@ namespace Office
         {
             try
             {
-                GetAllDrafts()?.ForEach(mailDraft => {
+                GetAllDrafts().ForEach(mailDraft => {
 
                     mailDraft.Send();
 

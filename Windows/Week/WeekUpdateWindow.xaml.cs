@@ -86,6 +86,8 @@ namespace MailCreator.Windows.Week
 
                         });
 
+
+
                         relances.Add(new Relance(
                             professeurCible != null,
                             matiereCible.Visioconference,
@@ -96,10 +98,10 @@ namespace MailCreator.Windows.Week
                             new EmailProperty(PropertyDatas.Jour, matiereCible.Jour),
                             new EmailProperty(PropertyDatas.Date, dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.ToString() : DateTimeDebutSemaine.ToString()),
                             new EmailProperty(PropertyDatas.Seance, matiereCible.Seance),
-                            new EmailProperty(PropertyDatas.EnseignantCivilite,  professeurCible?.Civilite),
-                            new EmailProperty(PropertyDatas.EnseignantNom, professeurCible?.Nom),
-                            new EmailProperty(PropertyDatas.EnseignantPrenom, professeurCible?.Prenom),
-                            new EmailProperty(PropertyDatas.EnseignantMail, professeurCible?.Mail)
+                            new EmailProperty(PropertyDatas.EnseignantCivilite,  professeurCible != null ? professeurCible.Civilite : ""),
+                            new EmailProperty(PropertyDatas.EnseignantNom, professeurCible != null ? professeurCible.Nom : ""),
+                            new EmailProperty(PropertyDatas.EnseignantPrenom, professeurCible != null ? professeurCible.Prenom : ""),
+                            new EmailProperty(PropertyDatas.EnseignantMail, professeurCible != null ? professeurCible.Mail : "")
                             ));
 
                     });

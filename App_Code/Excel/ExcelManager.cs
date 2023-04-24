@@ -50,7 +50,7 @@ namespace Excel
                 
             }catch(Exception e)
             {
-                throw new Exception($"Excel file cannot be load , Exception : {e.Message}");
+                throw new Exception("Excel file cannot be load , Exception : "+e.Message);
             }
        
         }
@@ -59,7 +59,7 @@ namespace Excel
         {
             List<CellViewBinding> cellViewBindings = new List<CellViewBinding>();
 
-            if (!this.IsFileLoaded())
+            if (!this.IsFileLoaded())   
                 return cellViewBindings;
 
             foreach (Row row in this._sheetData.Elements<Row>())
@@ -83,8 +83,10 @@ namespace Excel
 
         public string GetCellInnerText(Cell cell)
         {
+            if (cell == null || cell.CellValue == null || cell.CellValue.InnerText == null)
+                return "";
 
-            string value = cell.CellValue?.InnerText;
+            string value = cell.CellValue.InnerText;
 
             if (cell.DataType != null && cell.DataType == CellValues.SharedString)
             {

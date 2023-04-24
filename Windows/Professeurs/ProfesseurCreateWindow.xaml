@@ -22,7 +22,7 @@
 
 
         <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
-            <Label Content="Ajouter un enseignant" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>
+            <Label Content="Ajouter un enseignant" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold"  FontFamily="Poppins"  Margin="0,0,0,0"/>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
@@ -30,28 +30,28 @@
             <StackPanel Orientation="Vertical" Margin="20,80,20,0" HorizontalAlignment="Left"  >
 
                 <StackPanel Margin="0,0,0,5" Orientation="Vertical">
-                    <Label FontSize="14">Nom :</Label>
+                    <Label FontFamily="Poppins" FontSize="14">Nom :</Label>
                     <Border BorderThickness="1" BorderBrush="Black" Width="200"  HorizontalAlignment="Left" Height="30">
                         <TextBox x:Name="txtNom" BorderThickness="0"  VerticalAlignment="Center"></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Margin="0,5,0,5" Orientation="Vertical">
-                    <Label FontSize="14">Prenom :</Label>
+                    <Label FontFamily="Poppins" FontSize="14">Prenom :</Label>
                     <Border BorderThickness="1" BorderBrush="Black" Width="200"  HorizontalAlignment="Left" Height="30">
                         <TextBox x:Name="txtPrenom" BorderThickness="0" VerticalAlignment="Center" ></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Margin="0,5,0,5" Orientation="Vertical">
-                    <Label FontSize="14">Civilité :</Label>
+                    <Label FontFamily="Poppins" FontSize="14">Civilité :</Label>
                     <Border BorderThickness="1" BorderBrush="Black" Width="200"  HorizontalAlignment="Left" Height="30">
                         <TextBox x:Name="txtCivilite" BorderThickness="0" VerticalAlignment="Center"></TextBox>
                     </Border>
                 </StackPanel>
 
                 <StackPanel Margin="0,5,0,0" Orientation="Vertical">
-                    <Label FontSize="14">Mail :</Label>
+                    <Label FontFamily="Poppins" FontSize="14">Mail :</Label>
                     <Border BorderThickness="1" BorderBrush="Black" Width="200"  HorizontalAlignment="Left" Height="30">
                         <TextBox x:Name="txtMail"  BorderThickness="0" VerticalAlignment="Center" ></TextBox>
                     </Border>

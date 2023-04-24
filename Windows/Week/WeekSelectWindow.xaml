@@ -25,7 +25,7 @@
             </Border>
         </StackPanel>
 
-        <Label  VerticalAlignment="Top" Margin="10,130,0,0" FontSize="8">Double cliquez sur une semaine pour la sélectionner</Label>
+        <Label FontFamily="Poppins"  VerticalAlignment="Top" Margin="10,130,0,0" FontSize="8">Double cliquez sur une semaine pour la sélectionner</Label>
 
         <ListView  ItemsSource="{Binding Semaine}" MouseDoubleClick="lvWeek_MouseDoubleClick"  x:Name="lvWeek"  Margin="0,150,0,50">
             <ListView.View>

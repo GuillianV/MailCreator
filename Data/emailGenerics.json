@@ -1,6 +1,6 @@
 [
   {
-    "Sujet": "Relance cours avec $promo$ le $jour$ $enseignantCivilite$.$enseignantNom$\r\n\r\n",
-    "Body": "Bonjour , vous avez cours de $nomMatiere$ le $jour$ \r\nMerci d'avance. $visioconference$ \r\n$enseignantNom$\r\n\r\n\r\n\r\n"
+    "Sujet": "Relance cours avec $promo$ le $jour$ $enseignantCivilite$.$enseignantNom$, $date$ \r\n\r\n\r\n",
+    "Body": "Bonjour , vous avez cours de $nomMatiere$ le $jour$ \r\nMerci d'avance. $visioconference$ \r\n$enseignantNom$\r\nCoridialement Moi\r\n\r\n\r\n\r\n"
   }
 ]

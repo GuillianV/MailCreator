@@ -27,7 +27,7 @@ namespace DataView.Entries
 
         private static List<String> _allPromos = new List<string>() { B1, B2, B3, B3_CN, B3_DEV, B3_DIG, B3_ECO, B3_WSM, M1_DEV, M1_EMD,M1_MID,M1_UIUX,M2_DEV,M2_EMD,M2_MID, M2_UIUX };
 
-        public static string? MatchPromo(string text)
+        public static string MatchPromo(string text)
         {
             return _allPromos.FirstOrDefault(promo => promo == text);
         }

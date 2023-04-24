@@ -47,7 +47,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -135,7 +135,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -223,7 +223,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -311,7 +311,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -399,7 +399,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -487,7 +487,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -575,7 +575,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -663,7 +663,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -751,7 +751,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -839,7 +839,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -880,7 +880,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -927,7 +927,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1019,7 +1019,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1107,7 +1107,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1195,7 +1195,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1287,7 +1287,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1375,7 +1375,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1467,7 +1467,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1555,7 +1555,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1572,7 +1572,7 @@
         "MatchText": "$enseignantCivilite$",
         "Description": "Civilité de l'enseignant"
       },
-      "Traduction": "Mme"
+      "Traduction": "Mme "
     },
     "EnseignantNom": {
       "PropertyData": {
@@ -1647,7 +1647,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1739,7 +1739,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1827,7 +1827,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -1915,7 +1915,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2007,7 +2007,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2099,7 +2099,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2191,7 +2191,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2232,7 +2232,7 @@
     }
   },
   {
-    "EstRelancable": false,
+    "EstRelancable": true,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -2279,7 +2279,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2295,28 +2295,32 @@
         "Nom": "EnseignantCivilite",
         "MatchText": "$enseignantCivilite$",
         "Description": "Civilité de l'enseignant"
-      }
+      },
+      "Traduction": "Mr"
     },
     "EnseignantNom": {
       "PropertyData": {
         "Nom": "EnseignantNom",
         "MatchText": "$enseignantNom$",
         "Description": "Nom de l'enseignant"
-      }
+      },
+      "Traduction": "Vibert"
     },
     "EnseignantPrenom": {
       "PropertyData": {
         "Nom": "EnseignantPrenom",
         "MatchText": "$enseignantPrenom$",
         "Description": "Prénom de l'enseignant"
-      }
+      },
+      "Traduction": "Guillian"
     },
     "EnseignantMail": {
       "PropertyData": {
         "Nom": "EnseignantMail",
         "MatchText": "$enseignantMail$",
         "Description": "Mail de l'enseignant"
-      }
+      },
+      "Traduction": "guillianvibert90@gmail.com"
     }
   },
   {
@@ -2367,7 +2371,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2459,7 +2463,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2551,7 +2555,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2643,7 +2647,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2680,8 +2684,7 @@
         "Nom": "EnseignantMail",
         "MatchText": "$enseignantMail$",
         "Description": "Mail de l'enseignant"
-      },
-      "Traduction": ""
+      }
     }
   },
   {
@@ -2732,7 +2735,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2824,7 +2827,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -2916,7 +2919,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3008,7 +3011,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3100,7 +3103,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3188,7 +3191,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3276,7 +3279,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3364,7 +3367,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "24/04/2023"
+      "Traduction": "01/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3452,7 +3455,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "25/04/2023"
+      "Traduction": "02/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3493,7 +3496,7 @@
     }
   },
   {
-    "EstRelancable": true,
+    "EstRelancable": false,
     "Promo": {
       "PropertyData": {
         "Nom": "Promo",
@@ -3532,7 +3535,7 @@
         "MatchText": "$seance$",
         "Description": "Seance"
       },
-      "Traduction": "1/1"
+      "Traduction": ""
     },
     "Date": {
       "PropertyData": {
@@ -3540,7 +3543,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "26/04/2023"
+      "Traduction": "03/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3556,32 +3559,28 @@
         "Nom": "EnseignantCivilite",
         "MatchText": "$enseignantCivilite$",
         "Description": "Civilité de l'enseignant"
-      },
-      "Traduction": "Mr"
+      }
     },
     "EnseignantNom": {
       "PropertyData": {
         "Nom": "EnseignantNom",
         "MatchText": "$enseignantNom$",
         "Description": "Nom de l'enseignant"
-      },
-      "Traduction": "Vibert"
+      }
     },
     "EnseignantPrenom": {
       "PropertyData": {
         "Nom": "EnseignantPrenom",
         "MatchText": "$enseignantPrenom$",
         "Description": "Prénom de l'enseignant"
-      },
-      "Traduction": "Guillian"
+      }
     },
     "EnseignantMail": {
       "PropertyData": {
         "Nom": "EnseignantMail",
         "MatchText": "$enseignantMail$",
         "Description": "Mail de l'enseignant"
-      },
-      "Traduction": "guillianvibert90@gmail.com"
+      }
     }
   },
   {
@@ -3632,7 +3631,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "27/04/2023"
+      "Traduction": "04/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {
@@ -3724,7 +3723,7 @@
         "MatchText": "$date$",
         "Description": "Date"
       },
-      "Traduction": "28/04/2023"
+      "Traduction": "05/05/2023"
     },
     "EstVisioconference": false,
     "Visioconference": {

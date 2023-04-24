@@ -13,7 +13,7 @@ namespace Json
     {
         private static readonly JsonSerializerSettings _options = new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore };
 
-        private static string dataFolder = Path.GetFullPath("../../Data/");
+        private static string dataFolder = Path.GetFullPath("./Data/");
 
 
 
@@ -23,7 +23,7 @@ namespace Json
                 return;
 
             if (obj.GetType() != type)
-                throw new TypeAccessException($"Le Type : {type.Name} est different de l'objet donné : {obj.GetType().Name}");
+                throw new TypeAccessException("Le Type : "+type.Name+" est different de l'objet donné : "+obj.GetType().Name);
 
             var jsonString = JsonConvert.SerializeObject(obj, type, Formatting.Indented, _options);
             File.WriteAllText(Path.Combine(dataFolder, fileName.MatchJsonFilename()), jsonString);

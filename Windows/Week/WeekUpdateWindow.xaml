@@ -20,7 +20,7 @@
 
 
 
-        <Label Margin="10,100,0,0" FontSize="8" Height="21" VerticalAlignment="Top">L'enregistrement est automatique après l'édition de la cellule</Label>
+        <Label Margin="10,100,0,0" FontSize="8" Height="21" VerticalAlignment="Top" FontFamily="Poppins">L'enregistrement est automatique après l'édition de la cellule</Label>
 
         <DataGrid ItemsSource="{Binding Relances}"  x:Name="dgMatieres" AutoGenerateColumns="False"  Margin="0,120,0,100">
             <DataGrid.Columns>

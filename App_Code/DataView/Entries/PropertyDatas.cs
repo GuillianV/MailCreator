@@ -22,10 +22,10 @@ namespace DataView.Entries
 
         private static List<PropertyData> _propertyDatas = new List<PropertyData>() { Promo ,NomMatiere,Salle,Jour,Seance,Date,Visioconference,EnseignantCivilite,EnseignantMail,EnseignantNom,EnseignantPrenom};
 
-        public static bool GetPropertyDataByName(string identifier, out PropertyData  propertyData)
+        public static PropertyData GetPropertyDataByName(string identifier)
         {
-            propertyData = _propertyDatas.FirstOrDefault(p => p.Nom == identifier);
-            return propertyData != null;
+            return _propertyDatas.FirstOrDefault(p => p.Nom == identifier);
+            
         }
     }
 }
