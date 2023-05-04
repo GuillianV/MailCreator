@@ -20,18 +20,13 @@ namespace Excel.DataView
         public String ColumnReference { get; private set; }
 
 
-        public CellViewBinding(String _innerText, String _reference,CellValues _cellType)
+        public CellViewBinding(String _innerText,string _columnReference, int _rowReference,CellValues _cellType)
         {
             this.InnerText = _innerText;
-            this.Reference = _reference;
+            this.Reference = _columnReference+_rowReference.ToString();
             this.CellType =_cellType;
-
-            Match match = Regex.Match(this.Reference, @"([A-Z]+)(\d+)");
-            if (match.Success)
-            {
-                this.ColumnReference = match.Groups[1].Value;
-                this.RowReference = int.Parse(match.Groups[2].Value);
-            }
+            this.ColumnReference = _columnReference;
+            this.RowReference = _rowReference;
 
 
         }
