@@ -206,16 +206,5 @@ namespace MailCreator.Windows.Mail
       
         }
 
-        private void rtbMailObjet_KeyDown(object sender, KeyEventArgs e)
-        {
-            ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-
-        }
-
-        private void rtbMailBody_KeyDown(object sender, KeyEventArgs e)
-        {
-            ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-
-        }
     }
 }

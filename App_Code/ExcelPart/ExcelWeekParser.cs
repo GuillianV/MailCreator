@@ -108,7 +108,12 @@ namespace ExcelPart
 
                 if (Promos.MatchPromo(cell.InnerText) != null)
                 {
-
+                    string nbEleves = "";
+                    string[] cellSplited = cell.InnerText.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                    if(cellSplited.Length > 1)
+                    {
+                        nbEleves = cellSplited[1];
+                    }
                     weekCells.Where(wc => wc.RowReference == cell.RowReference && wc.Reference != cell.Reference).ToList().ForEach(matiereCell =>
                     {
 
@@ -197,7 +202,7 @@ namespace ExcelPart
 
 
 
-                        Matiere Matiere = new Matiere(cell.InnerText, matiere, prof, salle, jour.Nom, sceance, visio);
+                        Matiere Matiere = new Matiere(cell.InnerText, nbEleves, matiere, prof, salle, jour.Nom, sceance, visio);
                         result.Add(Matiere);
                     });
                 }

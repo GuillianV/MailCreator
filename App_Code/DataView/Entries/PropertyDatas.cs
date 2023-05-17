@@ -9,6 +9,7 @@ namespace DataView.Entries
     public static class PropertyDatas
     {
         public static PropertyData Promo = new PropertyData("Promo", "$promo$", "Promotion");
+        public static PropertyData NombreEtudiants = new PropertyData("NombreEtudiants", "$nbEtudiants$", "Le nombre d'étudiants pour la matière en cours");
         public static PropertyData NomMatiere = new PropertyData("NomMatiere", "$nomMatiere$", "Nom de la matière");
         public static PropertyData Salle = new PropertyData("Salle", "$salle$", "Salle");
         public static PropertyData Jour = new PropertyData("Jour", "$jour$", "Jour");
@@ -19,8 +20,9 @@ namespace DataView.Entries
         public static PropertyData EnseignantNom = new PropertyData("EnseignantNom", "$enseignantNom$", "Nom de l'enseignant");
         public static PropertyData EnseignantPrenom = new PropertyData("EnseignantPrenom", "$enseignantPrenom$", "Prénom de l'enseignant");
         public static PropertyData EnseignantMail = new PropertyData("EnseignantMail", "$enseignantMail$", "Mail de l'enseignant");
+        public static PropertyData Semaine = new PropertyData("Semaine", "$semaine$", "Semaine en cours");
 
-        private static List<PropertyData> _propertyDatas = new List<PropertyData>() { Promo ,NomMatiere,Salle,Jour,Seance,Date,Visioconference,EnseignantCivilite,EnseignantMail,EnseignantNom,EnseignantPrenom};
+        private static List<PropertyData> _propertyDatas = new List<PropertyData>() { Promo, NombreEtudiants, Semaine, NomMatiere,Salle,Jour,Seance,Date,Visioconference,EnseignantCivilite,EnseignantMail,EnseignantNom,EnseignantPrenom};
 
         public static PropertyData GetPropertyDataByName(string identifier)
         {

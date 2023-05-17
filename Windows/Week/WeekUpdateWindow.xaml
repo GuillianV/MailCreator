@@ -25,7 +25,9 @@
         <DataGrid ItemsSource="{Binding Relances}"  x:Name="dgMatieres" AutoGenerateColumns="False"  Margin="0,120,0,100">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn Header="Envoyer le mail" Binding="{Binding EstRelancable}"/>
+                <DataGridTextColumn Header="Semaine" Binding="{Binding Semaine.Traduction}"/>
                 <DataGridTextColumn Header="Promo" Binding="{Binding Promo.Traduction}"/>
+                <DataGridTextColumn Header="Nombre d'eleves" Binding="{Binding NombreEtudiants.Traduction}"/>
                 <DataGridTextColumn Header="Matière" Binding="{Binding NomMatiere.Traduction}"/>
                 <DataGridTextColumn Header="Salle" Binding="{Binding Salle.Traduction}"/>
                 <DataGridTextColumn Header="Jour" Binding="{Binding Jour.Traduction}"/>

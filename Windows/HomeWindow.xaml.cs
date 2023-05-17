@@ -6,6 +6,7 @@ using MailCreator.Windows.Mail;
 using MailCreator.Windows.Professeurs;
 using MailCreator.Windows.Week;
 using Office;
+using Popups;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,7 +22,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-
+using Utils;
 
 namespace MailCreator.Windows
 {
@@ -35,9 +36,19 @@ namespace MailCreator.Windows
         {
             InitializeComponent();
             BindSemaineEdit();
+            BindOffice();
         }
 
 
+        private void BindOffice()
+        {
+
+            if (!OfficeUtils.Authenticate())
+            {
+                this.ShowPopup(PopupValues.ConnexionOutlookFail);
+                return;
+            }
+        }
 
         private void btnEnsignants_Click(object sender, RoutedEventArgs e)
         {
@@ -58,7 +69,7 @@ namespace MailCreator.Windows
                 Semaine semaine = semaines.FirstOrDefault();
                 if (semaine != null)
                 {
-                    lbSemaineEdit.Content = "Modifier la semaine" + semaine.Nom;
+                    lbSemaineEdit.Content = "Modifier la semaine " + semaine.Nom;
                     return;
                 }
             }

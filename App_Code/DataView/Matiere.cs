@@ -10,6 +10,8 @@ namespace DataView
     {
         public string Promo { get; set; }
 
+        public string NombreEtudiants { get; set; }
+
         public string Nom { get; set; }
 
         public string Enseignant { get; set; }
@@ -22,9 +24,10 @@ namespace DataView
 
         public bool Visioconference { get; set; }
 
-        public Matiere(string promo, string matiere, string enseignant, string salle, string jour, string seance ,bool visioconference = false)
+        public Matiere(string promo,string nombreEtudiants, string matiere, string enseignant, string salle, string jour, string seance ,bool visioconference = false)
         {
             Promo = promo;
+            NombreEtudiants = nombreEtudiants;
             Nom = matiere;
             Enseignant = enseignant;
             Salle = salle;

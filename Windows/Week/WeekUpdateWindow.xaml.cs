@@ -93,6 +93,7 @@ namespace MailCreator.Windows.Week
                             matiereCible.Visioconference,
                             new EmailProperty(PropertyDatas.Visioconference, matiereCible.Visioconference ? "Ce cours sera en visioconférence." : ""),
                             new EmailProperty(PropertyDatas.Promo, matiereCible.Promo),
+                            new EmailProperty(PropertyDatas.NombreEtudiants, matiereCible.NombreEtudiants),
                             new EmailProperty(PropertyDatas.NomMatiere, matiereCible.Nom),
                             new EmailProperty(PropertyDatas.Salle, matiereCible.Salle),
                             new EmailProperty(PropertyDatas.Jour, matiereCible.Jour),
@@ -101,7 +102,8 @@ namespace MailCreator.Windows.Week
                             new EmailProperty(PropertyDatas.EnseignantCivilite,  professeurCible != null ? professeurCible.Civilite : ""),
                             new EmailProperty(PropertyDatas.EnseignantNom, professeurCible != null ? professeurCible.Nom : ""),
                             new EmailProperty(PropertyDatas.EnseignantPrenom, professeurCible != null ? professeurCible.Prenom : ""),
-                            new EmailProperty(PropertyDatas.EnseignantMail, professeurCible != null ? professeurCible.Mail : "")
+                            new EmailProperty(PropertyDatas.EnseignantMail, professeurCible != null ? professeurCible.Mail : ""),
+                            new EmailProperty(PropertyDatas.Semaine, semaines.FirstOrDefault().Nom)
                             ));
 
                     });

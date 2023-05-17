@@ -1,8 +1,10 @@
 ﻿using Office.DataView;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,25 +24,27 @@ namespace Office
         public static Outlook.Accounts accounts { get; set; }
         public static bool Authenticate()
         {
+            Outlook.Application outlookApp = null;
             Outlook.NameSpace ns = null;
-            Outlook.MAPIFolder folder = null;
             try
             {
 
                 if (account != null)
                     return true;
 
-                Outlook.Application outlookApp = new Outlook.Application();
-                ns = outlookApp.GetNamespace("MAPI");
-                folder = ns.GetDefaultFolder(Outlook.OlDefaultFolders.olFolderInbox);
-                accounts = ns.Accounts;
-                if (accounts.Count == 1)
+
+                Process[] processes = Process.GetProcessesByName("OUTLOOK");
+                if (processes.Count() <= 0)
                 {
-                    var acc = accounts[0];
-                    account = acc;
+                    return false;
+                   
                 }
-                else if(accounts.Count > 1)
-                    account = GetActiveAccount();
+
+                outlookApp = Marshal.GetActiveObject("Outlook.Application") as Outlook.Application;
+                ns = outlookApp.GetNamespace("MAPI");
+
+                accounts = ns.Accounts;
+                account = GetActiveAccount();
 
                 if (account == null || account.SmtpAddress == null)
                 {
@@ -56,7 +60,6 @@ namespace Office
             }
             finally
             {
-                if (folder != null) Marshal.ReleaseComObject(folder);
                 if (ns != null) Marshal.ReleaseComObject(ns);
                
             }

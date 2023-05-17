@@ -11,11 +11,11 @@ namespace DataView
     {
         public bool EstRelancable { get; set; }
         public EmailProperty Promo { get; set; }
+        public EmailProperty NombreEtudiants { get; set; }
         public EmailProperty NomMatiere { get; set; }
         public EmailProperty Salle { get; set; }
         public EmailProperty Jour { get; set; }
         public EmailProperty Seance { get; set; }
-
         public EmailProperty Date { get; set; }
         public bool EstVisioconference { get; set; }
         public EmailProperty Visioconference { get; set; }
@@ -24,12 +24,15 @@ namespace DataView
         public EmailProperty EnseignantPrenom { get; set; }
         public EmailProperty EnseignantMail { get; set; }
 
+        public EmailProperty Semaine { get; set; }
 
 
 
-        public Relance(bool estRelancable, bool estVisioconference, EmailProperty visioconference, EmailProperty promo, EmailProperty nomMatiere , EmailProperty salle, EmailProperty jour, EmailProperty date, EmailProperty seance, EmailProperty enseignantCivilite, EmailProperty enseignantNom , EmailProperty enseignantPrenom, EmailProperty enseignantMail)
+
+        public Relance(bool estRelancable, bool estVisioconference, EmailProperty visioconference, EmailProperty promo,EmailProperty nombreEtudiants, EmailProperty nomMatiere , EmailProperty salle, EmailProperty jour, EmailProperty date, EmailProperty seance, EmailProperty enseignantCivilite, EmailProperty enseignantNom , EmailProperty enseignantPrenom, EmailProperty enseignantMail, EmailProperty semaine)
         {
             EstRelancable = estRelancable;
+            NombreEtudiants = nombreEtudiants;
             EstVisioconference = estVisioconference;
             Promo = promo;
             NomMatiere = nomMatiere;
@@ -42,6 +45,7 @@ namespace DataView
             EnseignantNom = enseignantNom;
             EnseignantPrenom = enseignantPrenom;
             EnseignantMail = enseignantMail;
+            Semaine = semaine;
 
         }
 
