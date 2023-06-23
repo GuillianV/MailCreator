@@ -29,13 +29,13 @@
 
         <Label Margin="20,220,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
 
-        <telerik:RadRichTextBox  x:Name="radRichTextBox"  Margin="20,250,20,100"  Background="LightGray"/>
+        <telerik:RadRichTextBox  x:Name="rtbMailBody"  Margin="20,250,20,100"  Background="LightGray"/>
 
-        <RichTextBox Visibility="Hidden" Margin="20,250,20,100"  x:Name="rtbMailBody"  Background="LightGray">
+        <!--<RichTextBox Visibility="Hidden" Margin="20,250,20,100"  x:Name="rtbMailBody"  Background="LightGray">
             <FlowDocument Background="Transparent"  >
            
             </FlowDocument>
-        </RichTextBox>
+        </RichTextBox>-->
 
 
         <Button x:Name="btnValider" Width="40" Click="btnValider_Click" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Margin="0,0,0,30">

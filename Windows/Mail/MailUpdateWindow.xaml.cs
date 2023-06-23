@@ -1,4 +1,5 @@
-﻿using Office;
+﻿using MailCreator.App_Code.Utils;
+using Office;
 using Office.DataView;
 using Popups;
 using System;
@@ -50,10 +51,7 @@ namespace MailCreator.Windows.Mail
                 rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
             });
 
-            mailItem.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
-            {
-                rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
-            });
+            this.rtbMailBody.Document = TelerikExtensions.HtmlToRtb(mailItem.HTMLBody);
 
         }
 
@@ -83,13 +81,7 @@ namespace MailCreator.Windows.Mail
                 subjectText = subjectTextRange.Text;
 
 
-                string bodyText = "";
-                TextRange bodyTextRange = new TextRange(
-                     rtbMailBody.Document.ContentStart,
-                     rtbMailBody.Document.ContentEnd
-                 );
-                bodyText = bodyTextRange.Text;
-                mailItem.UpdateDraft(new MailData(mailItem.To, subjectText, bodyText));
+                mailItem.UpdateDraft(new MailData(mailItem.To, subjectText, TelerikExtensions.RtbToHtml(rtbMailBody)));
                 this.ShowPopup(PopupValues.ModificationSucces);
 
             }

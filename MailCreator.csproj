@@ -499,6 +499,7 @@
     <Compile Include="App_Code\Popups\PopupValue.cs" />
     <Compile Include="App_Code\Popups\PopupValues.cs" />
     <Compile Include="App_Code\Utils\StringExtensions.cs" />
+    <Compile Include="App_Code\Utils\TelerikExtensions.cs" />
     <Compile Include="App_Code\Utils\WindowExtensions.cs" />
     <Compile Include="UserControls\ucMailData.xaml.cs">
       <DependentUpon>ucMailData.xaml</DependentUpon>

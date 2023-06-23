@@ -163,7 +163,7 @@ namespace Office
                 {
                     mailItem.To = mailData.Destinataire;
                     mailItem.Subject = mailData.Objet;
-                    mailItem.Body =  mailData.Body;
+                    mailItem.HTMLBody =  mailData.Body;
                     mailItem.SendUsingAccount = account;
                     mailItem.Save();
                 }

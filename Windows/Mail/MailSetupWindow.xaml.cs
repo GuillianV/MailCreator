@@ -19,6 +19,12 @@ using DataView.Entries;
 using Json;
 using Utils;
 using Popups;
+using System.IO;
+using Telerik.Windows.Documents.FormatProviders.Html;
+using Telerik.Windows.Documents.FormatProviders.Xaml;
+using Telerik.Windows.Documents.Model;
+using Telerik.Windows.Documents.Flow.Model;
+using MailCreator.App_Code.Utils;
 
 namespace MailCreator.Windows.Mail
 {
@@ -92,16 +98,11 @@ namespace MailCreator.Windows.Mail
 
                 email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
                  {
-                     rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
+                     rtbMailObjet.Document.Blocks.Add(new System.Windows.Documents.Paragraph(new System.Windows.Documents.Run(txt)));
                      ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
                  });
 
-
-                email.Body.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
-                {
-                    rtbMailBody.Document.Blocks.Add(new Paragraph(new Run(txt)));
-                    ChangeTextColor(rtbMailBody, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-                });
+                rtbMailBody.Document =  TelerikExtensions.HtmlToRtb(email.Body);
 
 
             }
@@ -187,15 +188,8 @@ namespace MailCreator.Windows.Mail
                 subjectText = subjectTextRange.Text;
 
 
-                string bodyText = "";
 
-                TextRange bodyTextRange = new TextRange(
-                     rtbMailBody.Document.ContentStart,
-                     rtbMailBody.Document.ContentEnd
-                 );
-                bodyText = bodyTextRange.Text;
-
-                new List<EmailGeneric>() { new EmailGeneric(subjectText, bodyText) }.UpdateJson<EmailGeneric>("emailGenerics.json");
+                new List<EmailGeneric>() { new EmailGeneric(subjectText, TelerikExtensions.RtbToHtml(rtbMailBody)) }.UpdateJson<EmailGeneric>("emailGenerics.json");
                 this.ShowPopup(PopupValues.ModificationSucces);
             }
             catch
