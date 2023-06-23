@@ -33,6 +33,32 @@ namespace MailCreator.App_Code.Utils
             return htmlContent;
         }
 
+        public static string RtbToHtml(List<RadRichTextBox> rtbs)
+        {
+            HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
+
+            // Exportez le contenu de RadRichTextBox en tant que chaîne HTML
+            string htmlContent = string.Empty;
+          
+
+
+            if (rtbs != null)
+            {
+                rtbs.ForEach(rtb =>
+                {
+                    MemoryStream ms = new MemoryStream();
+                    htmlFormatProvider.Export(rtb.Document, ms);
+                    ms.Position = 0;
+                    StreamReader sr = new StreamReader(ms);
+                    htmlContent += sr.ReadToEnd();
+
+                });
+            }
+
+
+            return htmlContent;
+        }
+
         public static RadDocument HtmlToRtb(string html)
         {
             HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();

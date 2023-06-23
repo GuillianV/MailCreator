@@ -6,8 +6,8 @@
              xmlns:local="clr-namespace:MailCreator.Windows.Mail" 
              xmlns:uc="clr-namespace:MailCreator.UserControls"
              xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" 
-             mc:Ignorable="d" 
-             d:DesignHeight="650" d:DesignWidth="800">
+             mc:Ignorable="d"  
+             d:DesignHeight="550" d:DesignWidth="800">
     <Grid Background="White">
 
         <Label FontSize="28" FontWeight="SemiBold" x:Name="lbTitle" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" FontFamily="Poppins" >Modifiez le mail générique</Label>
@@ -18,24 +18,35 @@
 
             </StackPanel>
         </ScrollViewer>
-        <Label Margin="20,140,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
 
-        <RichTextBox Margin="20,170,20,0"  x:Name="rtbMailObjet" Height="40" VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
-            <FlowDocument Background="Transparent">
+        <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Hidden"  Margin="20,160,20,100"  >
 
-            </FlowDocument>
-        </RichTextBox>
+            <StackPanel >
+                <Label  VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
+
+                <RichTextBox  x:Name="rtbMailObjet" Height="40"  VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
+                    <FlowDocument Background="Transparent">
+
+                    </FlowDocument>
+                </RichTextBox>
 
 
-        <Label Margin="20,220,20,20" VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
+                <Label VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le header du mail à envoyer</Label>
 
-        <telerik:RadRichTextBox  x:Name="rtbMailBody"  Margin="20,250,20,100"  Background="LightGray"/>
+                <telerik:RadRichTextBox  x:Name="rtbMailBodyHeader"  Background="LightGray" Height="200" VerticalAlignment="Top"/>
 
-        <!--<RichTextBox Visibility="Hidden" Margin="20,250,20,100"  x:Name="rtbMailBody"  Background="LightGray">
-            <FlowDocument Background="Transparent"  >
-           
-            </FlowDocument>
-        </RichTextBox>-->
+                <Label VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le mail à envoyer</Label>
+
+                <telerik:RadRichTextBox  x:Name="rtbMailBody"  Background="LightGray" Height="200" VerticalAlignment="Top"/>
+
+                <Label VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le footer du mail à envoyer</Label>
+
+                <telerik:RadRichTextBox  x:Name="rtbMailBodyFooter"   Background="LightGray"/>
+            </StackPanel>
+
+         
+
+        </ScrollViewer>
 
 
         <Button x:Name="btnValider" Width="40" Click="btnValider_Click" Background="Transparent" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="40" Margin="0,0,0,30">

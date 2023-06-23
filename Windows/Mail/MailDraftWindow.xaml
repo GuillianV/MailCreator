@@ -63,9 +63,9 @@
             <ListView  ItemsSource="{Binding Mails}"  x:Name="lvMails"  Height="275" Width="480" HorizontalContentAlignment="Center" Margin="0,0,20,0" VerticalContentAlignment="Center"  VerticalAlignment="Top" >
 
                     <ListView.View>
-                        <GridView AllowsColumnReorder="true"    x:Name="gvMails" ColumnHeaderToolTip="Mails">
-                            <GridViewColumn x:Name="gvcDestinataire" DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="200" />
-                            <GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet" Width="280"/>
+                        <GridView AllowsColumnReorder="true"     x:Name="gvMails" ColumnHeaderToolTip="Mails">
+                            <GridViewColumn x:Name="gvcDestinataire"  DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="200" />
+                            <GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet"  Width="280"/>
                             <!--<GridViewColumn x:Name="gvcBody" DisplayMemberBinding="{Binding Body}" Header="Body" Width="auto"/>-->
 
                         </GridView>

@@ -134,7 +134,7 @@ namespace MailCreator.Windows.Mail
                {
                    string To = "";
                    string Subject = EmailGeneric.Sujet;
-                   string Body = EmailGeneric.Body;
+                   string Body = EmailGeneric.Body.GetRowText();
 
 
                    propertyInfos.ForEach(propertyInfo =>

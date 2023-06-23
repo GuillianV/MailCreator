@@ -25,6 +25,8 @@ using Telerik.Windows.Documents.FormatProviders.Xaml;
 using Telerik.Windows.Documents.Model;
 using Telerik.Windows.Documents.Flow.Model;
 using MailCreator.App_Code.Utils;
+using Telerik.Windows.Controls;
+using MailCreator.App_Code.DataView;
 
 namespace MailCreator.Windows.Mail
 {
@@ -102,8 +104,9 @@ namespace MailCreator.Windows.Mail
                      ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
                  });
 
-                rtbMailBody.Document =  TelerikExtensions.HtmlToRtb(email.Body);
-
+                rtbMailBodyHeader.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetHeader());
+                rtbMailBody.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetBody());
+                rtbMailBodyFooter.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetFooter());
 
             }
             catch
@@ -189,7 +192,7 @@ namespace MailCreator.Windows.Mail
 
 
 
-                new List<EmailGeneric>() { new EmailGeneric(subjectText, TelerikExtensions.RtbToHtml(rtbMailBody)) }.UpdateJson<EmailGeneric>("emailGenerics.json");
+                new List<EmailGeneric>() { new EmailGeneric(subjectText, new MailBody(TelerikExtensions.RtbToHtml(rtbMailBodyHeader), TelerikExtensions.RtbToHtml(rtbMailBody), TelerikExtensions.RtbToHtml(rtbMailBodyFooter)))}.UpdateJson<EmailGeneric>("emailGenerics.json");
                 this.ShowPopup(PopupValues.ModificationSucces);
             }
             catch

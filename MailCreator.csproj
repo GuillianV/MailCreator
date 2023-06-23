@@ -487,6 +487,7 @@
     <Compile Include="App_Code\DataView\EmailGeneric.cs" />
     <Compile Include="App_Code\DataView\EmailProperty.cs" />
     <Compile Include="App_Code\DataView\Entries\PropertyDatas.cs" />
+    <Compile Include="App_Code\DataView\MailBody.cs" />
     <Compile Include="App_Code\DataView\PropertyData.cs" />
     <Compile Include="App_Code\DataView\Relance.cs" />
     <Compile Include="App_Code\ExcelPart\ExcelProfesseurParser.cs" />

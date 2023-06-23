@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MailCreator.App_Code.DataView;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace DataView
     {
 
         public string Sujet { get; set; }
-        public string Body { get; set; }
+        public MailBody Body { get; set; }
 
-        public EmailGeneric(string _sujet,string _body)
+        public EmailGeneric(string _sujet, MailBody _body)
         {
             this.Sujet = _sujet;
             this.Body = _body;
