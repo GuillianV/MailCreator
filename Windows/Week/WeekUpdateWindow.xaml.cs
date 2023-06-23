@@ -6,6 +6,7 @@ using Json;
 using Popups;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -93,11 +94,11 @@ namespace MailCreator.Windows.Week
                             matiereCible.Visioconference,
                             new EmailProperty(PropertyDatas.Visioconference, matiereCible.Visioconference ? "- EN DISTANCIEL" : "- EN PRESENTIEL"),
                             new EmailProperty(PropertyDatas.Promo, matiereCible.Promo),
-                            new EmailProperty(PropertyDatas.NombreEtudiants, matiereCible.NombreEtudiants),
+                            new EmailProperty(PropertyDatas.NombreEtudiants,"("+ matiereCible.NombreEtudiants+")"),
                             new EmailProperty(PropertyDatas.NomMatiere, matiereCible.Nom),
-                            new EmailProperty(PropertyDatas.Salle, matiereCible.Salle),
+                            new EmailProperty(PropertyDatas.Salle,string.IsNullOrEmpty(matiereCible.Salle) ? "" : "- Salles : "+matiereCible.Salle ),
                             new EmailProperty(PropertyDatas.Jour, matiereCible.Jour),
-                            new EmailProperty(PropertyDatas.Date, dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.ToString() : DateTimeDebutSemaine.ToString()),
+                            new EmailProperty(PropertyDatas.Date, dpSemaine.SelectedDate != null ? dpSemaine.SelectedDate.Value.ToString("dddd dd MMMM", new CultureInfo("fr-FR", false)) : DateTimeDebutSemaine.ToString()),
                             new EmailProperty(PropertyDatas.Seance, matiereCible.Seance),
                             new EmailProperty(PropertyDatas.EnseignantCivilite,  professeurCible != null ? professeurCible.Civilite : ""),
                             new EmailProperty(PropertyDatas.EnseignantNom, professeurCible != null ? professeurCible.Nom : ""),
@@ -187,14 +188,14 @@ namespace MailCreator.Windows.Week
 
                 Relances.ForEach(relance =>
                 {
-                    relance.Visioconference = new EmailProperty(PropertyDatas.Visioconference, relance.EstVisioconference ? "Ce cours sera en visioconférence." : "");
+                    relance.Visioconference = new EmailProperty(PropertyDatas.Visioconference, relance.EstVisioconference ? "- EN DISTANCIEL" : "- EN PRESENTIEL");
                     int addDays = 0;
                     if (!string.IsNullOrEmpty(relance.Jour.Traduction))
                     {
                         Jour jCible = Jours.GetJours().FirstOrDefault(jour => jour.Nom == relance.Jour.Traduction);
                         if (jCible != null && dpSemaine.SelectedDate != null)
                         {
-                            relance.Date.Traduction = dpSemaine.SelectedDate.Value.AddDays(jCible.AddDays).ToString("dd/MM/yyyy");
+                            relance.Date.Traduction =  dpSemaine.SelectedDate.Value.AddDays(jCible.AddDays).ToString("dddd dd MMMM", new CultureInfo("fr-FR", false));
                         }
                     }
                 });

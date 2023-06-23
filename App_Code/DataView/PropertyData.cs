@@ -11,6 +11,7 @@ namespace DataView
         public string Nom { get; set; }
         public string MatchText { get; set; }
 
+
         public string Description { get; set; }
 
         public PropertyData(string _nom, string _matchText, string _description)
