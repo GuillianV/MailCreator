@@ -91,7 +91,7 @@ namespace MailCreator.Windows.Week
                         relances.Add(new Relance(
                             professeurCible != null,
                             matiereCible.Visioconference,
-                            new EmailProperty(PropertyDatas.Visioconference, matiereCible.Visioconference ? "Ce cours sera en visioconférence." : ""),
+                            new EmailProperty(PropertyDatas.Visioconference, matiereCible.Visioconference ? "- EN DISTANCIEL" : "- EN PRESENTIEL"),
                             new EmailProperty(PropertyDatas.Promo, matiereCible.Promo),
                             new EmailProperty(PropertyDatas.NombreEtudiants, matiereCible.NombreEtudiants),
                             new EmailProperty(PropertyDatas.NomMatiere, matiereCible.Nom),

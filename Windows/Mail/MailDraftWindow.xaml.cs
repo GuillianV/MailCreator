@@ -21,6 +21,7 @@ using DataView.Entries;
 using Outlook = Microsoft.Office.Interop.Outlook;
 using Utils;
 using Popups;
+using MailCreator.App_Code.DataView;
 
 namespace MailCreator.Windows.Mail
 {
@@ -130,35 +131,59 @@ namespace MailCreator.Windows.Mail
 
                 });
                 OfficeUtils.GetAllDrafts().Clear();
-                Relances.ForEach(relance =>
-               {
-                   string To = "";
-                   string Subject = EmailGeneric.Sujet;
-                   string Body = EmailGeneric.Body.GetRowText();
+             
+                List<List<Relance>> relanceGroupedMail =  Relances.GroupBy(group =>  group.EnseignantMail.Traduction).Select(grp => grp.ToList()).ToList();
+                if(relanceGroupedMail.Count <= 0)
+                {
+                    this.ShowPopup(PopupValues.CreationFail);
+                    return;
+                }
 
+                relanceGroupedMail.ForEach(relances =>
+                {
+                    if (relances.Count > 0)
+                    {
 
-                   propertyInfos.ForEach(propertyInfo =>
-                   {
-                       if (propertyInfo.PropertyType == typeof(EmailProperty))
-                       {
+                        string To = "";
+                        string Subject = EmailGeneric.Sujet;
+                        string Header = EmailGeneric.Body.GetHeader();
+                        string Body = EmailGeneric.Body.GetBody();
+                        string Footer = EmailGeneric.Body.GetFooter();
+                        string FullBody = "";
 
-                           EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
-                           if (emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
-                           {
-                               To = emailProperty.Traduction;
-                           }
+                        relances.ForEach(relance =>
+                        {
 
-                           Subject = Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
-                           Body = Body.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                            string BodyPart = Body;
+                            propertyInfos.ForEach(propertyInfo =>
+                            {
+                                if (propertyInfo.PropertyType == typeof(EmailProperty))
+                                {
 
+                                    EmailProperty emailProperty = (EmailProperty)propertyInfo.GetValue(relance);
+                                    if (emailProperty.PropertyData.Nom == PropertyDatas.EnseignantMail.Nom)
+                                    {
+                                        To = emailProperty.Traduction;
+                                    }
 
-                       }
+                                    Subject = Subject.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                                    Header = Header.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                                    Footer = Footer.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
 
-                   });
+                                    BodyPart = BodyPart.Replace(emailProperty.PropertyData.MatchText, emailProperty.Traduction);
+                                }
 
-                   OfficeUtils.CreateDraft(new MailData(To, Subject, Body));
+                            });
 
-               });
+                            FullBody += BodyPart;
+                        });
+                        MailBody mailBody = new MailBody(Header, FullBody, Footer);
+                        OfficeUtils.CreateDraft(new MailData(To, Subject, mailBody.GetRowText()));
+
+                    }
+
+                });
+
 
                 BindMails();
                 this.ShowPopup(PopupValues.CreationSucces);
