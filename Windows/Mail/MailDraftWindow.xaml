@@ -7,74 +7,79 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="White">
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
 
 
-
-        <Button x:Name="btnBack" Width="30" Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
+        <Button x:Name="btnBack" Width="30" Grid.Row="0" Grid.Column="0"  Click="btnBack_Click"  Height="30" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,20,0,0">
             <StackPanel Orientation="Horizontal">
                 <Image Source="../../Images/back.png" Width="16" Height="16" />
             </StackPanel>
         </Button>
 
 
-        <StackPanel  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
+        <StackPanel Grid.Row="0" Grid.Column="1"  Margin="10,25,10,0" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Label Content="Gestion des Emails" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="28" FontWeight="Bold" FontFamily="Poppins"  Margin="0,0,0,0"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Margin="30,100,30,30" Background="Transparent">
 
-            <StackPanel Orientation="Vertical" Margin="20,0,20,0" HorizontalAlignment="Left"  >
-
-
-                <ComboBox x:Name="cbAccounts" Width="200" FontFamily="Poppins" SelectionChanged="cbAccounts_SelectionChanged" Height="40" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,20">
-                </ComboBox>
+        <StackPanel Grid.Row="1"  Orientation="Vertical" Margin="20,20,20,20" HorizontalAlignment="Center"  >
 
 
-                <Button x:Name="btnCreer"  Click="btnCreer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Générer brouillons</Label>
-                        <Image Width="25" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/plus.png"  Height="25" />
-                    </StackPanel>
-                </Button>
+            <ComboBox x:Name="cbAccounts" Width="200" FontFamily="Poppins" SelectionChanged="cbAccounts_SelectionChanged" Height="40" VerticalAlignment="Center" VerticalContentAlignment="Center" Margin="0,0,0,20">
+            </ComboBox>
 
-                <Button x:Name="btnSupprimer"  Click="btnSupprimer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Supprimer</Label>
-                        <Image Width="25" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/delete.png" Height="25" />
-                    </StackPanel>
-                </Button>
 
-                <Button x:Name="btnModifier"  Click="btnModifier_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Modifier</Label>
-                        <Image Width="25"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../../Images/edit.png"  Height="25" />
-                    </StackPanel>
-                </Button>
+            <Button x:Name="btnCreer"  Click="btnCreer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,0,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Générer brouillons</Label>
+                    <Image Width="25" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/plus.png"  Height="25" />
+                </StackPanel>
+            </Button>
 
-                <Button x:Name="btnEnvoyer"  Click="btnEnvoyer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Envoyer !</Label>
-                        <Image Width="25"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../../Images/send.png"  Height="25" />
-                    </StackPanel>
-                </Button>
+            <Button x:Name="btnSupprimer"  Click="btnSupprimer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Supprimer</Label>
+                    <Image Width="25" Margin="10,0,0,0" HorizontalAlignment="Center" Source="../../Images/delete.png" Height="25" />
+                </StackPanel>
+            </Button>
 
-            </StackPanel>
+            <Button x:Name="btnModifier"  Click="btnModifier_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Modifier</Label>
+                    <Image Width="25"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../../Images/edit.png"  Height="25" />
+                </StackPanel>
+            </Button>
 
-            <ListView  ItemsSource="{Binding Mails}"  x:Name="lvMails"  Height="275" Width="480" HorizontalContentAlignment="Center" Margin="0,0,20,0" VerticalContentAlignment="Center"  VerticalAlignment="Top" >
-
-                    <ListView.View>
-                        <GridView AllowsColumnReorder="true"     x:Name="gvMails" ColumnHeaderToolTip="Mails">
-                            <GridViewColumn x:Name="gvcDestinataire"  DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="200" />
-                            <GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet"  Width="280"/>
-                            <!--<GridViewColumn x:Name="gvcBody" DisplayMemberBinding="{Binding Body}" Header="Body" Width="auto"/>-->
-
-                        </GridView>
-
-                    </ListView.View>
-                </ListView>
-
+            <Button x:Name="btnEnvoyer"  Click="btnEnvoyer_Click" Width="200"  Height="40" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0">
+                <StackPanel Orientation="Horizontal">
+                    <Label FontFamily="Poppins" FontSize="14" HorizontalContentAlignment="Center" Width="145">Envoyer !</Label>
+                    <Image Width="25"  HorizontalAlignment="Center" Margin="10,0,0,0" Source="../../Images/send.png"  Height="25" />
+                </StackPanel>
+            </Button>
 
         </StackPanel>
+
+        <ListView  ItemsSource="{Binding Mails}"  x:Name="lvMails" HorizontalContentAlignment="Center" Margin="20,20,20,20" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1"  >
+
+            <ListView.View>
+                <GridView AllowsColumnReorder="true"     x:Name="gvMails" ColumnHeaderToolTip="Mails">
+                    <GridViewColumn x:Name="gvcDestinataire"  DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="200" />
+                    <GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet"  Width="280"/>
+                    <!--<GridViewColumn x:Name="gvcBody" DisplayMemberBinding="{Binding Body}" Header="Body" Width="auto"/>-->
+
+                </GridView>
+
+            </ListView.View>
+        </ListView>
+
+
 
     </Grid>
 </UserControl>
