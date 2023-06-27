@@ -32,28 +32,55 @@ namespace MailCreator.Windows.Week
 
         private ExcelWeekParser _excelWeekParser;
 
+        private ExcelManager excel;
         public WeekSelectWindow()
         {
-            
+
 
             InitializeComponent();
 
-      
+
 
         }
 
 
         private void BindWeekListView(List<Semaine> _semaines)
         {
-            if (_semaines == null || _semaines.Count <= 0)
+            try
             {
-                this.ShowPopup(PopupValues.BindingFail);
-                return;
-            }
-                
 
-            lvWeek.ItemsSource = _semaines.OrderByDescending(semaine => Convert.ToInt32( semaine.Nom.Replace("S",String.Empty)));
-            lvWeek.Visibility = Visibility.Visible;
+
+
+                if (_semaines == null || _semaines.Count <= 0)
+                {
+                    this.ShowPopup(PopupValues.BindingFail);
+                    return;
+                }
+
+                List<Semaine> semainesFinales = new List<Semaine>();
+                _semaines.ForEach(semaine =>
+                {
+                    int weekId = 0;
+                    if (int.TryParse(semaine.Nom.Replace("S", String.Empty),out weekId) ){
+
+                        if (weekId != 0)
+                            semainesFinales.Add(semaine);
+
+                    }
+
+                });
+
+
+
+                lvWeek.ItemsSource = semainesFinales;
+                lvWeek.Visibility = Visibility.Visible;
+
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
         }
 
         private void lvWeek_MouseDoubleClick(object sender, MouseButtonEventArgs e)
@@ -75,8 +102,9 @@ namespace MailCreator.Windows.Week
                     this.ShowPopup(PopupValues.EnregistrerFail);
                 }
 
-         
-            }else
+
+            }
+            else
                 this.ShowPopup(PopupValues.BindingFail);
         }
 
@@ -129,11 +157,22 @@ namespace MailCreator.Windows.Week
                 FileInfo fileInfo = IsDropAllowed(files, bordExcelSemaine, lbDropExcelSemaine);
                 if (fileInfo != null)
                 {
-                    ExcelManager excel = new ExcelManager(fileInfo);
-                    ExcelWeekParser excelWeekParser = new ExcelWeekParser(excel.ShowCellsValues());
-                    this._excelWeekParser = excelWeekParser;
-                    Semaines = excelWeekParser.GetWeeks();
-                    BindWeekListView(Semaines);
+
+                  
+
+                    try
+                    {
+                        excel = new ExcelManager(fileInfo);
+                        ExcelWeekParser excelWeekParser = new ExcelWeekParser(excel.ShowCellsValues());
+                        this._excelWeekParser = excelWeekParser;
+                        Semaines = excelWeekParser.GetWeeks();
+                        BindWeekListView(Semaines);
+
+                    }
+                    catch (Exception ex)
+                    {
+                        this.ShowPopup(PopupValues.BindingFail);
+                    }
                 }
 
             }
@@ -141,6 +180,7 @@ namespace MailCreator.Windows.Week
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
+
             HomeWindow homeWindow = new HomeWindow();
             this.Content = homeWindow;
         }

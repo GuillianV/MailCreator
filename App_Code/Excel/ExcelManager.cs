@@ -13,7 +13,7 @@ namespace Excel
 {
     class ExcelManager
     {
-        
+
         public String FilePath { get; private set; }
         public FileInfo FileInfo { get; private set; }
 
@@ -48,61 +48,75 @@ namespace Excel
                 this._worksheetPart = this._workbookPart.WorksheetParts.Last();
                 this._sheetData = this._worksheetPart.Worksheet.Elements<SheetData>().Last();
                 this._excelLoaded = true;
-                
-            }catch(Exception e)
-            {
-                throw new Exception("Excel file cannot be load , Exception : "+e.Message);
+
             }
-       
+            catch (Exception e)
+            {
+                throw new Exception("Excel file cannot be load , Exception : " + e.Message);
+
+            }
+
         }
 
+     
         public List<CellViewBinding> ShowCellsValues()
         {
-            List<CellViewBinding> cellViewBindings = new List<CellViewBinding>();
+         
 
-            if (!this.IsFileLoaded())   
-                return cellViewBindings;
-
-            int byteColumRangeExceed = Convert.ToInt32(Encoding.ASCII.GetBytes("Q").First());
-
-            foreach (Row row in this._sheetData.Elements<Row>())
+            try
             {
+                List<CellViewBinding> cellViewBindings = new List<CellViewBinding>();
 
-                foreach (Cell cell in row.Elements<Cell>())
+
+                if (!this.IsFileLoaded())
+                    return cellViewBindings;
+
+                int byteColumRangeExceed = Convert.ToInt32(Encoding.ASCII.GetBytes("Q").First());
+
+                foreach (Row row in this._sheetData.Elements<Row>())
                 {
-                    string value = GetCellInnerText(cell);
 
-                    bool matchColumn = true;
-                    string columRef = default(string);
-                    int rowRef = default(int);
-                    Match match = Regex.Match(cell.CellReference.Value, @"([A-Z]+)(\d+)");
-                    if (match.Success)
+                    foreach (Cell cell in row.Elements<Cell>())
                     {
-                        int bytepoids = 0;
-                        columRef = match.Groups[1].Value;
-                        rowRef = int.Parse(match.Groups[2].Value);
-                        byte[] bytes = Encoding.ASCII.GetBytes(columRef);
-                        foreach (byte b in bytes)
+                        string value = GetCellInnerText(cell);
+
+                        bool matchColumn = true;
+                        string columRef = default(string);
+                        int rowRef = default(int);
+                        Match match = Regex.Match(cell.CellReference.Value, @"([A-Z]+)(\d+)");
+                        if (match.Success)
                         {
-                            bytepoids += b;
+                            int bytepoids = 0;
+                            columRef = match.Groups[1].Value;
+                            rowRef = int.Parse(match.Groups[2].Value);
+                            byte[] bytes = Encoding.ASCII.GetBytes(columRef);
+                            foreach (byte b in bytes)
+                            {
+                                bytepoids += b;
+                            }
+
+                            if (bytepoids > byteColumRangeExceed)
+                            {
+                                matchColumn = false;
+                            }
+
                         }
 
-                        if(bytepoids > byteColumRangeExceed)
-                        {
-                            matchColumn = false;
-                        }
+
+                        if (!string.IsNullOrEmpty(value) && matchColumn && columRef != default(string) && rowRef != default(int))
+                            cellViewBindings.Add(new CellViewBinding(value, columRef, rowRef, cell.DataType ?? CellValues.Number));
 
                     }
-
-
-                    if (!string.IsNullOrEmpty(value) && matchColumn && columRef != default(string) && rowRef != default(int))
-                        cellViewBindings.Add(new CellViewBinding(value, columRef,rowRef, cell.DataType ?? CellValues.Number));
-
                 }
+
+                return cellViewBindings;
+
             }
-
-            return cellViewBindings;
-
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return new List<CellViewBinding>();
+            }
         }
 
 

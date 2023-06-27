@@ -15,7 +15,7 @@ namespace ExcelPart
     public class ExcelWeekParser
     {
 
-        private  List<CellViewBinding> _cells = new List<CellViewBinding>();
+        private List<CellViewBinding> _cells = new List<CellViewBinding>();
 
         private Dictionary<string, List<CellViewBinding>> _weeks = new Dictionary<string, List<CellViewBinding>>();
 
@@ -29,40 +29,53 @@ namespace ExcelPart
 
         private void InitWeek()
         {
-            string workingWeek = "";
 
-            List<CellViewBinding> cells = new List<CellViewBinding>();
-            
-            _cells.ForEach(cell =>
-           {
+            try
+            {
 
-               string[] referenceRes = MatchReference(cell.InnerText);
-               if (MatchWeek(referenceRes[0],Convert.ToInt32(referenceRes[1]))){
+                string workingWeek = "";
 
-                   if (!string.IsNullOrEmpty(workingWeek) && cells.Count > 0 && workingWeek != cell.InnerText)
+                List<CellViewBinding> cells = new List<CellViewBinding>();
+
+                _cells.ForEach(cell =>
+               {
+
+                   string[] referenceRes = MatchReference(cell.InnerText);
+                   if (MatchWeek(referenceRes[0], Convert.ToInt32(referenceRes[1])))
                    {
-                       if (_weeks.ContainsKey(workingWeek))
-                       {
-                           _weeks[workingWeek].Add(cell);
-                       }
-                       else
-                       {
 
-                           _weeks.Add(workingWeek, cells);
+                       if (!string.IsNullOrEmpty(workingWeek) && cells.Count > 0 && workingWeek != cell.InnerText)
+                       {
+                           if (_weeks.ContainsKey(workingWeek))
+                           {
+                               _weeks[workingWeek].Add(cell);
+                           }
+                           else
+                           {
+
+                               _weeks.Add(workingWeek, cells);
+                           }
+
+                           cells = new List<CellViewBinding>();
+
                        }
 
-                       cells = new List<CellViewBinding>();
-                       
+                       workingWeek = cell.InnerText;
+
                    }
 
-                   workingWeek = cell.InnerText;
+                   if (!string.IsNullOrEmpty(workingWeek))
+                       cells.Add(cell);
 
-               }
+               });
 
-               if (!string.IsNullOrEmpty(workingWeek))
-                   cells.Add(cell);
-                  
-           });
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+
         }
 
 
@@ -102,116 +115,131 @@ namespace ExcelPart
 
         private List<Matiere> ParseMatiere(List<CellViewBinding> weekCells)
         {
-            List<Matiere> result = new List<Matiere>();
 
-            weekCells.OrderBy(c => c.RowReference).ThenBy(c => c.ColumnReference).ToList().ForEach(cell => {
 
-                if (Promos.MatchPromo(cell.InnerText) != null)
+            try
+            {
+
+
+
+                List<Matiere> result = new List<Matiere>();
+
+                weekCells.OrderBy(c => c.RowReference).ThenBy(c => c.ColumnReference).ToList().ForEach(cell =>
                 {
-                    string nbEleves = "";
-                    string[] cellSplited = cell.InnerText.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
-                    if(cellSplited.Length > 1)
-                    {
-                        nbEleves = cellSplited[1];
-                    }
-                    weekCells.Where(wc => wc.RowReference == cell.RowReference && wc.Reference != cell.Reference).ToList().ForEach(matiereCell =>
-                    {
 
-                        string matiere = "";
-                        string prof = "";
-                        string sceance = "";
-                        bool visio = false;
-                        string salle = "";
-                        string[] matierCellSplited = matiereCell.InnerText.Split('\n');
-                        if (matierCellSplited.Length > 0)
+                    if (Promos.MatchPromo(cell.InnerText) != null)
+                    {
+                        string nbEleves = "";
+                        string[] cellSplited = cell.InnerText.Split(new string[] { "\n" }, StringSplitOptions.RemoveEmptyEntries);
+                        if (cellSplited.Length > 1)
+                        {
+                            nbEleves = cellSplited[1];
+                        }
+                        weekCells.Where(wc => wc.RowReference == cell.RowReference && wc.Reference != cell.Reference).ToList().ForEach(matiereCell =>
                         {
 
-                            if (matierCellSplited.Length == 3)
+                            string matiere = "";
+                            string prof = "";
+                            string sceance = "";
+                            bool visio = false;
+                            string salle = "";
+                            string[] matierCellSplited = matiereCell.InnerText.Split('\n');
+                            if (matierCellSplited.Length > 0)
                             {
-                                matiere = matierCellSplited[0];
 
-                                if(MatchSeance(matierCellSplited[1]))
+                                if (matierCellSplited.Length == 3)
                                 {
-                                    sceance = matierCellSplited[1];
-                                    prof = matierCellSplited[2];
+                                    matiere = matierCellSplited[0];
+
+                                    if (MatchSeance(matierCellSplited[1]))
+                                    {
+                                        sceance = matierCellSplited[1];
+                                        prof = matierCellSplited[2];
+                                    }
+                                    else
+                                    {
+                                        prof = matierCellSplited[1];
+                                        sceance = matierCellSplited[2];
+                                    }
+
+
+                                    if (prof.Contains("(visio)"))
+                                    {
+                                        prof.Replace("(visio)", String.Empty);
+                                        visio = true;
+
+                                    }
                                 }
-                                else
+
+
+                                if (matierCellSplited.Length == 2)
                                 {
+                                    matiere = matierCellSplited[0];
                                     prof = matierCellSplited[1];
-                                    sceance = matierCellSplited[2];
-                                }
+                                    if (prof.Contains("(visio)"))
+                                    {
+                                        prof.Replace("(visio)", String.Empty);
+                                        visio = true;
 
-                            
-                                if (prof.Contains("(visio)"))
-                                {
-                                    prof.Replace("(visio)", String.Empty);
-                                    visio = true;
+                                    }
 
                                 }
-                            }
 
 
-                            if (matierCellSplited.Length == 2)
-                            {
-                                matiere = matierCellSplited[0];
-                                prof = matierCellSplited[1];
-                                if (prof.Contains("(visio)"))
-                                {
-                                    prof.Replace("(visio)", String.Empty);
-                                    visio = true;
+                                if (matierCellSplited.Length == 1)
+                                    matiere = matierCellSplited[0];
 
-                                }
+
 
                             }
-
-
-                            if (matierCellSplited.Length == 1)
-                                matiere = matierCellSplited[0];
-
-
-
-                        }
-                        Jour jour = Jours.GetJourByColumn(matiereCell.ColumnReference);
-                        List<CellViewBinding> sallesCells = new List<CellViewBinding>();
-                        if (jour.ColumnReference.Count > 0)
-                        {
-
-                            foreach (string jourColumnRef in jour.ColumnReference)
+                            Jour jour = Jours.GetJourByColumn(matiereCell.ColumnReference);
+                            List<CellViewBinding> sallesCells = new List<CellViewBinding>();
+                            if (jour.ColumnReference.Count > 0)
                             {
-                                CellViewBinding salleCell = weekCells.FirstOrDefault(wc => wc.RowReference == matiereCell.RowReference + 4 && wc.ColumnReference == jourColumnRef);
-                                if (salleCell != null)
+
+                                foreach (string jourColumnRef in jour.ColumnReference)
                                 {
-                                    sallesCells.Add(salleCell);
-                                    break;
+                                    CellViewBinding salleCell = weekCells.FirstOrDefault(wc => wc.RowReference == matiereCell.RowReference + 4 && wc.ColumnReference == jourColumnRef);
+                                    if (salleCell != null)
+                                    {
+                                        sallesCells.Add(salleCell);
+                                        break;
+                                    }
+
                                 }
+
+
+                                sallesCells.ForEach(salleCell =>
+                                {
+                                    if (!string.IsNullOrEmpty(salleCell.InnerText))
+                                        salle += salleCell.InnerText + ",";
+                                });
+
 
                             }
 
-
-                            sallesCells.ForEach(salleCell =>
-                            {
-                                if (!string.IsNullOrEmpty(salleCell.InnerText))
-                                    salle += salleCell.InnerText+",";
-                            });
-
-
-                        }
-
-                        salle = String.Join(",", salle.Split('+'));
-                        salle = String.Join(",", salle.Split('/'));
+                            salle = String.Join(",", salle.Split('+'));
+                            salle = String.Join(",", salle.Split('/'));
 
 
 
-                        Matiere Matiere = new Matiere(cell.InnerText, nbEleves, matiere, prof, salle, jour.Nom, sceance, visio);
-                        result.Add(Matiere);
-                    });
-                }
+                            Matiere Matiere = new Matiere(cell.InnerText, nbEleves, matiere, prof, salle, jour.Nom, sceance, visio);
+                            result.Add(Matiere);
+                        });
+                    }
 
 
 
-            });
+                });
 
-            return result;
+                return result;
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                return new List<Matiere>();
+            }
         }
 
 
@@ -222,10 +250,10 @@ namespace ExcelPart
 
         private bool MatchWeek(string week, int weekNumber)
         {
-            if(week == null || weekNumber == null)
+            if (week == null || weekNumber == null)
                 return false;
 
-            if (week.Contains("S") && weekNumber > 0)
+            if (week.Contains("S") && weekNumber > 0 && week.Length < 5)
                 return true;
 
             return false;
@@ -235,8 +263,9 @@ namespace ExcelPart
         private string[] MatchReference(string cellReference)
         {
 
+
             Match match = Regex.Match(cellReference, @"([A-Z]+)(\d+)");
-            if (match.Success)
+            if (match.Success && cellReference.Length < 5)
             {
                 string column = match.Groups[1].Value;
                 int row = int.Parse(match.Groups[2].Value);
@@ -245,7 +274,7 @@ namespace ExcelPart
 
             }
 
-            return new string[] { "","0" };
+            return new string[] { "", "0" };
 
         }
 
