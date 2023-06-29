@@ -70,8 +70,8 @@
 
             <ListView.View>
                 <GridView AllowsColumnReorder="true"     x:Name="gvMails" ColumnHeaderToolTip="Mails">
-                    <GridViewColumn x:Name="gvcDestinataire"  DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="200" />
-                    <GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet"  Width="280"/>
+                    <GridViewColumn x:Name="gvcDestinataire"  DisplayMemberBinding="{Binding Destinataire}"  Header="Destinataire" Width="auto" />
+                    <!--<GridViewColumn x:Name="gvcObjet" DisplayMemberBinding="{Binding Objet}" Header="Objet"  Width="280"/>-->
                     <!--<GridViewColumn x:Name="gvcBody" DisplayMemberBinding="{Binding Body}" Header="Body" Width="auto"/>-->
 
                 </GridView>

@@ -24,11 +24,9 @@
             <StackPanel >
                 <Label  VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez l'objet du mail</Label>
 
-                <RichTextBox  x:Name="rtbMailObjet" Height="40"  VerticalAlignment="Top" FontFamily="Poppins" Background="LightGray">
-                    <FlowDocument Background="Transparent">
+                
+                <telerik:RadRichTextBox  x:Name="rtbMailObjet"   Height="40"   FontFamily="Poppins" Background="LightGray"/>
 
-                    </FlowDocument>
-                </RichTextBox>
 
 
                 <Label VerticalAlignment="Top" FontSize="14" FontFamily="Poppins" >Modifiez le header du mail à envoyer</Label>

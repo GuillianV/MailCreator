@@ -46,11 +46,7 @@ namespace MailCreator.Windows.Mail
             }
 
 
-            mailItem.Subject.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
-            {
-                rtbMailObjet.Document.Blocks.Add(new Paragraph(new Run(txt)));
-            });
-
+            this.rtbMailObjet.Document = TelerikExtensions.HtmlToRtb(mailItem.Subject);
             this.rtbMailBody.Document = TelerikExtensions.HtmlToRtb(mailItem.HTMLBody);
 
         }
@@ -73,15 +69,10 @@ namespace MailCreator.Windows.Mail
 
             try
             {
-                string subjectText = "";
-                TextRange subjectTextRange = new TextRange(
-                     rtbMailObjet.Document.ContentStart,
-                     rtbMailObjet.Document.ContentEnd
-                 );
-                subjectText = subjectTextRange.Text;
+         
 
 
-                mailItem.UpdateDraft(new MailData(mailItem.To, subjectText, TelerikExtensions.RtbToHtml(rtbMailBody)));
+                mailItem.UpdateDraft(new MailData(mailItem.To, TelerikExtensions.RtbToHtml(rtbMailObjet), TelerikExtensions.RtbToHtml(rtbMailBody)));
                 this.ShowPopup(PopupValues.ModificationSucces);
 
             }

@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using Telerik.Windows.Documents.Spreadsheet.Model;
 
 namespace ExcelPart
 {
@@ -66,9 +67,12 @@ namespace ExcelPart
 
                    if (!string.IsNullOrEmpty(workingWeek))
                        cells.Add(cell);
+                });
 
-               });
-
+                if (!_weeks.ContainsKey(workingWeek))
+                {
+                    _weeks.Add(workingWeek, cells);
+                }
 
             }
             catch (Exception ex)

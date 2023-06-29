@@ -98,12 +98,7 @@ namespace MailCreator.Windows.Mail
             {
 
 
-                email.Sujet.Split(new string[] { "\\r\\n" }, StringSplitOptions.RemoveEmptyEntries).ToList().ForEach(txt =>
-                 {
-                     rtbMailObjet.Document.Blocks.Add(new System.Windows.Documents.Paragraph(new System.Windows.Documents.Run(txt)));
-                     ChangeTextColor(rtbMailObjet, MatchTextStrings.ToArray(), new SolidColorBrush(Colors.ForestGreen));
-                 });
-
+                rtbMailObjet.Document = TelerikExtensions.HtmlToRtb(email.Sujet);
                 rtbMailBodyHeader.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetHeader());
                 rtbMailBody.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetBody());
                 rtbMailBodyFooter.Document =  TelerikExtensions.HtmlToRtb(email.Body.GetFooter());
@@ -182,17 +177,11 @@ namespace MailCreator.Windows.Mail
 
             try
             {
-                string subjectText = "";
-
-                TextRange subjectTextRange = new TextRange(
-                     rtbMailObjet.Document.ContentStart,
-                     rtbMailObjet.Document.ContentEnd
-                 );
-                subjectText = subjectTextRange.Text;
+             
 
 
 
-                new List<EmailGeneric>() { new EmailGeneric(subjectText, new MailBody(TelerikExtensions.RtbToHtml(rtbMailBodyHeader), TelerikExtensions.RtbToHtml(rtbMailBody), TelerikExtensions.RtbToHtml(rtbMailBodyFooter)))}.UpdateJson<EmailGeneric>("emailGenerics.json");
+                new List<EmailGeneric>() { new EmailGeneric(TelerikExtensions.RtbToHtml(rtbMailObjet), new MailBody(TelerikExtensions.RtbToHtml(rtbMailBodyHeader), TelerikExtensions.RtbToHtml(rtbMailBody), TelerikExtensions.RtbToHtml(rtbMailBodyFooter)))}.UpdateJson<EmailGeneric>("emailGenerics.json");
                 this.ShowPopup(PopupValues.ModificationSucces);
             }
             catch
